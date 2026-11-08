@@ -1,0 +1,6 @@
+{
+  "name": "Smart Scanner Industrial PRO",
+  "description": "Sistema profesional de escaneo y control de inventario adaptado para móvil y Termux con soporte de código de barras, bultos y exportación multiformato.",
+  "requestFramePermissions": ["camera"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

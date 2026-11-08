@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Smart Scanner Industrial PRO - Edición de Alto Contraste</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        :root {
+            --bg-main: #0b1329;
+            --bg-card: #162038;
+            --bg-input: #090e1c;
+            --border-card: #2a3a5e;
+            --text-main: #ffffff;
+            --text-muted: #94a3b8;
+            --accent-cyan: #38bdf8;
+            --accent-green: #10b981;
+            --accent-amber: #f59e0b;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-main);
+            color: var(--text-main);
+            margin: 0;
+            padding: 0;
+        }
+
+        /* CARD DE ALTO CONTRASTE */
+        .card {
+            background-color: var(--bg-card);
+            border: 1px solid var(--border-card);
+            color: var(--text-main);
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+        }
+
+        .card-header {
+            background-color: #1e2d4a;
+            border-bottom: 1px solid var(--border-card);
+            color: #ffffff;
+            font-weight: 700;
+        }
+
+        /* INPUTS ULTRA-LEGIBLES */
+        .form-control, .form-select {
+            background-color: var(--bg-input) !important;
+            border: 1.5px solid #334155 !important;
+            color: #ffffff !important;
+            font-weight: 600;
+            font-size: 0.95rem;
+        }
+
+        .form-control::placeholder {
+            color: #94a3b8 !important;
+            font-weight: 400;
+        }
+
+        .form-control:focus, .form-select:focus {
+            border-color: var(--accent-cyan) !important;
+            box-shadow: 0 0 0 0.25rem rgba(56, 189, 248, 0.25) !important;
+            color: #ffffff !important;
+        }
+
+        .form-label, label {
+            color: #e2e8f0 !important;
+            font-weight: 700 !important;
+        }
+
+        .list-group-item {
+            background-color: var(--bg-card);
+            border-color: var(--border-card);
+            color: #ffffff;
+        }
+
+        /* CAMARA */
+        #reader {
+            width: 100% !important;
+            min-height: 180px !important;
+            max-height: 240px !important;
+            overflow: hidden !important;
+            background-color: #000000 !important;
+            border: 2px solid var(--accent-cyan) !important;
+            border-radius: 12px !important;
+            margin: 0 auto !important;
+        }
+        #reader video {
+            width: 100% !important;
+            max-height: 240px !important;
+            object-fit: cover !important;
+        }
+
+        /* BOTONES DE MODO DE ALTA VISIBILIDAD */
+        .btn-check:checked + .btn-outline-success {
+            background-color: #10b981;
+            border-color: #10b981;
+            color: #ffffff;
+            font-weight: 800;
+        }
+
+        .btn-check:checked + .btn-outline-danger {
+            background-color: #ef4444;
+            border-color: #ef4444;
+            color: #ffffff;
+            font-weight: 800;
+        }
+
+        .btn-check:checked + .btn-outline-info {
+            background-color: #06b6d4;
+            border-color: #06b6d4;
+            color: #000000;
+            font-weight: 800;
+        }
+
+        .uppercase-input {
+            text-transform: uppercase;
+        }
+
+        /* BANNER CADUCIDAD ALTO CONTRASTE */
+        .banner-caducidad {
+            background: linear-gradient(90deg, #b91c1c 0%, #dc2626 100%);
+            color: #ffffff;
+            border-bottom: 2px solid #f87171;
+        }
+
+        /* STATS WIDGETS */
+        .stat-card {
+            background-color: #1a2642;
+            border: 1px solid #2d3f66;
+            border-radius: 10px;
+            padding: 8px 12px;
+        }
+
+        /* TABLA INDUSTRIAL */
+        .table-dark {
+            --bs-table-bg: var(--bg-card);
+            --bs-table-border-color: var(--border-card);
+            color: #ffffff !important;
+        }
+
+        .table-dark th {
+            background-color: #1e2d4a !important;
+            color: #38bdf8 !important;
+            font-weight: 700;
+            text-transform: uppercase;
+            font-size: 0.8rem;
+        }
+
+        .table-dark td {
+            color: #f1f5f9 !important;
+            font-weight: 500;
+        }
+
+        .badge-sku {
+            background-color: #0284c7;
+            color: #ffffff;
+            font-family: monospace;
+            font-size: 0.9rem;
+            padding: 4px 8px;
+            border-radius: 6px;
+        }
+    </style>
+</head>
+<body>
+    <!-- INPUT OCULTO PARA SUBIR EXCEL -->
+    <input type="file" id="inputImportarExcel" accept=".xlsx, .xls, .csv, .json" style="display: none;" onchange="procesarArchivoSubido(event)">
+
+    <!-- BANNER DE RECORDATORIO DE CADUCIDADES -->
+    <div id="bannerCaducidad" class="banner-caducidad py-2 px-3 d-none align-items-center justify-content-between shadow-sm">
+        <div class="d-flex align-items-center gap-2">
+            <i class="fa-solid fa-bell fa-bounce text-warning fs-5"></i>
+            <div>
+                <strong id="lblCantCaducados" class="fs-6">0</strong> <span class="fw-bold">productos por caducar o caducados detectados.</span>
+                <small class="d-block text-white-50" id="lblDetalleCaducidad">Revisa las fechas para evitar mermas en tu almacén.</small>
+            </div>
+        </div>
+        <button class="btn btn-sm btn-light fw-bold py-1 px-3" onclick="filtrarCaducadosEnTabla()"><i class="fa-solid fa-filter"></i> Filtrar Tabla</button>
+    </div>
+
+    <!-- NAVBAR Y BOTONES PRINCIPALES -->
+    <nav class="navbar navbar-dark bg-dark sticky-top shadow py-2 px-2 border-bottom border-secondary">
+        <div class="container-fluid d-flex justify-content-between align-items-center p-0">
+            <div class="d-flex align-items-center gap-1.5">
+                <span class="navbar-brand mb-0 h6 text-info fw-bold me-1"><i class="fa-solid fa-boxes-stacked"></i> SMART SCANNER</span>
+                <span class="badge bg-primary text-truncate cursor-pointer fs-6" style="max-width: 130px;" id="badgeArchivoActivo" onclick="abrirGestorArchivos()">General</span>
+            </div>
+            
+            <!-- TOGGLE DE VISTAS (ESCÁNER VS DASHBOARD) -->
+            <div class="btn-group btn-group-sm me-auto ms-2">
+                <button id="btnTabEscaner" class="btn btn-primary active fw-bold" onclick="mostrarVista('escaner')"><i class="fa-solid fa-barcode"></i> Escáner</button>
+                <button id="btnTabDashboard" class="btn btn-outline-info fw-bold text-white" onclick="mostrarVista('dashboard')"><i class="fa-solid fa-chart-pie"></i> Dashboard</button>
+            </div>
+
+            <div class="d-flex gap-1">
+                <button class="btn btn-sm btn-outline-info py-1 px-2 fw-bold text-white" onclick="abrirModalConsultaRapida()" title="Buscar código sin agregar">
+                    <i class="fa-solid fa-magnifying-glass"></i> <span class="d-none d-md-inline">Buscar</span>
+                </button>
+                <button class="btn btn-sm btn-info fw-bold py-1 px-2 text-dark" onclick="document.getElementById('inputImportarExcel').click()" title="Subir Archivo">
+                    <i class="fa-solid fa-file-import"></i> <span class="d-none d-sm-inline">Subir</span>
+                </button>
+                <button class="btn btn-sm btn-outline-light py-1 px-2" onclick="abrirGestorArchivos()" title="Gestor de Áreas">
+                    <i class="fa-solid fa-folder-open"></i> <span class="d-none d-sm-inline">Áreas</span>
+                </button>
+                <button class="btn btn-sm btn-success py-1 px-2 fw-bold" onclick="guardarArchivoActualManual()" title="Guardar cambios">
+                    <i class="fa-solid fa-floppy-disk"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container-fluid py-2">
+        <!-- TARJETAS WIDGET DE RESUMEN DE INVENTARIO -->
+        <div class="row g-2 mb-2">
+            <div class="col-6 col-md-3">
+                <div class="stat-card text-center">
+                    <small class="text-info fw-bold d-block">📦 PRODUCTOS REGISTRADOS</small>
+                    <strong class="fs-4 text-white" id="statCantItems">0</strong>
+                </div>
+            </div>
+            <div class="col-6 col-md-3">
+                <div class="stat-card text-center">
+                    <small class="text-warning fw-bold d-block">📦 BULTOS TOTALES</small>
+                    <strong class="fs-4 text-warning" id="statCantBultos">0</strong>
+                </div>
+            </div>
+            <div class="col-6 col-md-3">
+                <div class="stat-card text-center">
+                    <small class="text-success fw-bold d-block">🔢 PIEZAS TOTALES</small>
+                    <strong class="fs-4 text-success" id="statCantPiezas">0</strong>
+                </div>
+            </div>
+            <div class="col-6 col-md-3">
+                <div class="stat-card text-center">
+                    <small class="text-info fw-bold d-block">💰 VALOR ESTIMADO ($)</small>
+                    <strong class="fs-4 text-cyan" id="statValorTotal">$0.00</strong>
+                </div>
+            </div>
+        </div>
+
+        <!-- VISTA DASHBOARD (GRÁFICOS CHART.JS) -->
+        <div id="seccionDashboard" class="row g-2 mb-3" style="display: none;">
+            <div class="col-12">
+                <div class="d-flex justify-content-between align-items-center mb-2">
+                    <h5 class="fw-bold text-info mb-0"><i class="fa-solid fa-chart-pie"></i> Centro de Analíticas e Inventario</h5>
+                    <button class="btn btn-sm btn-outline-info py-1 text-white" onclick="actualizarGraficosDashboard()"><i class="fa-solid fa-rotate"></i> Actualizar</button>
+                </div>
+            </div>
+            <div class="col-md-6 col-12">
+                <div class="card shadow p-2">
+                    <h6 class="fw-bold text-center text-info mb-2">Distribución de Stock por Área</h6>
+                    <canvas id="chartStockPorArea" style="max-height: 220px;"></canvas>
+                </div>
+            </div>
+            <div class="col-md-6 col-12">
+                <div class="card shadow p-2">
+                    <h6 class="fw-bold text-center text-success mb-2">Top Productos con Mayor Inventario</h6>
+                    <canvas id="chartTopProductos" style="max-height: 220px;"></canvas>
+                </div>
+            </div>
+            <div class="col-12">
+                <div class="card shadow p-2">
+                    <h6 class="fw-bold text-center text-danger mb-2">Estado de Vencimiento de Productos</h6>
+                    <canvas id="chartCaducidades" style="max-height: 200px;"></canvas>
+                </div>
+            </div>
+        </div>
+
+        <!-- VISTA ESCÁNER PRINCIPAL -->
+        <div id="seccionEscaner">
+            <!-- ASISTENTE DE IMPORTACIÓN -->
+            <div class="row mb-2" id="panelAsistenteMapeo" style="display: none;">
+                <div class="col-12">
+                    <div class="card border-success shadow-lg">
+                        <div class="card-header bg-success text-white d-flex justify-content-between align-items-center py-1">
+                            <span class="fw-bold small"><i class="fa-solid fa-wand-magic-sparkles"></i> Asistente de Importación Flexible</span>
+                            <button class="btn btn-sm btn-outline-light py-0" onclick="cerrarAsistenteMapeo()"><i class="fa-solid fa-xmark"></i></button>
+                        </div>
+                        <div class="card-body p-2">
+                            <div class="alert alert-info py-1 small mb-2 text-dark">Archivo: <strong id="lblArchivoMapeo">archivo.xlsx</strong> (<span id="lblFilasMapeo">0</span> filas).</div>
+                            <div class="row g-2 mb-2">
+                                <div class="col-6"><label class="form-label small fw-bold text-primary mb-0">CÓDIGO / SKU (*)</label><select id="selColCodigo" class="form-select form-select-sm border-primary"></select></div>
+                                <div class="col-6"><label class="form-label small fw-bold text-primary mb-0">NOMBRE (*)</label><select id="selColNombre" class="form-select form-select-sm border-primary"></select></div>
+                                <div class="col-4"><label class="form-label small fw-bold text-secondary mb-0">BULTOS</label><select id="selColBultos" class="form-select form-select-sm"></select></div>
+                                <div class="col-4"><label class="form-label small fw-bold text-secondary mb-0">PIEZAS / TOTAL</label><select id="selColPiezas" class="form-select form-select-sm"></select></div>
+                                <div class="col-4"><label class="form-label small fw-bold text-success mb-0">PRECIO ($)</label><select id="selColPrecio" class="form-select form-select-sm"></select></div>
+                            </div>
+                            <div class="d-flex gap-2">
+                                <button class="btn btn-success btn-sm w-100 fw-bold" onclick="confirmarImportacionMapeada()">Importar</button>
+                                <button class="btn btn-outline-secondary btn-sm w-25 text-white" onclick="cerrarAsistenteMapeo()">Cancelar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- GESTOR DE ÁREAS -->
+            <div class="row mb-2" id="panelGestorArchivos" style="display: none;">
+                <div class="col-12">
+                    <div class="card border-info shadow">
+                        <div class="card-header bg-primary text-white d-flex justify-content-between align-items-center py-1">
+                            <span class="fw-bold small"><i class="fa-solid fa-layer-group"></i> Sesiones por Área</span>
+                            <div>
+                                <button class="btn btn-sm btn-warning fw-bold me-1 py-0 px-2 text-dark" onclick="forzarSincronizacionTotal()">
+                                    <i class="fa-solid fa-rotate"></i> Sincronizar
+                                </button>
+                                <button class="btn btn-sm btn-outline-light py-0" onclick="cerrarGestorArchivos()"><i class="fa-solid fa-xmark"></i></button>
+                            </div>
+                        </div>
+                        <div class="card-body p-2">
+                            <div class="p-2 bg-dark rounded border border-secondary mb-2">
+                                <small class="fw-bold text-info d-block mb-1">Iniciar sesión rápida de área:</small>
+                                <div class="d-flex flex-wrap gap-1">
+                                    <button class="btn btn-sm btn-outline-info text-white py-0" onclick="crearSesionAreaRapida('Hogar')">🏠 Hogar</button>
+                                    <button class="btn btn-sm btn-outline-info text-white py-0" onclick="crearSesionAreaRapida('Fiesta')">🎉 Fiesta</button>
+                                    <button class="btn btn-sm btn-outline-info text-white py-0" onclick="crearSesionAreaRapida('Juguetes')">🧸 Juguetes</button>
+                                    <button class="btn btn-sm btn-outline-info text-white py-0" onclick="crearSesionAreaRapida('Ferreteria')">🔧 Ferretería</button>
+                                    <button class="btn btn-sm btn-outline-info text-white py-0" onclick="crearSesionAreaRapida('Ropa')">👕 Ropa</button>
+                                    <button class="btn btn-sm btn-outline-info text-white py-0" onclick="crearSesionAreaRapida('Abarrotes')">🥫 Abarrotes</button>
+                                    <button class="btn btn-sm btn-secondary py-0" onclick="crearNuevoArchivo()">➕ Otra...</button>
+                                </div>
+                            </div>
+                            <small class="text-white-50 d-block mb-1">Toca un área para abrirla o eliminarla:</small>
+                            <div class="list-group" id="listaArchivosGuardados"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row g-2">
+                <!-- PANEL CÁMARA CON BOTÓN DE REESCANEAR GIGANTE -->
+                <div class="col-lg-5 col-md-12 mb-2">
+                    <div class="card shadow-sm">
+                        <div class="card-header py-1.5 d-flex justify-content-between align-items-center">
+                            <span class="text-info fw-bold small"><i class="fa-solid fa-barcode"></i> Escáner Láser</span>
+                            <div class="d-flex gap-1">
+                                <button id="btnSonidoToggle" class="btn btn-sm btn-outline-secondary py-0 px-2 text-white" onclick="toggleSonido()"><i class="fa-solid fa-volume-high"></i> Bip</button>
+                                <button id="btnLinterna" class="btn btn-sm btn-outline-warning py-0 px-2" onclick="toggleLinterna()" disabled><i class="fa-solid fa-bolt"></i> Flash</button>
+                                <button id="btnCambiarCamara" class="btn btn-sm btn-outline-info py-0 px-2 text-white" onclick="cambiarLenteCamara()"><i class="fa-solid fa-arrows-rotate"></i> Lente</button>
+                            </div>
+                        </div>
+                        <div class="card-body p-2 text-center">
+                            <div class="row g-1 mb-1.5">
+                                <div class="col-6">
+                                    <button id="btnIniciar" class="btn btn-success btn-sm w-100 py-1.5 fw-bold" onclick="iniciarCamara()"><i class="fa-solid fa-camera"></i> Iniciar</button>
+                                    <button id="btnDetener" class="btn btn-danger btn-sm w-100 py-1.5 d-none fw-bold" onclick="detenerCamara()"><i class="fa-solid fa-stop"></i> Detener</button>
+                                </div>
+                                <div class="col-6">
+                                    <button class="btn btn-outline-info btn-sm w-100 py-1.5 fw-bold text-white" onclick="document.getElementById('inputFotoCodigo').click()"><i class="fa-solid fa-image"></i> Foto</button>
+                                    <input type="file" id="inputFotoCodigo" accept="image/*" capture="environment" style="display:none;" onchange="procesarFotoCodigo(event)">
+                                </div>
+                            </div>
+
+                            <!-- ALERTA ERROR CÁMARA -->
+                            <div id="alertaErrorCamara" class="alert alert-danger py-2 mb-2 d-none shadow-sm small text-start">
+                                <strong class="d-block mb-1"><i class="fa-solid fa-triangle-exclamation"></i> Cámara no disponible</strong>
+                                <span id="txtErrorCamara" class="d-block mb-1"></span>
+                                <div class="d-flex gap-1">
+                                    <button class="btn btn-sm btn-outline-light py-0 px-2" onclick="iniciarCamara()">Reintentar</button>
+                                    <button class="btn btn-sm btn-info py-0 px-2 text-dark" onclick="document.getElementById('inputFotoCodigo').click()">Usar Foto</button>
+                                </div>
+                            </div>
+
+                            <!-- BOTÓN DE RE-ESCANEAR Y REINICIO AUTOMÁTICO -->
+                            <div id="alertaPausa" class="alert alert-warning py-2 mb-2 d-none shadow-sm border-warning text-dark">
+                                <strong class="d-block mb-1"><i class="fa-solid fa-circle-check text-success"></i> CÓDIGO CAPTURADO</strong>
+                                <button class="btn btn-warning w-100 fw-bold border border-dark text-dark shadow-sm py-2" onclick="descongelarCamara()" style="font-size: 1.1rem;">
+                                    <i class="fa-solid fa-rotate-right"></i> Volver a Escanear / Siguiente
+                                </button>
+                            </div>
+
+                            <div id="reader"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PANEL FORMULARIO -->
+                <div class="col-lg-7 col-md-12 mb-2">
+                    <div class="card shadow-sm">
+                        <div class="card-header py-1.5 d-flex justify-content-between align-items-center">
+                            <div class="btn-group btn-group-sm">
+                                <input type="radio" class="btn-check" name="modo" id="mEnt" checked onchange="cambiarModo('entrada')"><label class="btn btn-outline-success fw-bold" for="mEnt"><i class="fa-solid fa-circle-plus"></i> Entrada (+)</label>
+                                <input type="radio" class="btn-check" name="modo" id="mSal" onchange="cambiarModo('salida')"><label class="btn btn-outline-danger fw-bold" for="mSal"><i class="fa-solid fa-circle-minus"></i> Salida (-)</label>
+                                <input type="radio" class="btn-check" name="modo" id="mAud" onchange="cambiarModo('consulta')"><label class="btn btn-outline-info fw-bold" for="mAud"><i class="fa-solid fa-magnifying-glass"></i> Auditoría</label>
+                            </div>
+                            <button id="btnEscaneoRapido" class="btn btn-sm btn-outline-warning fw-bold py-1 px-2" onclick="toggleModoRapido()">
+                                <i class="fa-solid fa-bolt"></i> Rápido: <span id="lblModoRapido">OFF</span>
+                            </button>
+                        </div>
+                        <div class="card-body p-2">
+                            <!-- OPCIONES DE CADUCIDAD, PRECIO Y CAJA MIXTA -->
+                            <div class="d-flex justify-content-between mb-2 p-2 bg-dark rounded border border-secondary flex-wrap gap-1">
+                                <div class="form-check form-switch m-0"><input class="form-check-input" type="checkbox" id="chkCaducidad" onchange="toggleOpciones()"><label class="small fw-bold text-danger cursor-pointer ms-1" for="chkCaducidad">⏳ Caducidad</label></div>
+                                <div class="form-check form-switch m-0"><input class="form-check-input" type="checkbox" id="chkPrecio" onchange="toggleOpciones()"><label class="small fw-bold text-success cursor-pointer ms-1" for="chkPrecio">💰 Precio</label></div>
+                                <div class="form-check form-switch m-0"><input class="form-check-input" type="checkbox" id="chkCajaMixta" onchange="toggleCajaMixta()"><label class="small fw-bold text-warning cursor-pointer ms-1" for="chkCajaMixta">📦 Caja Mixta</label></div>
+                            </div>
+
+                            <div class="row g-2 mb-2">
+                                <div class="col-6" id="colCaducidad" style="display:none;"><input type="date" id="caducidad" class="form-control form-control-sm border-danger"></div>
+                                <div class="col-6" id="colPrecio" style="display:none;"><input type="number" id="precio" class="form-control form-control-sm border-success" placeholder="Precio $" step="0.1"></div>
+                            </div>
+
+                            <!-- BANNER INDICADOR DE CAJA MIXTA -->
+                            <div id="bannerCajaMixta" class="alert alert-warning py-1.5 px-2 mb-2 d-none text-dark small fw-bold d-flex justify-content-between align-items-center">
+                                <span><i class="fa-solid fa-boxes-packing text-dark"></i> CAJA MIXTA ACTIVA: <span id="lblCodigoCajaMixta" class="text-primary fw-bold">MIX-001</span></span>
+                                <button class="btn btn-sm btn-dark py-0" onclick="finalizarCajaMixta()">Terminar Caja</button>
+                            </div>
+
+                            <form id="formInventario" onsubmit="event.preventDefault(); agregarRegistro();">
+                                <div class="mb-2">
+                                    <label class="small fw-bold text-info mb-0">SKU / CÓDIGO DE BARRAS (*)</label>
+                                    <input type="text" id="sku" class="form-control fw-bold fs-5 text-info" placeholder="Escanea o escribe código..." inputmode="numeric" oninput="alEscribirSKU()">
+                                </div>
+                                <div class="mb-2">
+                                    <label class="small fw-bold text-info mb-0">NOMBRE DEL ARTÍCULO (MAYÚSCULAS)</label>
+                                    <input type="text" id="nombre" class="form-control form-control-sm uppercase-input" placeholder="DESCRIPCIÓN DEL PRODUCTO..." list="sugerenciasNombres" oninput="this.value = this.value.toUpperCase(); alEscribirNombre();">
+                                    <datalist id="sugerenciasNombres"></datalist>
+                                </div>
+                                <div class="row g-2 mb-2">
+                                    <div class="col-6">
+                                        <div class="d-flex justify-content-between"><label class="small fw-bold text-light mb-0">BULTOS / CAJAS</label><a href="#" class="small text-decoration-none text-info fw-bold" onclick="activarSoloPiezas()">Solo Pz</a></div>
+                                        <div class="input-group input-group-sm">
+                                            <button class="btn btn-outline-danger fw-bold" type="button" onclick="let b=document.getElementById('bultos'); b.value=Math.max(0, (parseInt(b.value)||0)-1); alCambiarBultos();">-</button>
+                                            <input type="number" id="bultos" class="form-control text-center fw-bold fs-5 text-white" value="0" oninput="alCambiarBultos()" min="0">
+                                            <button class="btn btn-outline-success fw-bold" type="button" onclick="let b=document.getElementById('bultos'); b.value=(parseInt(b.value)||0)+1; alCambiarBultos();">+</button>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <label class="small fw-bold text-light mb-0">PIEZAS / BTO</label>
+                                        <div class="input-group input-group-sm">
+                                            <button class="btn btn-outline-danger fw-bold" type="button" onclick="let p=document.getElementById('piezas'); p.value=Math.max(0, (parseInt(p.value)||0)-1); alCambiarPiezas();">-</button>
+                                            <input type="number" id="piezas" class="form-control text-center fw-bold text-info fs-5" value="0" oninput="alCambiarPiezas()" min="0">
+                                            <button class="btn btn-outline-success fw-bold" type="button" onclick="let p=document.getElementById('piezas'); p.value=(parseInt(p.value)||0)+1; alCambiarPiezas();">+</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="mb-2 p-2 bg-dark border border-secondary rounded d-flex justify-content-between align-items-center">
+                                    <span class="small fw-bold text-white-50">TOTAL PIEZAS TANDA:</span>
+                                    <input type="number" id="total" class="form-control w-50 bg-transparent border-0 text-end fw-bold text-danger fs-3 p-0" readonly value="0">
+                                </div>
+                                <button type="button" id="btnGuardarRegistro" class="btn btn-success w-100 fw-bold py-2.5 shadow-sm" onclick="agregarRegistro()">➕ Sumar al Inventario</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- TABLA Y DESCARGAS -->
+            <div class="card shadow-sm mb-4">
+                <div class="card-header d-flex justify-content-between align-items-center py-2 flex-wrap gap-2">
+                    <span class="small fw-bold text-white">Ítems: <span id="contadorRegistros" class="text-info">0</span> | <span id="resumenTotales" class="text-info fw-bold"></span></span>
+                    <div class="d-flex gap-1">
+                        <button class="btn btn-info btn-sm fw-bold text-dark px-2" onclick="consolidarAInventarioGeneral()"><i class="fa-solid fa-inbox"></i> Consolidar</button>
+                        <!-- SELECTOR DE EXPORTACIÓN -->
+                        <div class="btn-group btn-group-sm">
+                            <button class="btn btn-warning dropdown-toggle fw-bold text-dark" data-bs-toggle="dropdown"><i class="fa-solid fa-download"></i> Exportar</button>
+                            <ul class="dropdown-menu dropdown-menu-end shadow small dropdown-menu-dark">
+                                <li><h6 class="dropdown-header text-info fw-bold">Formato Básico (SKU, Nom, Tot)</h6></li>
+                                <li><a class="dropdown-item" href="#" onclick="descargarDocumento('excel', 'basico')"><i class="fa-solid fa-file-excel text-success"></i> Excel Básico (Auto-ajustado)</a></li>
+                                <li><a class="dropdown-item" href="#" onclick="descargarDocumento('pdf', 'basico')"><i class="fa-solid fa-file-pdf text-danger"></i> PDF Básico</a></li>
+                                <li><a class="dropdown-item" href="#" onclick="descargarDocumento('word', 'basico')"><i class="fa-solid fa-file-word text-primary"></i> Word Básico</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><h6 class="dropdown-header text-danger fw-bold">Formato Completo (+ Cad/Precios)</h6></li>
+                                <li><a class="dropdown-item" href="#" onclick="descargarDocumento('excel', 'completo')"><i class="fa-solid fa-file-excel text-success"></i> Excel Completo (Auto-ajustado)</a></li>
+                                <li><a class="dropdown-item" href="#" onclick="descargarDocumento('pdf', 'completo')"><i class="fa-solid fa-file-pdf text-danger"></i> PDF Completo</a></li>
+                                <li><a class="dropdown-item" href="#" onclick="descargarDocumento('word', 'completo')"><i class="fa-solid fa-file-word text-primary"></i> Word Completo</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- BUSCADOR Y ORDENAMIENTO -->
+                <div class="p-2 bg-dark border-bottom border-secondary d-flex gap-2 flex-wrap">
+                    <div class="input-group input-group-sm flex-grow-1">
+                        <span class="input-group-text bg-secondary text-white border-secondary"><i class="fa-solid fa-magnifying-glass"></i></span>
+                        <input type="text" id="inputBuscarTabla" class="form-control border-secondary text-white" placeholder="Buscar por código, nombre, área o fecha..." oninput="filtrarTabla()" autocomplete="off">
+                        <button class="btn btn-outline-danger" type="button" onclick="limpiarBuscador()" title="Limpiar filtro"><i class="fa-solid fa-xmark"></i></button>
+                    </div>
+                    <select id="selOrdenTabla" class="form-select form-select-sm border-secondary text-white bg-dark w-auto" onchange="rendTab()">
+                        <option value="defecto">Orden: Registro (Recientes)</option>
+                        <option value="nombre">Orden: Nombre (A-Z)</option>
+                        <option value="codigo">Orden: Código (SKU)</option>
+                        <option value="total">Orden: Mayor Cantidad</option>
+                    </select>
+                </div>
+                <div class="table-responsive">
+                    <table class="table table-dark table-hover table-bordered mb-0 align-middle text-center" style="font-size:0.88rem; white-space:nowrap;">
+                        <thead>
+                            <tr>
+                                <th>Fecha</th>
+                                <th>Área</th>
+                                <th>SKU / Código</th>
+                                <th>Nombre / Detalle</th>
+                                <th>Bultos</th>
+                                <th>Pzs/Bto</th>
+                                <th>Total Pzs</th>
+                                <th>Acción</th>
+                            </tr>
+                        </thead>
+                        <tbody id="tablaBody"></tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- MODAL BUSQUEDA / CONSULTA RAPIDA -->
+    <div class="modal fade" id="modalLookup" tabindex="-1"><div class="modal-dialog modal-dialog-centered"><div class="modal-content border-info bg-dark text-white">
+        <div class="modal-header bg-info text-dark py-2"><h6 class="fw-bold mb-0"><i class="fa-solid fa-magnifying-glass"></i> Modo Consulta / Búsqueda de Código</h6><button class="btn-close" data-bs-dismiss="modal"></button></div>
+        <div class="modal-body p-3">
+            <div class="input-group mb-3">
+                <input type="text" id="inputLookupSKU" class="form-control fw-bold text-info" placeholder="Escribe o escanea SKU..." oninput="alBuscarLookup()">
+                <button class="btn btn-info fw-bold text-dark" onclick="alBuscarLookup()">Buscar</button>
+            </div>
+            <div id="resultadoLookup" class="p-2 border rounded bg-secondary bg-opacity-10 text-start small d-none"></div>
+        </div>
+    </div></div></div>
+
+    <!-- MODAL EDITAR FILA -->
+    <div class="modal fade" id="modalEditarFila" tabindex="-1" data-bs-backdrop="static"><div class="modal-dialog modal-dialog-centered"><div class="modal-content border-primary bg-dark text-white">
+        <div class="modal-header bg-primary text-white py-2"><h6 class="fw-bold mb-0"><i class="fa-solid fa-pencil"></i> Editar Registro</h6><button class="btn-close btn-close-white" data-bs-dismiss="modal"></button></div>
+        <div class="modal-body p-3">
+            <input type="hidden" id="editIndex">
+            <label class="small fw-bold text-info">SKU:</label><input type="text" id="editSKU" class="form-control mb-2 bg-secondary text-white" readonly>
+            <label class="small fw-bold text-info">Nombre:</label><input type="text" id="editNombre" class="form-control mb-2 uppercase-input text-white" oninput="this.value = this.value.toUpperCase();">
+            <div class="row g-2 mb-2">
+                <div class="col-6"><label class="small fw-bold text-white">Bultos</label><input type="number" id="editBultos" class="form-control text-center text-white"></div>
+                <div class="col-6"><label class="small fw-bold text-white">Pzs/Bulto</label><input type="number" id="editPiezas" class="form-control text-center text-white"></div>
+            </div>
+            <div class="row g-2 mb-3">
+                <div class="col-6"><label class="small fw-bold text-danger">Caducidad</label><input type="date" id="editCaducidad" class="form-control border-danger text-white"></div>
+                <div class="col-6"><label class="small fw-bold text-success">Precio ($)</label><input type="number" id="editPrecio" class="form-control border-success text-white" step="0.01"></div>
+            </div>
+            <button class="btn btn-success w-100 fw-bold py-2" onclick="guardarEdicionFila()"><i class="fa-solid fa-save"></i> Guardar Cambios</button>
+        </div>
+    </div></div></div>
+
+    <!-- MODAL AUDITORIA -->
+    <div class="modal fade" id="modalAuditoria" tabindex="-1"><div class="modal-dialog modal-dialog-centered"><div class="modal-content border-info bg-dark text-white">
+        <div class="modal-header bg-info py-2"><h6 class="fw-bold mb-0 text-dark">🔍 Auditoría del Producto</h6><button class="btn-close" data-bs-dismiss="modal"></button></div>
+        <div class="modal-body p-3">
+            <h5 class="fw-bold text-info mb-0" id="resConsultaNombre"></h5>
+            <span class="badge bg-secondary mb-2" id="resConsultaSKU"></span>
+            <div class="row g-2 text-center mb-2">
+                <div class="col-6"><div class="bg-secondary bg-opacity-25 p-2 border rounded"><small>ESTA ÁREA:</small><div class="fw-bold text-info fs-5" id="resConsultaStockActual"></div></div></div>
+                <div class="col-6"><div class="bg-secondary bg-opacity-25 p-2 border rounded border-success"><small>TOTAL GLOBAL:</small><div class="fw-bold text-success fs-5" id="resConsultaStockGlobal"></div></div></div>
+            </div>
+            <ul class="list-group list-group-flush border rounded small" id="resConsultaListaArchivos"></ul>
+            <button class="btn btn-success w-100 fw-bold mt-3" onclick="traerProductoACaptura()"><i class="fa-solid fa-arrow-down"></i> Modificar cantidades</button>
+        </div>
+    </div></div></div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/html5-qrcode"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf-autotable/3.5.28/jspdf.plugin.autotable.min.js"></script>
+    <script src="/static/js/main.js?v=400"></script>
+</body>
+</html>

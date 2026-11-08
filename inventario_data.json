@@ -1,0 +1,6769 @@
+{
+  "archivos": {
+    "Inventario_General": [
+      {
+        "Fecha_Captura": "26/10 16:35",
+        "Código": "7500366003873",
+        "Nombre": "PAPS SALSA PICANTE",
+        "Caducidad": "2026-12-13",
+        "Bultos": 1,
+        "Piezas": 28,
+        "Total": 28,
+        "Precio": 0,
+        "_extraData": {},
+        "Área": "BOTANA"
+      },
+      {
+        "Fecha_Captura": "24/10 03:26 (Ed)",
+        "Código": "7500463413957",
+        "Nombre": "CHICHARON DE CERDO",
+        "Caducidad": "2026-11-14",
+        "Bultos": 1,
+        "Piezas": 50,
+        "Total": 50,
+        "Precio": 15,
+        "_extraData": {
+          "Precio": 15
+        },
+        "Área": "BOTANA"
+      },
+      {
+        "Fecha_Captura": "24/10 03:26 (Ed)",
+        "Código": "7503026133392",
+        "Nombre": "CHICHARRÓN DE CERDO PICANTE MORA",
+        "Caducidad": "2026-11-17",
+        "Bultos": 1,
+        "Piezas": 50,
+        "Total": 50,
+        "Precio": 15,
+        "_extraData": {
+          "Precio": 15
+        },
+        "Área": "BOTANA"
+      },
+      {
+        "Fecha_Captura": "23/10 13:23",
+        "Código": "6924743915121",
+        "Nombre": "LAYS PEPINO",
+        "Caducidad": "2026-12-01",
+        "Bultos": 3,
+        "Piezas": 10,
+        "Total": 28,
+        "Precio": 0,
+        "_extraData": {},
+        "Área": "BOTANA"
+      },
+      {
+        "Fecha_Captura": "23/10 13:18",
+        "Código": "7709136938050",
+        "Nombre": "MADURITOS",
+        "Caducidad": "",
+        "Bultos": 1,
+        "Piezas": 24,
+        "Total": 24,
+        "Precio": 0,
+        "_extraData": {},
+        "Área": "BOTANA"
+      },
+      {
+        "Fecha_Captura": "23/10 13:15",
+        "Código": "815196013358",
+        "Nombre": "ZEBRA POPCORN",
+        "Caducidad": "2026-11-18",
+        "Bultos": 1,
+        "Piezas": 11,
+        "Total": 11,
+        "Precio": 0,
+        "_extraData": {},
+        "Área": "BOTANA"
+      },
+      {
+        "Fecha_Captura": "23/10 13:14",
+        "Código": "660251604404",
+        "Nombre": "MUNCHIES BOTANA",
+        "Caducidad": "",
+        "Bultos": 1,
+        "Piezas": 9,
+        "Total": 9,
+        "Precio": 0,
+        "_extraData": {},
+        "Área": "BOTANA"
+      },
+      {
+        "Fecha_Captura": "31/10 13:05 (Ed)",
+        "Código": "7502007770311",
+        "Nombre": "CUCHILLO DE COCINA",
+        "Caducidad": "",
+        "Bultos": 1,
+        "Piezas": 24,
+        "Total": 24,
+        "Precio": 0,
+        "_extraData": {},
+        "Área": "Inventario 2026-10-21  2  bodega"
+      },
+      {
+        "Fecha_Captura": "31/10 12:45",
+        "Código": "400005955907",
+        "Nombre": "CUCHARA PARA SERVIR",
+        "Caducidad": "",
+        "Bultos": 1,
+        "Piezas": 70,
+        "Total": 70,
+        "Precio": 0,
+        "_extraData": {},
+        "Área": "Inventario 2026-10-21  2  bodega"
+      },
+      {
+        "Fecha_Captura": "31/10 12:44",
+        "Código": "400005955884",
+        "Nombre": "CUCHARA SOPERA",
+        "Caducidad": "",
+        "Bultos": 1,
+        "Piezas": 38,
+        "Total": 38,
+        "Precio": 0,
+        "_extraData": {},
+        "Área": "Inventario 2026-10-21  2  bodega"
+      },
+      {
+        "Fecha_Captura": "29/10 09:42",
+        "Código": "400000418377",
+        "Nombre": "CUADRO",
+        "Caducidad": "",
+        "Bultos": 1,
+        "Piezas": 36,
+        "Total": 36,
+        "Precio": 0,
+        "_extraData": {},
+        "Área": "Inventario 2026-10-21  2  bodega"
+      },
+      {
+        "Fecha_Captura": "29/10 09:41",
+        "Código": "681307521438",
+        "Nombre": "SHOTS 4",
+        "Caducidad": "",
+        "Bultos": 1,
+        "Piezas": 16,
+        "Total": 16,
+        "Precio": 0,
+        "_extraData": {},
+        "Área": "Inventario 2026-10-21  2  bodega"
+      },
+      {
+        "Fecha_Captura": "29/10 09:40",
+        "Código": "400000630823",
+        "Nombre": "PORTA RETRATO GRIS",
+        "Caducidad": "",
+        "Bultos": 1,
+        "Piezas": 18,
+        "Total": 18,
+        "Precio": 0,
+        "_extraData": {},
+        "Área": "Inventario 2026-10-21  2  bodega"
+      },
+      {
+        "Fecha_Captura": "29/10 09:40",
+        "Código": "681307453883",
+        "Nombre": "MARCADORES LAVABLES",
+        "Caducidad": "",
+        "Bultos": 2,
+        "Piezas": 12,
+        "Total": 24,
+        "Precio": 0,
+        "_extraData": {},
+        "Área": "Inventario 2026-10-21  2  bodega"
+      },
+      {
+        "Fecha_Captura": "29/10 09:39",
+        "Código": "400000557885",
+        "Nombre": "PORTA RETRATO COBRE",
+        "Caducidad": "",
+        "Bultos": 1,
+        "Piezas": 18,
+        "Total": 18,
+        "Precio": 0,
+        "_extraData": {},
+        "Área": "Inventario 2026-10-21  2  bodega"
+      },
+      {
+        "Fecha_Captura": "29/10 09:37",
+        "Código": "400000630151",
+        "Nombre": "PORTA RETRATO TRIÁNGULOS",
+        "Caducidad": "",
+        "Bultos": 1,
+        "Piezas": 18,
+        "Total": 18,
+        "Precio": 0,
+        "_extraData": {},
+        "Área": "Inventario 2026-10-21  2  bodega"
+      },
+      {
+        "Fecha_Captura": "29/10 09:37",
+        "Código": "400000557892",
+        "Nombre": "PORTA RETRATO COBRE",
+        "Caducidad": "",
+        "Bultos": 1,
+        "Piezas": 18,
+        "Total": 18,
+        "Precio": 0,
+        "_extraData": {},
+        "Área": "Inventario 2026-10-21  2  bodega"
+      },
+      {
+        "Fecha_Captura": "29/10 09:34",
+        "Código": "400000630090",
+        "Nombre": "PORTA RETRATO ROMBO",
+        "Caducidad": "",
+        "Bultos": 2,
+        "Piezas": 18,
+        "Total": 36,
+        "Precio": 0,
+        "_extraData": {},
+        "Área": "Inventario 2026-10-21  2  bodega"
+      },
+      {
+        "Fecha_Captura": "29/10 09:33",
+        "Código": "400000557489",
+        "Nombre": "PORTA RETRATO GRUESO",
+        "Caducidad": "",
+        "Bultos": 1,
+        "Piezas": 18,
+        "Total": 18,
+        "Precio": 0,
+        "_extraData": {},
+        "Área": "Inventario 2026-10-21  2  bodega"
+      },
+      {
+        "Fecha_Captura": "29/10 09:32",
+        "Código": "400000630335",
+        "Nombre": "FOTO FRAGMENTO",
+        "Caducidad": "",
+        "Bultos": 1,
+        "Piezas": 18,
+        "Total": 18,
+        "Precio": 0,
+        "_extraData": {},
+        "Área": "Inventario 2026-10-21  2  bodega"
+      },
+      {
+        "Fecha_Captura": "29/10 09:32",
+        "Código": "40000558134",
+        "Nombre": "PORTA RETRATO GRUESO",
+        "Caducidad": "",
+        "Bultos": 1,
+        "Piezas": 18,
+        "Total": 18,
+        "Precio": 0,
+        "_extraData": {},
+        "Área": "Inventario 2026-10-21  2  bodega"
+      },
+      {
+        "Fecha_Captura": "29/10 09:31",
+        "Código": "400000694740",
+        "Nombre": "TERMO CAFE 380 ML",
+        "Caducidad": "",
+        "Bultos": 1,
+        "Piezas": 24,
+        "Total": 24,
+        "Precio": 0,
+        "_extraData": {},
+        "Área": "Inventario 2026-10-21  2  bodega"
+      },
+      {
+        "Fecha_Captura": "29/10 09:31",
+        "Código": "400000888057",
+        "Nombre": "NDK CONTENEDOR DE PLÁSTICO",
+        "Caducidad": "",
+        "Bultos": 1,
+        "Piezas": 6,
+        "Total": 6,
+        "Precio": 0,
+        "_extraData": {},
+        "Área": "Inventario 2026-10-21  2  bodega"
+      },
+      {
+        "Fecha_Captura": "29/10 09:30",
+        "Código": "400000606279",
+        "Nombre": "NDK VASO 780 ML",
+        "Caducidad": "",
+        "Bultos": 1,
+        "Piezas": 36,
+        "Total": 36,
+        "Precio": 0,
+        "_extraData": {},
+        "Área": "Inventario 2026-10-21  2  bodega"
+      },
+      {
+        "Fecha_Captura": "21/10 14:43",
+        "Código": "7506557608780",
+        "Nombre": "SABANA MATRIMONIAL",
+        "Caducidad": "",
+        "Bultos": 0,
+        "Piezas": 1,
+        "Total": 0,
+        "Precio": 0,
+        "_extraData": {},
+        "Área": "Inventario 2026-10-21  2  bodega"
+      },
+      {
+        "Fecha_Captura": "21/10 11:34",
+        "Código": "400000694924",
+        "Nombre": "TAZA 473",
+        "Caducidad": "",
+        "Bultos": 1,
+        "Piezas": 24,
+        "Total": 24,
+        "Precio": 0,
+        "_extraData": {},
+        "Área": "Inventario 2026-10-21  2  bodega"
+      },
+      {
+        "Fecha_Captura": "21/10 11:33",
+        "Código": "400000386003",
+        "Nombre": "FRASCO 620ML",
+        "Caducidad": "",
+        "Bultos": 1,
+        "Piezas": 24,
+        "Total": 24,
+        "Precio": 0,
+        "_extraData": {},
+        "Área": "Inventario 2026-10-21  2  bodega"
+      },
+      {
+        "Fecha_Captura": "21/10 11:30",
+        "Código": "7502123450019",
+        "Nombre": "RECOGEDOR CON BASTON",
+        "Caducidad": "",
+        "Bultos": 1,
+        "Piezas": 15,
+        "Total": 15,
+        "Precio": 0,
+        "_extraData": {},
+        "Área": "Inventario 2026-10-21  2  bodega"
+      },
+      {
+        "Fecha_Captura": "21/10 11:28",
+        "Código": "400000696140",
+        "Nombre": "BOTELLA AGUA 400ML",
+        "Caducidad": "",
+        "Bultos": 1,
+        "Piezas": 24,
+        "Total": 24,
+        "Precio": 0,
+        "_extraData": {},
+        "Área": "Inventario 2026-10-21  2  bodega"
+      },
+      {
+        "Fecha_Captura": "21/10 11:27",
+        "Código": "681307470811",
+        "Nombre": "CUBETA LECHERA",
+        "Caducidad": "",
+        "Bultos": 1,
+        "Piezas": 12,
+        "Total": 12,
+        "Precio": 0,
+        "_extraData": {},
+        "Área": "Inventario 2026-10-21  2  bodega"
+      },
+      {
+        "Fecha_Captura": "21/10 11:26",
+        "Código": "7502007760664",
+        "Nombre": "S/N",
+        "Caducidad": "",
+        "Bultos": 1,
+        "Piezas": 24,
+        "Total": 24,
+        "Precio": 0,
+        "_extraData": {},
+        "Área": "Inventario 2026-10-21  2  bodega"
+      },
+      {
+        "Fecha_Captura": "21/10 11:26",
+        "Código": "681307541603",
+        "Nombre": "S/N",
+        "Caducidad": "",
+        "Bultos": 1,
+        "Piezas": 6,
+        "Total": 6,
+        "Precio": 0,
+        "_extraData": {},
+        "Área": "Inventario 2026-10-21  2  bodega"
+      },
+      {
+        "Fecha_Captura": "21/10 11:25",
+        "Código": "792245370450",
+        "Nombre": "BOTE DE BASURA",
+        "Caducidad": "",
+        "Bultos": 1,
+        "Piezas": 4,
+        "Total": 4,
+        "Precio": 0,
+        "_extraData": {},
+        "Área": "Inventario 2026-10-21  2  bodega"
+      },
+      {
+        "Fecha_Captura": "21/10 11:23",
+        "Código": "400009511703",
+        "Nombre": "TAZÓN PLÁSTICO",
+        "Caducidad": "",
+        "Bultos": 1,
+        "Piezas": 24,
+        "Total": 24,
+        "Precio": 0,
+        "_extraData": {},
+        "Área": "Inventario 2026-10-21  2  bodega"
+      },
+      {
+        "Fecha_Captura": "21/10 11:22",
+        "Código": "400000694733",
+        "Nombre": "TERMO CAFÉ 500ML",
+        "Caducidad": "",
+        "Bultos": 1,
+        "Piezas": 24,
+        "Total": 24,
+        "Precio": 0,
+        "_extraData": {},
+        "Área": "Inventario 2026-10-21  2  bodega"
+      },
+      {
+        "Fecha_Captura": "21/10 11:22",
+        "Código": "400000488288",
+        "Nombre": "ORGANIZADOR ESCRITORIO",
+        "Caducidad": "",
+        "Bultos": 1,
+        "Piezas": 12,
+        "Total": 12,
+        "Precio": 0,
+        "_extraData": {},
+        "Área": "Inventario 2026-10-21  2  bodega"
+      },
+      {
+        "Fecha_Captura": "21/10 11:21",
+        "Código": "7506557645327",
+        "Nombre": "S/N",
+        "Caducidad": "",
+        "Bultos": 3,
+        "Piezas": 12,
+        "Total": 36,
+        "Precio": 0,
+        "_extraData": {},
+        "Área": "Inventario 2026-10-21  2  bodega"
+      },
+      {
+        "Fecha_Captura": "21/10 11:19",
+        "Código": "7502007770243",
+        "Nombre": "PINZAS PARRILLERA",
+        "Caducidad": "",
+        "Bultos": 1,
+        "Piezas": 1,
+        "Total": 1,
+        "Precio": 0,
+        "_extraData": {},
+        "Área": "Inventario 2026-10-21  2  bodega"
+      },
+      {
+        "Fecha_Captura": "21/10 11:17",
+        "Código": "40000711003",
+        "Nombre": "GEL CLING",
+        "Caducidad": "",
+        "Bultos": 1,
+        "Piezas": 12,
+        "Total": 12,
+        "Precio": 0,
+        "_extraData": {},
+        "Área": "Inventario 2026-10-21  2  bodega"
+      },
+      {
+        "Fecha_Captura": "21/10 11:15",
+        "Código": "792245381012",
+        "Nombre": "CAJA ESMERALDA",
+        "Caducidad": "",
+        "Bultos": 2,
+        "Piezas": 12,
+        "Total": 24,
+        "Precio": 0,
+        "_extraData": {},
+        "Área": "Inventario 2026-10-21  2  bodega"
+      },
+      {
+        "Fecha_Captura": "21/10 11:19",
+        "Código": "4000009511550",
+        "Nombre": "CONTENEDOR DE PLÁSTICO 3PK",
+        "Caducidad": "",
+        "Bultos": 1,
+        "Piezas": 24,
+        "Total": 24,
+        "Precio": 0,
+        "_extraData": {},
+        "Área": "Inventario 2026-10-21  2  bodega"
+      },
+      {
+        "Fecha_Captura": "21/10 11:18",
+        "Código": "681307527379",
+        "Nombre": "PINK FRAGANCIA 90ML",
+        "Caducidad": "",
+        "Bultos": 3,
+        "Piezas": 12,
+        "Total": 36,
+        "Precio": 0,
+        "_extraData": {},
+        "Área": "Inventario 2026-10-21  2  bodega"
+      },
+      {
+        "Fecha_Captura": "21/10 10:43",
+        "Código": "400006191397",
+        "Nombre": "MOLDE PARA PALETAS",
+        "Caducidad": "",
+        "Bultos": 1,
+        "Piezas": 48,
+        "Total": 48,
+        "Precio": 0,
+        "_extraData": {},
+        "Área": "Inventario 2026-10-21  2  bodega"
+      },
+      {
+        "Fecha_Captura": "21/10 10:40",
+        "Código": "681307536708",
+        "Nombre": "ATOMIZADOR",
+        "Caducidad": "",
+        "Bultos": 1,
+        "Piezas": 10,
+        "Total": 10,
+        "Precio": 0,
+        "_extraData": {},
+        "Área": "Inventario 2026-10-21  2  bodega"
+      },
+      {
+        "Fecha_Captura": "21/10 09:20",
+        "Código": "400000530741",
+        "Nombre": "CONTENEDOR CUADRADO 1900ML",
+        "Caducidad": "",
+        "Bultos": 1,
+        "Piezas": 24,
+        "Total": 24,
+        "Precio": 0,
+        "_extraData": {},
+        "Área": "Inventario 2026-10-21  2  bodega"
+      },
+      {
+        "Fecha_Captura": "21/10 09:15",
+        "Código": "400008164283",
+        "Nombre": "TABLA DE CORTE",
+        "Caducidad": "",
+        "Bultos": 1,
+        "Piezas": 48,
+        "Total": 48,
+        "Precio": 0,
+        "_extraData": {},
+        "Área": "Inventario 2026-10-21  2  bodega"
+      },
+      {
+        "Fecha_Captura": "21/10 09:14",
+        "Código": "400000677552",
+        "Nombre": "TAZA CERÁMICA VARIOS MODELOS",
+        "Caducidad": "",
+        "Bultos": 1,
+        "Piezas": 24,
+        "Total": 24,
+        "Precio": 0,
+        "_extraData": {},
+        "Área": "Inventario 2026-10-21  2  bodega"
+      },
+      {
+        "Fecha_Captura": "21/10 09:12",
+        "Código": "4001000146398",
+        "Nombre": "BOTELLA ACERO 500ML",
+        "Caducidad": "",
+        "Bultos": 1,
+        "Piezas": 50,
+        "Total": 50,
+        "Precio": 0,
+        "_extraData": {},
+        "Área": "Inventario 2026-10-21  2  bodega"
+      },
+      {
+        "Fecha_Captura": "21/10 09:10",
+        "Código": "4001000146404",
+        "Nombre": "BOTELLA ACERO 500ML",
+        "Caducidad": "",
+        "Bultos": 1,
+        "Piezas": 50,
+        "Total": 50,
+        "Precio": 0,
+        "_extraData": {},
+        "Área": "Inventario 2026-10-21  2  bodega"
+      },
+      {
+        "Fecha_Captura": "21/10 09:09",
+        "Código": "400000323015",
+        "Nombre": "CONTENEDOR CILINDRO 1400ML",
+        "Caducidad": "",
+        "Bultos": 1,
+        "Piezas": 24,
+        "Total": 24,
+        "Precio": 0,
+        "_extraData": {},
+        "Área": "Inventario 2026-10-21  2  bodega"
+      },
+      {
+        "Fecha_Captura": "21/10 09:08",
+        "Código": "7502007770465",
+        "Nombre": "SOLMAR CONTENEDOR GALLON ANILLADO",
+        "Caducidad": "",
+        "Bultos": 1,
+        "Piezas": 18,
+        "Total": 18,
+        "Precio": 0,
+        "_extraData": {},
+        "Área": "Inventario 2026-10-21  2  bodega"
+      },
+      {
+        "Fecha_Captura": "21/10 09:07",
+        "Código": "400000562568",
+        "Nombre": "MESA REDONDA",
+        "Caducidad": "",
+        "Bultos": 1,
+        "Piezas": 6,
+        "Total": 6,
+        "Precio": 0,
+        "_extraData": {},
+        "Área": "Inventario 2026-10-21  2  bodega"
+      },
+      {
+        "Fecha_Captura": "21/10 09:05",
+        "Código": "400000615622",
+        "Nombre": "VALS25 LG PET SHIRT",
+        "Caducidad": "",
+        "Bultos": 1,
+        "Piezas": 22,
+        "Total": 22,
+        "Precio": 0,
+        "_extraData": {},
+        "Área": "Inventario 2026-10-21  2  bodega"
+      },
+      {
+        "Fecha_Captura": "21/10 08:58",
+        "Código": "40000000564166",
+        "Nombre": "FRASCO VIDRIO 500ML",
+        "Caducidad": "",
+        "Bultos": 1,
+        "Piezas": 24,
+        "Total": 24,
+        "Precio": 0,
+        "_extraData": {},
+        "Área": "Inventario 2026-10-21  2  bodega"
+      },
+      {
+        "Fecha_Captura": "21/10 08:53",
+        "Código": "40000541679",
+        "Nombre": "CESTA DE ALMACENAMIENTO",
+        "Caducidad": "",
+        "Bultos": 1,
+        "Piezas": 24,
+        "Total": 24,
+        "Precio": 0,
+        "_extraData": {},
+        "Área": "Inventario 2026-10-21  2  bodega"
+      },
+      {
+        "Fecha_Captura": "26/10 09:14",
+        "Código": "400000749990",
+        "Nombre": "CHOCO BEARS",
+        "Caducidad": "",
+        "Bultos": 2,
+        "Piezas": 24,
+        "Total": 48,
+        "Precio": 0,
+        "_extraData": {},
+        "Área": "navidad bodega"
+      },
+      {
+        "Fecha_Captura": "26/10 08:38",
+        "Código": "400000758558",
+        "Nombre": "GIT BAG",
+        "Caducidad": "",
+        "Bultos": 1,
+        "Piezas": 30,
+        "Total": 30,
+        "Precio": 0,
+        "_extraData": {},
+        "Área": "navidad bodega"
+      },
+      {
+        "Fecha_Captura": "26/10 08:37",
+        "Código": "400000681368",
+        "Nombre": "GALLETAS SURTIDAS",
+        "Caducidad": "",
+        "Bultos": 1,
+        "Piezas": 12,
+        "Total": 12,
+        "Precio": 0,
+        "_extraData": {},
+        "Área": "navidad bodega"
+      },
+      {
+        "Fecha_Captura": "26/10 08:36",
+        "Código": "400000680408",
+        "Nombre": "CLS GLITTER",
+        "Caducidad": "",
+        "Bultos": 1,
+        "Piezas": 24,
+        "Total": 24,
+        "Precio": 0,
+        "_extraData": {},
+        "Área": "navidad bodega"
+      },
+      {
+        "Fecha_Captura": "26/10 08:35",
+        "Código": "400000759760",
+        "Nombre": "XM26 MINI TREE DECORATION",
+        "Caducidad": "",
+        "Bultos": 1,
+        "Piezas": 18,
+        "Total": 18,
+        "Precio": 0,
+        "_extraData": {},
+        "Área": "navidad bodega"
+      },
+      {
+        "Fecha_Captura": "26/10 08:34",
+        "Código": "400000753645",
+        "Nombre": "XM26 MDF ORNAMENT",
+        "Caducidad": "",
+        "Bultos": 1,
+        "Piezas": 18,
+        "Total": 18,
+        "Precio": 0,
+        "_extraData": {},
+        "Área": "navidad bodega"
+      },
+      {
+        "Fecha_Captura": "26/10 08:33",
+        "Código": "400000761497",
+        "Nombre": "FELIZ AÑO NUEVO",
+        "Caducidad": "",
+        "Bultos": 1,
+        "Piezas": 18,
+        "Total": 18,
+        "Precio": 0,
+        "_extraData": {},
+        "Área": "navidad bodega"
+      },
+      {
+        "Fecha_Captura": "26/10 08:33",
+        "Código": "400000788012",
+        "Nombre": "XM26 MINI TREE",
+        "Caducidad": "",
+        "Bultos": 1,
+        "Piezas": 24,
+        "Total": 24,
+        "Precio": 0,
+        "_extraData": {},
+        "Área": "navidad bodega"
+      },
+      {
+        "Fecha_Captura": "26/10 08:32",
+        "Código": "400000680316",
+        "Nombre": "XM25 TINSEL TREE",
+        "Caducidad": "",
+        "Bultos": 1,
+        "Piezas": 30,
+        "Total": 30,
+        "Precio": 0,
+        "_extraData": {},
+        "Área": "navidad bodega"
+      },
+      {
+        "Fecha_Captura": "26/10 08:31",
+        "Código": "400000675725",
+        "Nombre": "XM25 REINDDER HEADBAND",
+        "Caducidad": "",
+        "Bultos": 1,
+        "Piezas": 30,
+        "Total": 30,
+        "Precio": 0,
+        "_extraData": {},
+        "Área": "navidad bodega"
+      },
+      {
+        "Fecha_Captura": "26/10 08:30",
+        "Código": "400000680590",
+        "Nombre": "XM25 CLS PLUSH BALL",
+        "Caducidad": "",
+        "Bultos": 1,
+        "Piezas": 24,
+        "Total": 24,
+        "Precio": 0,
+        "_extraData": {},
+        "Área": "navidad bodega"
+      },
+      {
+        "Fecha_Captura": "26/10 08:29",
+        "Código": "400000675992",
+        "Nombre": "XM25 YUTE",
+        "Caducidad": "",
+        "Bultos": 1,
+        "Piezas": 18,
+        "Total": 18,
+        "Precio": 0,
+        "_extraData": {},
+        "Área": "navidad bodega"
+      },
+      {
+        "Fecha_Captura": "26/10 08:28",
+        "Código": "400000754093",
+        "Nombre": "COOKIES",
+        "Caducidad": "",
+        "Bultos": 1,
+        "Piezas": 24,
+        "Total": 24,
+        "Precio": 0,
+        "_extraData": {},
+        "Área": "navidad bodega"
+      },
+      {
+        "Fecha_Captura": "26/10 08:28",
+        "Código": "400000664880",
+        "Nombre": "XM25 KRFT WRAPPING",
+        "Caducidad": "",
+        "Bultos": 1,
+        "Piezas": 48,
+        "Total": 48,
+        "Precio": 0,
+        "_extraData": {},
+        "Área": "navidad bodega"
+      },
+      {
+        "Fecha_Captura": "26/10 08:26",
+        "Código": "400000753546",
+        "Nombre": "XM26 PLATO PLASTICO",
+        "Caducidad": "",
+        "Bultos": 1,
+        "Piezas": 18,
+        "Total": 18,
+        "Precio": 0,
+        "_extraData": {},
+        "Área": "navidad bodega"
+      },
+      {
+        "Fecha_Captura": "26/10 08:26",
+        "Código": "400000753119",
+        "Nombre": "COOKIES",
+        "Caducidad": "",
+        "Bultos": 1,
+        "Piezas": 24,
+        "Total": 24,
+        "Precio": 0,
+        "_extraData": {},
+        "Área": "navidad bodega"
+      },
+      {
+        "Fecha_Captura": "26/10 08:25",
+        "Código": "400000749204",
+        "Nombre": "26 CHA GUMMY STAR",
+        "Caducidad": "",
+        "Bultos": 1,
+        "Piezas": 24,
+        "Total": 24,
+        "Precio": 0,
+        "_extraData": {},
+        "Área": "navidad bodega"
+      },
+      {
+        "Fecha_Captura": "26/10 08:25",
+        "Código": "400000673615",
+        "Nombre": "XM25 COFFE",
+        "Caducidad": "",
+        "Bultos": 1,
+        "Piezas": 12,
+        "Total": 12,
+        "Precio": 0,
+        "_extraData": {},
+        "Área": "navidad bodega"
+      },
+      {
+        "Fecha_Captura": "28/10 07:35",
+        "Código": "400000753607",
+        "Nombre": "WAFER ROLL",
+        "Caducidad": "",
+        "Bultos": 2,
+        "Piezas": 24,
+        "Total": 48,
+        "Precio": 0,
+        "_extraData": {},
+        "Área": "navidad bodega"
+      },
+      {
+        "Fecha_Captura": "26/10 08:24",
+        "Código": "400000584393",
+        "Nombre": "ESFERAS",
+        "Caducidad": "",
+        "Bultos": 1,
+        "Piezas": 7,
+        "Total": 7,
+        "Precio": 0,
+        "_extraData": {},
+        "Área": "navidad bodega"
+      },
+      {
+        "Fecha_Captura": "26/10 08:23",
+        "Código": "400000670560",
+        "Nombre": "XM25 PLASTIC CUP",
+        "Caducidad": "",
+        "Bultos": 1,
+        "Piezas": 18,
+        "Total": 18,
+        "Precio": 0,
+        "_extraData": {},
+        "Área": "navidad bodega"
+      },
+      {
+        "Fecha_Captura": "26/10 08:22",
+        "Código": "400000675541",
+        "Nombre": "XM25 XMAS STOCKING",
+        "Caducidad": "",
+        "Bultos": 1,
+        "Piezas": 18,
+        "Total": 18,
+        "Precio": 0,
+        "_extraData": {},
+        "Área": "navidad bodega"
+      },
+      {
+        "Fecha_Captura": "26/10 08:21",
+        "Código": "400000746517",
+        "Nombre": "3 METROS 90 LUCES",
+        "Caducidad": "",
+        "Bultos": 1,
+        "Piezas": 18,
+        "Total": 18,
+        "Precio": 0,
+        "_extraData": {},
+        "Área": "navidad bodega"
+      },
+      {
+        "Fecha_Captura": "26/10 08:21",
+        "Código": "400000748559",
+        "Nombre": "XM26 GREEN CABLE",
+        "Caducidad": "",
+        "Bultos": 1,
+        "Piezas": 18,
+        "Total": 18,
+        "Precio": 0,
+        "_extraData": {},
+        "Área": "navidad bodega"
+      },
+      {
+        "Fecha_Captura": "26/10 08:20",
+        "Código": "400000680385",
+        "Nombre": "XM25 TREE MDF",
+        "Caducidad": "",
+        "Bultos": 1,
+        "Piezas": 18,
+        "Total": 18,
+        "Precio": 0,
+        "_extraData": {},
+        "Área": "navidad bodega"
+      },
+      {
+        "Fecha_Captura": "26/10 08:20",
+        "Código": "400000675565",
+        "Nombre": "XM25 GARLAN",
+        "Caducidad": "",
+        "Bultos": 1,
+        "Piezas": 18,
+        "Total": 18,
+        "Precio": 0,
+        "_extraData": {},
+        "Área": "navidad bodega"
+      },
+      {
+        "Fecha_Captura": "26/10 08:19",
+        "Código": "400000753874",
+        "Nombre": "COOKIES",
+        "Caducidad": "",
+        "Bultos": 1,
+        "Piezas": 24,
+        "Total": 24,
+        "Precio": 0,
+        "_extraData": {},
+        "Área": "navidad bodega"
+      },
+      {
+        "Fecha_Captura": "26/10 08:18",
+        "Código": "400000754369",
+        "Nombre": "LISTON NAVIDEÑO",
+        "Caducidad": "",
+        "Bultos": 1,
+        "Piezas": 18,
+        "Total": 18,
+        "Precio": 0,
+        "_extraData": {},
+        "Área": "navidad bodega"
+      },
+      {
+        "Fecha_Captura": "26/10 08:18",
+        "Código": "400000753638",
+        "Nombre": "LISTON NAVIDEÑO",
+        "Caducidad": "",
+        "Bultos": 1,
+        "Piezas": 18,
+        "Total": 18,
+        "Precio": 0,
+        "_extraData": {},
+        "Área": "navidad bodega"
+      },
+      {
+        "Fecha_Captura": "26/10 08:17",
+        "Código": "400000748566",
+        "Nombre": "LUCES NAVIDEÑAS",
+        "Caducidad": "",
+        "Bultos": 1,
+        "Piezas": 20,
+        "Total": 20,
+        "Precio": 0,
+        "_extraData": {},
+        "Área": "navidad bodega"
+      },
+      {
+        "Fecha_Captura": "26/10 08:15",
+        "Código": "681307543164",
+        "Nombre": "SUGAR WORLD GOMITA CHOCOLATE 52G",
+        "Caducidad": "",
+        "Bultos": 1,
+        "Piezas": 30,
+        "Total": 30,
+        "Precio": 0,
+        "_extraData": {},
+        "Área": "navidad bodega"
+      },
+      {
+        "Fecha_Captura": "26/10 08:14",
+        "Código": "400000754024",
+        "Nombre": "COOKIES",
+        "Caducidad": "",
+        "Bultos": 1,
+        "Piezas": 24,
+        "Total": 24,
+        "Precio": 0,
+        "_extraData": {},
+        "Área": "navidad bodega"
+      },
+      {
+        "Fecha_Captura": "26/10 08:12",
+        "Código": "400000754345",
+        "Nombre": "XM26 CUPS 90Z",
+        "Caducidad": "",
+        "Bultos": 1,
+        "Piezas": 18,
+        "Total": 18,
+        "Precio": 0,
+        "_extraData": {},
+        "Área": "navidad bodega"
+      },
+      {
+        "Fecha_Captura": "26/10 08:11",
+        "Código": "400000670539",
+        "Nombre": "XM25 SANTA FIGURA POLIRESINA",
+        "Caducidad": "",
+        "Bultos": 1,
+        "Piezas": 10,
+        "Total": 10,
+        "Precio": 0,
+        "_extraData": {},
+        "Área": "navidad bodega"
+      },
+      {
+        "Fecha_Captura": "26/10 08:38",
+        "Código": "400000683140",
+        "Nombre": "XM25 ACRYLIC",
+        "Caducidad": "",
+        "Bultos": 2,
+        "Piezas": 24,
+        "Total": 48,
+        "Precio": 0,
+        "_extraData": {},
+        "Área": "navidad bodega"
+      },
+      {
+        "Fecha_Captura": "26/10 08:10",
+        "Código": "400000683188",
+        "Nombre": "MX25 PLUS",
+        "Caducidad": "",
+        "Bultos": 1,
+        "Piezas": 25,
+        "Total": 25,
+        "Precio": 0,
+        "_extraData": {},
+        "Área": "navidad bodega"
+      },
+      {
+        "Fecha_Captura": "26/10 11:22",
+        "Código": "7506557632365",
+        "Nombre": "ZTCOBIJA FELPUDA",
+        "Caducidad": "",
+        "Bultos": 4,
+        "Piezas": 25,
+        "Total": 100,
+        "Precio": 0,
+        "_extraData": {},
+        "Área": "Inventario Garcia 2026-10-23"
+      },
+      {
+        "Fecha_Captura": "26/10 11:12",
+        "Código": "7506557635007",
+        "Nombre": "COBIJA FRAZADA",
+        "Caducidad": "",
+        "Bultos": 1,
+        "Piezas": 100,
+        "Total": 100,
+        "Precio": 0,
+        "_extraData": {},
+        "Área": "Inventario Garcia 2026-10-23"
+      },
+      {
+        "Fecha_Captura": "26/10 10:44",
+        "Código": "7506557632419",
+        "Nombre": "FELPUDA",
+        "Caducidad": "",
+        "Bultos": 0,
+        "Piezas": 1,
+        "Total": 1,
+        "Precio": 0,
+        "_extraData": {},
+        "Área": "Inventario Garcia 2026-10-23"
+      },
+      {
+        "Fecha_Captura": "26/10 08:50",
+        "Código": "7506557603914",
+        "Nombre": "S/N",
+        "Caducidad": "",
+        "Bultos": 1,
+        "Piezas": 1,
+        "Total": 250,
+        "Precio": 0,
+        "_extraData": {
+          "Detalle": "",
+          "Fecha": "22/10 17:52",
+          "Total Bultos": 0,
+          "Área / Departamento": "Inventario Garcia",
+          "Últimos Dígitos": ""
+        },
+        "Área": "Inventario Garcia 2026-10-23"
+      },
+      {
+        "Fecha_Captura": "26/10 08:50",
+        "Código": "7506557633904",
+        "Nombre": "S/N",
+        "Caducidad": "",
+        "Bultos": 120,
+        "Piezas": 1,
+        "Total": 120,
+        "Precio": 0,
+        "_extraData": {
+          "Detalle": "",
+          "Fecha": "22/10 17:52",
+          "Total Bultos": 0,
+          "Área / Departamento": "Inventario Garcia",
+          "Últimos Dígitos": ""
+        },
+        "Área": "Inventario Garcia 2026-10-23"
+      },
+      {
+        "Fecha_Captura": "26/10 08:42",
+        "Código": "7506352844901",
+        "Nombre": "S/N",
+        "Caducidad": "",
+        "Bultos": 240,
+        "Piezas": 1,
+        "Total": 240,
+        "Precio": 0,
+        "_extraData": {
+          "Detalle": "",
+          "Fecha": "22/10 17:51",
+          "Total Bultos": 0,
+          "Área / Departamento": "Inventario Garcia",
+          "Últimos Dígitos": ""
+        },
+        "Área": "Inventario Garcia 2026-10-23"
+      },
+      {
+        "Fecha_Captura": "26/10 08:42",
+        "Código": "7506557615375",
+        "Nombre": "S/N",
+        "Caducidad": "",
+        "Bultos": 36,
+        "Piezas": 1,
+        "Total": 36,
+        "Precio": 0,
+        "_extraData": {
+          "Detalle": "",
+          "Fecha": "22/10 17:50",
+          "Total Bultos": 0,
+          "Área / Departamento": "Inventario Garcia",
+          "Últimos Dígitos": ""
+        },
+        "Área": "Inventario Garcia 2026-10-23"
+      },
+      {
+        "Fecha_Captura": "26/10 08:42",
+        "Código": "7506557615290",
+        "Nombre": "S/N",
+        "Caducidad": "",
+        "Bultos": 36,
+        "Piezas": 1,
+        "Total": 36,
+        "Precio": 0,
+        "_extraData": {
+          "Detalle": "",
+          "Fecha": "22/10 17:49",
+          "Total Bultos": 0,
+          "Área / Departamento": "Inventario Garcia",
+          "Últimos Dígitos": ""
+        },
+        "Área": "Inventario Garcia 2026-10-23"
+      },
+      {
+        "Fecha_Captura": "26/10 08:42",
+        "Código": "750655760116",
+        "Nombre": "S/N",
+        "Caducidad": "",
+        "Bultos": 12,
+        "Piezas": 1,
+        "Total": 12,
+        "Precio": 0,
+        "_extraData": {
+          "Detalle": "",
+          "Fecha": "22/10 17:48",
+          "Total Bultos": 0,
+          "Área / Departamento": "Inventario Garcia",
+          "Últimos Dígitos": ""
+        },
+        "Área": "Inventario Garcia 2026-10-23"
+      },
+      {
+        "Fecha_Captura": "26/10 08:42",
+        "Código": "750635288806",
+        "Nombre": "S/N",
+        "Caducidad": "",
+        "Bultos": 31,
+        "Piezas": 1,
+        "Total": 31,
+        "Precio": 0,
+        "_extraData": {
+          "Detalle": "",
+          "Fecha": "22/10 17:47",
+          "Total Bultos": 0,
+          "Área / Departamento": "Inventario Garcia",
+          "Últimos Dígitos": ""
+        },
+        "Área": "Inventario Garcia 2026-10-23"
+      },
+      {
+        "Fecha_Captura": "26/10 08:42",
+        "Código": "7506557635366",
+        "Nombre": "S/N",
+        "Caducidad": "",
+        "Bultos": 240,
+        "Piezas": 2,
+        "Total": 480,
+        "Precio": 0,
+        "_extraData": {
+          "Detalle": "",
+          "Fecha": "22/10 17:52",
+          "Total Bultos": 0,
+          "Área / Departamento": "Inventario Garcia",
+          "Últimos Dígitos": ""
+        },
+        "Área": "Inventario Garcia 2026-10-23"
+      },
+      {
+        "Fecha_Captura": "26/10 08:42",
+        "Código": "7506557622250",
+        "Nombre": "S/N",
+        "Caducidad": "",
+        "Bultos": 12,
+        "Piezas": 1,
+        "Total": 12,
+        "Precio": 0,
+        "_extraData": {
+          "Detalle": "",
+          "Fecha": "22/10 17:46",
+          "Total Bultos": 0,
+          "Área / Departamento": "Inventario Garcia",
+          "Últimos Dígitos": ""
+        },
+        "Área": "Inventario Garcia 2026-10-23"
+      },
+      {
+        "Fecha_Captura": "26/10 08:42",
+        "Código": "17506557620164",
+        "Nombre": "CHAMARRA",
+        "Caducidad": "",
+        "Bultos": 36,
+        "Piezas": 1,
+        "Total": 36,
+        "Precio": 0,
+        "_extraData": {
+          "Detalle": "",
+          "Fecha": "22/10 17:41",
+          "Total Bultos": 0,
+          "Área / Departamento": "Inventario Garcia",
+          "Últimos Dígitos": ""
+        },
+        "Área": "Inventario Garcia 2026-10-23"
+      },
+      {
+        "Fecha_Captura": "26/10 08:42",
+        "Código": "7506352898317",
+        "Nombre": "S/N",
+        "Caducidad": "",
+        "Bultos": 14,
+        "Piezas": 1,
+        "Total": 14,
+        "Precio": 0,
+        "_extraData": {
+          "Detalle": "",
+          "Fecha": "22/10 17:39",
+          "Total Bultos": 0,
+          "Área / Departamento": "Inventario Garcia",
+          "Últimos Dígitos": ""
+        },
+        "Área": "Inventario Garcia 2026-10-23"
+      },
+      {
+        "Fecha_Captura": "26/10 08:42",
+        "Código": "7506557603754",
+        "Nombre": "S/N",
+        "Caducidad": "",
+        "Bultos": 240,
+        "Piezas": 1,
+        "Total": 240,
+        "Precio": 0,
+        "_extraData": {
+          "Detalle": "",
+          "Fecha": "22/10 17:37",
+          "Total Bultos": 0,
+          "Área / Departamento": "Inventario Garcia",
+          "Últimos Dígitos": ""
+        },
+        "Área": "Inventario Garcia 2026-10-23"
+      },
+      {
+        "Fecha_Captura": "26/10 08:42",
+        "Código": "7506557603693",
+        "Nombre": "S/N",
+        "Caducidad": "",
+        "Bultos": 480,
+        "Piezas": 1,
+        "Total": 480,
+        "Precio": 0,
+        "_extraData": {
+          "Detalle": "",
+          "Fecha": "22/10 17:36",
+          "Total Bultos": 0,
+          "Área / Departamento": "Inventario Garcia",
+          "Últimos Dígitos": ""
+        },
+        "Área": "Inventario Garcia 2026-10-23"
+      },
+      {
+        "Fecha_Captura": "26/10 08:42",
+        "Código": "7506557615153",
+        "Nombre": "S/N",
+        "Caducidad": "",
+        "Bultos": 36,
+        "Piezas": 3,
+        "Total": 108,
+        "Precio": 0,
+        "_extraData": {
+          "Detalle": "",
+          "Fecha": "22/10 17:54",
+          "Total Bultos": 0,
+          "Área / Departamento": "Inventario Garcia",
+          "Últimos Dígitos": ""
+        },
+        "Área": "Inventario Garcia 2026-10-23"
+      },
+      {
+        "Fecha_Captura": "26/10 08:42",
+        "Código": "7506557626784",
+        "Nombre": "S/N",
+        "Caducidad": "",
+        "Bultos": 30,
+        "Piezas": 1,
+        "Total": 30,
+        "Precio": 0,
+        "_extraData": {
+          "Detalle": "",
+          "Fecha": "22/10 17:34",
+          "Total Bultos": 0,
+          "Área / Departamento": "Inventario Garcia",
+          "Últimos Dígitos": ""
+        },
+        "Área": "Inventario Garcia 2026-10-23"
+      },
+      {
+        "Fecha_Captura": "26/10 08:42",
+        "Código": "7506557634918",
+        "Nombre": "S/N",
+        "Caducidad": "",
+        "Bultos": 60,
+        "Piezas": 1,
+        "Total": 60,
+        "Precio": 0,
+        "_extraData": {
+          "Detalle": "",
+          "Fecha": "22/10 17:34",
+          "Total Bultos": 0,
+          "Área / Departamento": "Inventario Garcia",
+          "Últimos Dígitos": ""
+        },
+        "Área": "Inventario Garcia 2026-10-23"
+      },
+      {
+        "Fecha_Captura": "26/10 08:42",
+        "Código": "7506557600074",
+        "Nombre": "S/N",
+        "Caducidad": "",
+        "Bultos": 120,
+        "Piezas": 1,
+        "Total": 120,
+        "Precio": 0,
+        "_extraData": {
+          "Detalle": "",
+          "Fecha": "22/10 17:33",
+          "Total Bultos": 0,
+          "Área / Departamento": "Inventario Garcia",
+          "Últimos Dígitos": ""
+        },
+        "Área": "Inventario Garcia 2026-10-23"
+      },
+      {
+        "Fecha_Captura": "26/10 08:42",
+        "Código": "7506352893794",
+        "Nombre": "S/N",
+        "Caducidad": "",
+        "Bultos": 120,
+        "Piezas": 1,
+        "Total": 120,
+        "Precio": 0,
+        "_extraData": {
+          "Detalle": "",
+          "Fecha": "22/10 17:32",
+          "Total Bultos": 0,
+          "Área / Departamento": "Inventario Garcia",
+          "Últimos Dígitos": ""
+        },
+        "Área": "Inventario Garcia 2026-10-23"
+      },
+      {
+        "Fecha_Captura": "26/10 08:42",
+        "Código": "7506352882408",
+        "Nombre": "S/N",
+        "Caducidad": "",
+        "Bultos": 240,
+        "Piezas": 1,
+        "Total": 240,
+        "Precio": 0,
+        "_extraData": {
+          "Detalle": "",
+          "Fecha": "22/10 17:30",
+          "Total Bultos": 0,
+          "Área / Departamento": "Inventario Garcia",
+          "Últimos Dígitos": ""
+        },
+        "Área": "Inventario Garcia 2026-10-23"
+      },
+      {
+        "Fecha_Captura": "26/10 08:42",
+        "Código": "7506352890809",
+        "Nombre": "S/N",
+        "Caducidad": "",
+        "Bultos": 240,
+        "Piezas": 1,
+        "Total": 240,
+        "Precio": 0,
+        "_extraData": {
+          "Detalle": "",
+          "Fecha": "22/10 17:29",
+          "Total Bultos": 0,
+          "Área / Departamento": "Inventario Garcia",
+          "Últimos Dígitos": ""
+        },
+        "Área": "Inventario Garcia 2026-10-23"
+      },
+      {
+        "Fecha_Captura": "26/10 08:42",
+        "Código": "7506557600555",
+        "Nombre": "S/N",
+        "Caducidad": "",
+        "Bultos": 10,
+        "Piezas": 1,
+        "Total": 10,
+        "Precio": 0,
+        "_extraData": {
+          "Detalle": "",
+          "Fecha": "22/10 17:28",
+          "Total Bultos": 0,
+          "Área / Departamento": "Inventario Garcia",
+          "Últimos Dígitos": ""
+        },
+        "Área": "Inventario Garcia 2026-10-23"
+      },
+      {
+        "Fecha_Captura": "26/10 08:42",
+        "Código": "750657635335",
+        "Nombre": "S/N",
+        "Caducidad": "",
+        "Bultos": 144,
+        "Piezas": 1,
+        "Total": 144,
+        "Precio": 0,
+        "_extraData": {
+          "Detalle": "",
+          "Fecha": "22/10 17:28",
+          "Total Bultos": 0,
+          "Área / Departamento": "Inventario Garcia",
+          "Últimos Dígitos": ""
+        },
+        "Área": "Inventario Garcia 2026-10-23"
+      },
+      {
+        "Fecha_Captura": "26/10 08:42",
+        "Código": "7506557626944",
+        "Nombre": "BOXER PARA NIÑO",
+        "Caducidad": "",
+        "Bultos": 240,
+        "Piezas": 2,
+        "Total": 480,
+        "Precio": 0,
+        "_extraData": {
+          "Detalle": "",
+          "Fecha": "22/10 17:27",
+          "Total Bultos": 0,
+          "Área / Departamento": "Inventario Garcia",
+          "Últimos Dígitos": ""
+        },
+        "Área": "Inventario Garcia 2026-10-23"
+      },
+      {
+        "Fecha_Captura": "26/10 08:42",
+        "Código": "7506352891196",
+        "Nombre": "S/N",
+        "Caducidad": "",
+        "Bultos": 360,
+        "Piezas": 2,
+        "Total": 660,
+        "Precio": 0,
+        "_extraData": {
+          "Detalle": "",
+          "Fecha": "22/10 17:21",
+          "Total Bultos": 0,
+          "Área / Departamento": "Inventario Garcia",
+          "Últimos Dígitos": ""
+        },
+        "Área": "Inventario Garcia 2026-10-23"
+      },
+      {
+        "Fecha_Captura": "26/10 08:42",
+        "Código": "7506352890663",
+        "Nombre": "S/N",
+        "Caducidad": "",
+        "Bultos": 60,
+        "Piezas": 1,
+        "Total": 60,
+        "Precio": 0,
+        "_extraData": {
+          "Detalle": "",
+          "Fecha": "22/10 17:18",
+          "Total Bultos": 0,
+          "Área / Departamento": "Inventario Garcia",
+          "Últimos Dígitos": ""
+        },
+        "Área": "Inventario Garcia 2026-10-23"
+      },
+      {
+        "Fecha_Captura": "26/10 08:42",
+        "Código": "7506352891233",
+        "Nombre": "S/N",
+        "Caducidad": "",
+        "Bultos": 60,
+        "Piezas": 1,
+        "Total": 60,
+        "Precio": 0,
+        "_extraData": {
+          "Detalle": "",
+          "Fecha": "22/10 17:18",
+          "Total Bultos": 0,
+          "Área / Departamento": "Inventario Garcia",
+          "Últimos Dígitos": ""
+        },
+        "Área": "Inventario Garcia 2026-10-23"
+      },
+      {
+        "Fecha_Captura": "26/10 08:42",
+        "Código": "7506352873468",
+        "Nombre": "S/N",
+        "Caducidad": "",
+        "Bultos": 240,
+        "Piezas": 1,
+        "Total": 240,
+        "Precio": 0,
+        "_extraData": {
+          "Detalle": "",
+          "Fecha": "22/10 17:16",
+          "Total Bultos": 0,
+          "Área / Departamento": "Inventario Garcia",
+          "Últimos Dígitos": ""
+        },
+        "Área": "Inventario Garcia 2026-10-23"
+      },
+      {
+        "Fecha_Captura": "26/10 08:42",
+        "Código": "7506557647994",
+        "Nombre": "GORRO INVERNAL NIÑA",
+        "Caducidad": "",
+        "Bultos": 60,
+        "Piezas": 1,
+        "Total": 60,
+        "Precio": 0,
+        "_extraData": {
+          "Detalle": "",
+          "Fecha": "22/10 17:16",
+          "Total Bultos": 0,
+          "Área / Departamento": "Inventario Garcia",
+          "Últimos Dígitos": ""
+        },
+        "Área": "Inventario Garcia 2026-10-23"
+      },
+      {
+        "Fecha_Captura": "26/10 08:42",
+        "Código": "6911646988277",
+        "Nombre": "S/N",
+        "Caducidad": "",
+        "Bultos": 18,
+        "Piezas": 1,
+        "Total": 18,
+        "Precio": 0,
+        "_extraData": {
+          "Detalle": "",
+          "Fecha": "22/10 17:15",
+          "Total Bultos": 0,
+          "Área / Departamento": "Inventario Garcia",
+          "Últimos Dígitos": ""
+        },
+        "Área": "Inventario Garcia 2026-10-23"
+      },
+      {
+        "Fecha_Captura": "26/10 08:42",
+        "Código": "7506352886901",
+        "Nombre": "S/N",
+        "Caducidad": "",
+        "Bultos": 3,
+        "Piezas": 1,
+        "Total": 3,
+        "Precio": 0,
+        "_extraData": {
+          "Detalle": "",
+          "Fecha": "22/10 17:14",
+          "Total Bultos": 0,
+          "Área / Departamento": "Inventario Garcia",
+          "Últimos Dígitos": ""
+        },
+        "Área": "Inventario Garcia 2026-10-23"
+      },
+      {
+        "Fecha_Captura": "26/10 08:42",
+        "Código": "7506352831338",
+        "Nombre": "PLAYERA POLO NIÑO",
+        "Caducidad": "",
+        "Bultos": 56,
+        "Piezas": 1,
+        "Total": 56,
+        "Precio": 0,
+        "_extraData": {
+          "Detalle": "",
+          "Fecha": "22/10 17:14",
+          "Total Bultos": 0,
+          "Área / Departamento": "Inventario Garcia",
+          "Últimos Dígitos": ""
+        },
+        "Área": "Inventario Garcia 2026-10-23"
+      },
+      {
+        "Fecha_Captura": "26/10 08:42",
+        "Código": "7506352831345",
+        "Nombre": "PLAYERA POLO NIÑO",
+        "Caducidad": "",
+        "Bultos": 56,
+        "Piezas": 1,
+        "Total": 56,
+        "Precio": 0,
+        "_extraData": {
+          "Detalle": "",
+          "Fecha": "22/10 17:13",
+          "Total Bultos": 0,
+          "Área / Departamento": "Inventario Garcia",
+          "Últimos Dígitos": ""
+        },
+        "Área": "Inventario Garcia 2026-10-23"
+      },
+      {
+        "Fecha_Captura": "26/10 08:42",
+        "Código": "7506557600111",
+        "Nombre": "CALCETAS",
+        "Caducidad": "",
+        "Bultos": 240,
+        "Piezas": 4,
+        "Total": 960,
+        "Precio": 0,
+        "_extraData": {
+          "Detalle": "",
+          "Fecha": "22/10 17:17",
+          "Total Bultos": 0,
+          "Área / Departamento": "Inventario Garcia",
+          "Últimos Dígitos": ""
+        },
+        "Área": "Inventario Garcia 2026-10-23"
+      },
+      {
+        "Fecha_Captura": "26/10 08:42",
+        "Código": "196064347462",
+        "Nombre": "S/N",
+        "Caducidad": "",
+        "Bultos": 24,
+        "Piezas": 1,
+        "Total": 24,
+        "Precio": 0,
+        "_extraData": {
+          "Detalle": "",
+          "Fecha": "22/10 17:09",
+          "Total Bultos": 0,
+          "Área / Departamento": "Inventario Garcia",
+          "Últimos Dígitos": ""
+        },
+        "Área": "Inventario Garcia 2026-10-23"
+      },
+      {
+        "Fecha_Captura": "26/10 08:42",
+        "Código": "750655708360",
+        "Nombre": "S/N",
+        "Caducidad": "",
+        "Bultos": 60,
+        "Piezas": 1,
+        "Total": 60,
+        "Precio": 0,
+        "_extraData": {
+          "Detalle": "",
+          "Fecha": "22/10 17:08",
+          "Total Bultos": 0,
+          "Área / Departamento": "Inventario Garcia",
+          "Últimos Dígitos": ""
+        },
+        "Área": "Inventario Garcia 2026-10-23"
+      },
+      {
+        "Fecha_Captura": "26/10 08:42",
+        "Código": "681307555471",
+        "Nombre": "S/N",
+        "Caducidad": "",
+        "Bultos": 60,
+        "Piezas": 1,
+        "Total": 60,
+        "Precio": 0,
+        "_extraData": {
+          "Detalle": "",
+          "Fecha": "22/10 17:07",
+          "Total Bultos": 0,
+          "Área / Departamento": "Inventario Garcia",
+          "Últimos Dígitos": ""
+        },
+        "Área": "Inventario Garcia 2026-10-23"
+      },
+      {
+        "Fecha_Captura": "26/10 08:42",
+        "Código": "756557648052",
+        "Nombre": "S/N",
+        "Caducidad": "",
+        "Bultos": 120,
+        "Piezas": 1,
+        "Total": 120,
+        "Precio": 0,
+        "_extraData": {
+          "Detalle": "",
+          "Fecha": "22/10 17:05",
+          "Total Bultos": 0,
+          "Área / Departamento": "Inventario Garcia",
+          "Últimos Dígitos": ""
+        },
+        "Área": "Inventario Garcia 2026-10-23"
+      },
+      {
+        "Fecha_Captura": "26/10 08:42",
+        "Código": "7506352891240",
+        "Nombre": "CALCETINES INVERNALES",
+        "Caducidad": "",
+        "Bultos": 120,
+        "Piezas": 14,
+        "Total": 1680,
+        "Precio": 0,
+        "_extraData": {
+          "Detalle": "",
+          "Fecha": "22/10 17:04",
+          "Total Bultos": 0,
+          "Área / Departamento": "Inventario Garcia",
+          "Últimos Dígitos": ""
+        },
+        "Área": "Inventario Garcia 2026-10-23"
+      },
+      {
+        "Fecha_Captura": "26/10 08:42",
+        "Código": "7506557648052",
+        "Nombre": "EB CALCETINES MULLIDO DAMA",
+        "Caducidad": "",
+        "Bultos": 120,
+        "Piezas": 1,
+        "Total": 120,
+        "Precio": 0,
+        "_extraData": {
+          "Detalle": "",
+          "Fecha": "22/10 16:58",
+          "Total Bultos": 0,
+          "Área / Departamento": "Inventario Garcia",
+          "Últimos Dígitos": ""
+        },
+        "Área": "Inventario Garcia 2026-10-23"
+      },
+      {
+        "Fecha_Captura": "26/10 08:42",
+        "Código": "7506557615528",
+        "Nombre": "EB",
+        "Caducidad": "",
+        "Bultos": 1,
+        "Piezas": 1,
+        "Total": 1,
+        "Precio": 0,
+        "_extraData": {
+          "Detalle": "",
+          "Fecha": "22/10 16:55",
+          "Total Bultos": 0,
+          "Área / Departamento": "Inventario Garcia",
+          "Últimos Dígitos": ""
+        },
+        "Área": "Inventario Garcia 2026-10-23"
+      },
+      {
+        "Fecha_Captura": "26/10 08:42",
+        "Código": "7506557615214",
+        "Nombre": "EB",
+        "Caducidad": "",
+        "Bultos": 1,
+        "Piezas": 1,
+        "Total": 1,
+        "Precio": 0,
+        "_extraData": {
+          "Detalle": "",
+          "Fecha": "22/10 16:49",
+          "Total Bultos": 0,
+          "Área / Departamento": "Inventario Garcia",
+          "Últimos Dígitos": ""
+        },
+        "Área": "Inventario Garcia 2026-10-23"
+      },
+      {
+        "Fecha_Captura": "26/10 08:42",
+        "Código": "681307557833",
+        "Nombre": "EB",
+        "Caducidad": "",
+        "Bultos": 1,
+        "Piezas": 5,
+        "Total": 5,
+        "Precio": 0,
+        "_extraData": {
+          "Detalle": "",
+          "Fecha": "22/10 16:54",
+          "Total Bultos": 0,
+          "Área / Departamento": "Inventario Garcia",
+          "Últimos Dígitos": ""
+        },
+        "Área": "Inventario Garcia 2026-10-23"
+      },
+      {
+        "Fecha_Captura": "26/10 08:42",
+        "Código": "7506557626623",
+        "Nombre": "TOP PARA DAMA",
+        "Caducidad": "",
+        "Bultos": 1,
+        "Piezas": 203,
+        "Total": 203,
+        "Precio": 0,
+        "_extraData": {
+          "Detalle": "",
+          "Fecha": "22/10 17:54",
+          "Total Bultos": 0,
+          "Área / Departamento": "Inventario Garcia",
+          "Últimos Dígitos": ""
+        },
+        "Área": "Inventario Garcia 2026-10-23"
+      },
+      {
+        "Fecha_Captura": "26/10 08:42",
+        "Código": "7506557615795",
+        "Nombre": "EB",
+        "Caducidad": "",
+        "Bultos": 1,
+        "Piezas": 3,
+        "Total": 3,
+        "Precio": 0,
+        "_extraData": {
+          "Detalle": "",
+          "Fecha": "22/10 16:48",
+          "Total Bultos": 0,
+          "Área / Departamento": "Inventario Garcia",
+          "Últimos Dígitos": ""
+        },
+        "Área": "Inventario Garcia 2026-10-23"
+      },
+      {
+        "Fecha_Captura": "26/10 08:42",
+        "Código": "7506352899451",
+        "Nombre": "BLUSA",
+        "Caducidad": "",
+        "Bultos": 1,
+        "Piezas": 1,
+        "Total": 1,
+        "Precio": 0,
+        "_extraData": {
+          "Detalle": "",
+          "Fecha": "22/10 16:47",
+          "Total Bultos": 0,
+          "Área / Departamento": "Inventario Garcia",
+          "Últimos Dígitos": ""
+        },
+        "Área": "Inventario Garcia 2026-10-23"
+      },
+      {
+        "Fecha_Captura": "26/10 08:42",
+        "Código": "7506557615726",
+        "Nombre": "EB",
+        "Caducidad": "",
+        "Bultos": 1,
+        "Piezas": 2,
+        "Total": 2,
+        "Precio": 0,
+        "_extraData": {
+          "Detalle": "",
+          "Fecha": "22/10 16:44",
+          "Total Bultos": 0,
+          "Área / Departamento": "Inventario Garcia",
+          "Últimos Dígitos": ""
+        },
+        "Área": "Inventario Garcia 2026-10-23"
+      },
+      {
+        "Fecha_Captura": "26/10 08:42",
+        "Código": "7506557614354",
+        "Nombre": "S/N",
+        "Caducidad": "",
+        "Bultos": 1,
+        "Piezas": 1,
+        "Total": 1,
+        "Precio": 0,
+        "_extraData": {
+          "Detalle": "",
+          "Fecha": "22/10 16:40",
+          "Total Bultos": 0,
+          "Área / Departamento": "Inventario Garcia",
+          "Últimos Dígitos": ""
+        },
+        "Área": "Inventario Garcia 2026-10-23"
+      },
+      {
+        "Fecha_Captura": "26/10 08:42",
+        "Código": "7506557630149",
+        "Nombre": "S/N",
+        "Caducidad": "",
+        "Bultos": 1,
+        "Piezas": 38,
+        "Total": 38,
+        "Precio": 0,
+        "_extraData": {
+          "Detalle": "",
+          "Fecha": "22/10 17:47",
+          "Total Bultos": 0,
+          "Área / Departamento": "Inventario Garcia",
+          "Últimos Dígitos": ""
+        },
+        "Área": "Inventario Garcia 2026-10-23"
+      },
+      {
+        "Fecha_Captura": "26/10 08:42",
+        "Código": "7506557603884",
+        "Nombre": "S/N",
+        "Caducidad": "",
+        "Bultos": 3,
+        "Piezas": 1,
+        "Total": 3,
+        "Precio": 0,
+        "_extraData": {
+          "Detalle": "",
+          "Fecha": "22/10 16:39",
+          "Total Bultos": 0,
+          "Área / Departamento": "Inventario Garcia",
+          "Últimos Dígitos": ""
+        },
+        "Área": "Inventario Garcia 2026-10-23"
+      },
+      {
+        "Fecha_Captura": "26/10 08:42",
+        "Código": "7506352892827",
+        "Nombre": "S/N",
+        "Caducidad": "",
+        "Bultos": 3,
+        "Piezas": 1,
+        "Total": 3,
+        "Precio": 0,
+        "_extraData": {
+          "Detalle": "",
+          "Fecha": "22/10 16:38",
+          "Total Bultos": 0,
+          "Área / Departamento": "Inventario Garcia",
+          "Últimos Dígitos": ""
+        },
+        "Área": "Inventario Garcia 2026-10-23"
+      },
+      {
+        "Fecha_Captura": "26/10 08:42",
+        "Código": "7506557618116",
+        "Nombre": "S/N",
+        "Caducidad": "",
+        "Bultos": 2,
+        "Piezas": 2,
+        "Total": 3,
+        "Precio": 0,
+        "_extraData": {
+          "Detalle": "",
+          "Fecha": "22/10 16:39",
+          "Total Bultos": 0,
+          "Área / Departamento": "Inventario Garcia",
+          "Últimos Dígitos": ""
+        },
+        "Área": "Inventario Garcia 2026-10-23"
+      },
+      {
+        "Fecha_Captura": "26/10 08:42",
+        "Código": "7506557620058",
+        "Nombre": "S/N",
+        "Caducidad": "",
+        "Bultos": 2,
+        "Piezas": 1,
+        "Total": 2,
+        "Precio": 0,
+        "_extraData": {
+          "Detalle": "",
+          "Fecha": "22/10 16:37",
+          "Total Bultos": 0,
+          "Área / Departamento": "Inventario Garcia",
+          "Últimos Dígitos": ""
+        },
+        "Área": "Inventario Garcia 2026-10-23"
+      },
+      {
+        "Fecha_Captura": "26/10 08:42",
+        "Código": "7506557604379",
+        "Nombre": "S/N",
+        "Caducidad": "",
+        "Bultos": 3,
+        "Piezas": 1,
+        "Total": 3,
+        "Precio": 0,
+        "_extraData": {
+          "Detalle": "",
+          "Fecha": "22/10 16:36",
+          "Total Bultos": 0,
+          "Área / Departamento": "Inventario Garcia",
+          "Últimos Dígitos": ""
+        },
+        "Área": "Inventario Garcia 2026-10-23"
+      },
+      {
+        "Fecha_Captura": "26/10 08:42",
+        "Código": "7506557621680",
+        "Nombre": "S/N",
+        "Caducidad": "",
+        "Bultos": 4,
+        "Piezas": 1,
+        "Total": 4,
+        "Precio": 0,
+        "_extraData": {
+          "Detalle": "",
+          "Fecha": "22/10 16:34",
+          "Total Bultos": 0,
+          "Área / Departamento": "Inventario Garcia",
+          "Últimos Dígitos": ""
+        },
+        "Área": "Inventario Garcia 2026-10-23"
+      },
+      {
+        "Fecha_Captura": "26/10 08:42",
+        "Código": "7506557621130",
+        "Nombre": "S/N",
+        "Caducidad": "",
+        "Bultos": 9,
+        "Piezas": 1,
+        "Total": 9,
+        "Precio": 0,
+        "_extraData": {
+          "Detalle": "",
+          "Fecha": "22/10 16:34",
+          "Total Bultos": 0,
+          "Área / Departamento": "Inventario Garcia",
+          "Últimos Dígitos": ""
+        },
+        "Área": "Inventario Garcia 2026-10-23"
+      },
+      {
+        "Fecha_Captura": "26/10 08:42",
+        "Código": "7506352891400",
+        "Nombre": "S/N",
+        "Caducidad": "",
+        "Bultos": 1,
+        "Piezas": 1,
+        "Total": 1,
+        "Precio": 0,
+        "_extraData": {
+          "Detalle": "",
+          "Fecha": "22/10 16:33",
+          "Total Bultos": 0,
+          "Área / Departamento": "Inventario Garcia",
+          "Últimos Dígitos": ""
+        },
+        "Área": "Inventario Garcia 2026-10-23"
+      },
+      {
+        "Fecha_Captura": "26/10 08:42",
+        "Código": "7506557617966",
+        "Nombre": "S/N",
+        "Caducidad": "",
+        "Bultos": 12,
+        "Piezas": 1,
+        "Total": 12,
+        "Precio": 0,
+        "_extraData": {
+          "Detalle": "",
+          "Fecha": "22/10 16:33",
+          "Total Bultos": 0,
+          "Área / Departamento": "Inventario Garcia",
+          "Últimos Dígitos": ""
+        },
+        "Área": "Inventario Garcia 2026-10-23"
+      },
+      {
+        "Fecha_Captura": "26/10 08:42",
+        "Código": "7506557618093",
+        "Nombre": "S/N",
+        "Caducidad": "",
+        "Bultos": 2,
+        "Piezas": 1,
+        "Total": 2,
+        "Precio": 0,
+        "_extraData": {
+          "Detalle": "",
+          "Fecha": "22/10 16:32",
+          "Total Bultos": 0,
+          "Área / Departamento": "Inventario Garcia",
+          "Últimos Dígitos": ""
+        },
+        "Área": "Inventario Garcia 2026-10-23"
+      },
+      {
+        "Fecha_Captura": "26/10 08:42",
+        "Código": "7506557621376",
+        "Nombre": "S/N",
+        "Caducidad": "",
+        "Bultos": 8,
+        "Piezas": 1,
+        "Total": 8,
+        "Precio": 0,
+        "_extraData": {
+          "Detalle": "",
+          "Fecha": "22/10 16:31",
+          "Total Bultos": 0,
+          "Área / Departamento": "Inventario Garcia",
+          "Últimos Dígitos": ""
+        },
+        "Área": "Inventario Garcia 2026-10-23"
+      },
+      {
+        "Fecha_Captura": "26/10 08:42",
+        "Código": "7506557624759",
+        "Nombre": "DINO PANTALON CABALLERO MEZCLILLA",
+        "Caducidad": "",
+        "Bultos": 6,
+        "Piezas": 4,
+        "Total": 21,
+        "Precio": 0,
+        "_extraData": {
+          "Detalle": "",
+          "Fecha": "22/10 17:43",
+          "Total Bultos": 0,
+          "Área / Departamento": "Inventario Garcia",
+          "Últimos Dígitos": ""
+        },
+        "Área": "Inventario Garcia 2026-10-23"
+      },
+      {
+        "Fecha_Captura": "26/10 08:42",
+        "Código": "7506557645211",
+        "Nombre": "S/N",
+        "Caducidad": "",
+        "Bultos": 1,
+        "Piezas": 1,
+        "Total": 1,
+        "Precio": 0,
+        "_extraData": {
+          "Detalle": "",
+          "Fecha": "22/10 15:21",
+          "Total Bultos": 0,
+          "Área / Departamento": "Inventario Garcia",
+          "Últimos Dígitos": ""
+        },
+        "Área": "Inventario Garcia 2026-10-23"
+      },
+      {
+        "Fecha_Captura": "26/10 08:42",
+        "Código": "7506557617843",
+        "Nombre": "S/N",
+        "Caducidad": "",
+        "Bultos": 1,
+        "Piezas": 45,
+        "Total": 45,
+        "Precio": 0,
+        "_extraData": {
+          "Detalle": "",
+          "Fecha": "22/10 15:15",
+          "Total Bultos": 0,
+          "Área / Departamento": "Inventario Garcia",
+          "Últimos Dígitos": ""
+        },
+        "Área": "Inventario Garcia 2026-10-23"
+      },
+      {
+        "Fecha_Captura": "26/10 08:42",
+        "Código": "7506557625817",
+        "Nombre": "S/N",
+        "Caducidad": "",
+        "Bultos": 59,
+        "Piezas": 1,
+        "Total": 59,
+        "Precio": 0,
+        "_extraData": {
+          "Detalle": "",
+          "Fecha": "22/10 15:14",
+          "Total Bultos": 0,
+          "Área / Departamento": "Inventario Garcia",
+          "Últimos Dígitos": ""
+        },
+        "Área": "Inventario Garcia 2026-10-23"
+      },
+      {
+        "Fecha_Captura": "26/10 08:42",
+        "Código": "7506557608827",
+        "Nombre": "S/N",
+        "Caducidad": "",
+        "Bultos": 1,
+        "Piezas": 1,
+        "Total": 1,
+        "Precio": 0,
+        "_extraData": {
+          "Detalle": "",
+          "Fecha": "22/10 15:11",
+          "Total Bultos": 0,
+          "Área / Departamento": "Inventario Garcia",
+          "Últimos Dígitos": ""
+        },
+        "Área": "Inventario Garcia 2026-10-23"
+      },
+      {
+        "Fecha_Captura": "26/10 08:42",
+        "Código": "7506352899789",
+        "Nombre": "S/N",
+        "Caducidad": "",
+        "Bultos": 1,
+        "Piezas": 1,
+        "Total": 1,
+        "Precio": 0,
+        "_extraData": {
+          "Detalle": "",
+          "Fecha": "22/10 15:11",
+          "Total Bultos": 0,
+          "Área / Departamento": "Inventario Garcia",
+          "Últimos Dígitos": ""
+        },
+        "Área": "Inventario Garcia 2026-10-23"
+      },
+      {
+        "Fecha_Captura": "26/10 08:42",
+        "Código": "7506557648083",
+        "Nombre": "S/N",
+        "Caducidad": "",
+        "Bultos": 1,
+        "Piezas": 1,
+        "Total": 1,
+        "Precio": 0,
+        "_extraData": {
+          "Detalle": "",
+          "Fecha": "22/10 15:11",
+          "Total Bultos": 0,
+          "Área / Departamento": "Inventario Garcia",
+          "Últimos Dígitos": ""
+        },
+        "Área": "Inventario Garcia 2026-10-23"
+      },
+      {
+        "Fecha_Captura": "26/10 08:42",
+        "Código": "7506352893305",
+        "Nombre": "S/N",
+        "Caducidad": "",
+        "Bultos": 1,
+        "Piezas": 1,
+        "Total": 1,
+        "Precio": 0,
+        "_extraData": {
+          "Detalle": "",
+          "Fecha": "22/10 15:10",
+          "Total Bultos": 0,
+          "Área / Departamento": "Inventario Garcia",
+          "Últimos Dígitos": ""
+        },
+        "Área": "Inventario Garcia 2026-10-23"
+      },
+      {
+        "Fecha_Captura": "26/10 08:42",
+        "Código": "7506557615771",
+        "Nombre": "S/N",
+        "Caducidad": "",
+        "Bultos": 1,
+        "Piezas": 1,
+        "Total": 1,
+        "Precio": 0,
+        "_extraData": {
+          "Detalle": "",
+          "Fecha": "22/10 15:10",
+          "Total Bultos": 0,
+          "Área / Departamento": "Inventario Garcia",
+          "Últimos Dígitos": ""
+        },
+        "Área": "Inventario Garcia 2026-10-23"
+      },
+      {
+        "Fecha_Captura": "26/10 08:42",
+        "Código": "7506557633584",
+        "Nombre": "S/N",
+        "Caducidad": "",
+        "Bultos": 1,
+        "Piezas": 1,
+        "Total": 1,
+        "Precio": 0,
+        "_extraData": {
+          "Detalle": "",
+          "Fecha": "22/10 15:10",
+          "Total Bultos": 0,
+          "Área / Departamento": "Inventario Garcia",
+          "Últimos Dígitos": ""
+        },
+        "Área": "Inventario Garcia 2026-10-23"
+      },
+      {
+        "Fecha_Captura": "26/10 08:42",
+        "Código": "7506352899925",
+        "Nombre": "S/N",
+        "Caducidad": "",
+        "Bultos": 1,
+        "Piezas": 37,
+        "Total": 37,
+        "Precio": 0,
+        "_extraData": {
+          "Detalle": "",
+          "Fecha": "22/10 17:49",
+          "Total Bultos": 0,
+          "Área / Departamento": "Inventario Garcia",
+          "Últimos Dígitos": ""
+        },
+        "Área": "Inventario Garcia 2026-10-23"
+      },
+      {
+        "Fecha_Captura": "26/10 08:42",
+        "Código": "7506557644320",
+        "Nombre": "S/N",
+        "Caducidad": "",
+        "Bultos": 1,
+        "Piezas": 1,
+        "Total": 1,
+        "Precio": 0,
+        "_extraData": {
+          "Detalle": "",
+          "Fecha": "22/10 15:02",
+          "Total Bultos": 0,
+          "Área / Departamento": "Inventario Garcia",
+          "Últimos Dígitos": ""
+        },
+        "Área": "Inventario Garcia 2026-10-23"
+      },
+      {
+        "Fecha_Captura": "26/10 08:42",
+        "Código": "7506557600029",
+        "Nombre": "EB",
+        "Caducidad": "",
+        "Bultos": 1,
+        "Piezas": 2,
+        "Total": 2,
+        "Precio": 0,
+        "_extraData": {
+          "Detalle": "",
+          "Fecha": "22/10 16:48",
+          "Total Bultos": 0,
+          "Área / Departamento": "Inventario Garcia",
+          "Últimos Dígitos": ""
+        },
+        "Área": "Inventario Garcia 2026-10-23"
+      },
+      {
+        "Fecha_Captura": "26/10 08:42",
+        "Código": "7506557634338",
+        "Nombre": "BLUSA CASUAL",
+        "Caducidad": "",
+        "Bultos": 1,
+        "Piezas": 21,
+        "Total": 21,
+        "Precio": 0,
+        "_extraData": {
+          "Detalle": "",
+          "Fecha": "22/10 16:55",
+          "Total Bultos": 0,
+          "Área / Departamento": "Inventario Garcia",
+          "Últimos Dígitos": ""
+        },
+        "Área": "Inventario Garcia 2026-10-23"
+      },
+      {
+        "Fecha_Captura": "26/10 08:42",
+        "Código": "7506557616174",
+        "Nombre": "BLUSA DAMA",
+        "Caducidad": "",
+        "Bultos": 1,
+        "Piezas": 3,
+        "Total": 3,
+        "Precio": 0,
+        "_extraData": {
+          "Detalle": "",
+          "Fecha": "22/10 16:48",
+          "Total Bultos": 0,
+          "Área / Departamento": "Inventario Garcia",
+          "Últimos Dígitos": ""
+        },
+        "Área": "Inventario Garcia 2026-10-23"
+      },
+      {
+        "Fecha_Captura": "26/10 08:42",
+        "Código": "7506557624711",
+        "Nombre": "S/N",
+        "Caducidad": "",
+        "Bultos": 1,
+        "Piezas": 182,
+        "Total": 182,
+        "Precio": 0,
+        "_extraData": {
+          "Detalle": "",
+          "Fecha": "22/10 17:33",
+          "Total Bultos": 0,
+          "Área / Departamento": "Inventario Garcia",
+          "Últimos Dígitos": ""
+        },
+        "Área": "Inventario Garcia 2026-10-23"
+      },
+      {
+        "Fecha_Captura": "26/10 08:42",
+        "Código": "7506557647611",
+        "Nombre": "PANTALON DAMA",
+        "Caducidad": "",
+        "Bultos": 1,
+        "Piezas": 1,
+        "Total": 1,
+        "Precio": 0,
+        "_extraData": {
+          "Detalle": "",
+          "Fecha": "22/10 14:55",
+          "Total Bultos": 0,
+          "Área / Departamento": "Inventario Garcia",
+          "Últimos Dígitos": ""
+        },
+        "Área": "Inventario Garcia 2026-10-23"
+      },
+      {
+        "Fecha_Captura": "26/10 08:42",
+        "Código": "7506352899970",
+        "Nombre": "BLUSA DAMA CON BORDADO",
+        "Caducidad": "",
+        "Bultos": 3,
+        "Piezas": 1,
+        "Total": 4,
+        "Precio": 0,
+        "_extraData": {
+          "Detalle": "",
+          "Fecha": "22/10 16:47",
+          "Total Bultos": 0,
+          "Área / Departamento": "Inventario Garcia",
+          "Últimos Dígitos": ""
+        },
+        "Área": "Inventario Garcia 2026-10-23"
+      },
+      {
+        "Fecha_Captura": "26/10 08:42",
+        "Código": "7506557633812",
+        "Nombre": "VESTIDO DAMA",
+        "Caducidad": "",
+        "Bultos": 60,
+        "Piezas": 1,
+        "Total": 60,
+        "Precio": 0,
+        "_extraData": {
+          "Detalle": "",
+          "Fecha": "22/10 14:52",
+          "Total Bultos": 1,
+          "Área / Departamento": "Inventario Garcia",
+          "Últimos Dígitos": ""
+        },
+        "Área": "Inventario Garcia 2026-10-23"
+      },
+      {
+        "Fecha_Captura": "26/10 08:42",
+        "Código": "7506557609626",
+        "Nombre": "TRGT VARIEDAD ARTICULOS 1P",
+        "Caducidad": "",
+        "Bultos": 4,
+        "Piezas": 1,
+        "Total": 4,
+        "Precio": 0,
+        "_extraData": {
+          "Detalle": "",
+          "Fecha": "22/10 14:47",
+          "Total Bultos": 0,
+          "Área / Departamento": "Inventario Garcia",
+          "Últimos Dígitos": ""
+        },
+        "Área": "Inventario Garcia 2026-10-23"
+      },
+      {
+        "Fecha_Captura": "26/10 08:42",
+        "Código": "7506557625121",
+        "Nombre": "EB PIJAMA POLAR INFANTIL 2 PZS",
+        "Caducidad": "",
+        "Bultos": 22,
+        "Piezas": 1,
+        "Total": 23,
+        "Precio": 0,
+        "_extraData": {
+          "Detalle": "",
+          "Fecha": "22/10 16:38",
+          "Total Bultos": 0,
+          "Área / Departamento": "Inventario Garcia",
+          "Últimos Dígitos": ""
+        },
+        "Área": "Inventario Garcia 2026-10-23"
+      },
+      {
+        "Fecha_Captura": "26/10 08:42",
+        "Código": "7506557621901",
+        "Nombre": "PANTALON DEPORTIVO PARA DAMA",
+        "Caducidad": "",
+        "Bultos": 6,
+        "Piezas": 1,
+        "Total": 6,
+        "Precio": 0,
+        "_extraData": {
+          "Detalle": "",
+          "Fecha": "22/10 14:45",
+          "Total Bultos": 0,
+          "Área / Departamento": "Inventario Garcia",
+          "Últimos Dígitos": ""
+        },
+        "Área": "Inventario Garcia 2026-10-23"
+      },
+      {
+        "Fecha_Captura": "26/10 08:42",
+        "Código": "7506557622243",
+        "Nombre": "EB PANTALON DAMA CASUAL",
+        "Caducidad": "",
+        "Bultos": 18,
+        "Piezas": 1,
+        "Total": 18,
+        "Precio": 0,
+        "_extraData": {
+          "Detalle": "",
+          "Fecha": "22/10 14:43",
+          "Total Bultos": 0,
+          "Área / Departamento": "Inventario Garcia",
+          "Últimos Dígitos": ""
+        },
+        "Área": "Inventario Garcia 2026-10-23"
+      },
+      {
+        "Fecha_Captura": "26/10 08:42",
+        "Código": "7506557626951",
+        "Nombre": "PANS PARA DAMA",
+        "Caducidad": "",
+        "Bultos": 5,
+        "Piezas": 1,
+        "Total": 5,
+        "Precio": 0,
+        "_extraData": {
+          "Detalle": "",
+          "Fecha": "22/10 14:41",
+          "Total Bultos": 1,
+          "Área / Departamento": "Inventario Garcia",
+          "Últimos Dígitos": ""
+        },
+        "Área": "Inventario Garcia 2026-10-23"
+      },
+      {
+        "Fecha_Captura": "26/10 08:42",
+        "Código": "7506557613371",
+        "Nombre": "EB PANTALON DEPORTIVO DAMA",
+        "Caducidad": "",
+        "Bultos": 8,
+        "Piezas": 1,
+        "Total": 8,
+        "Precio": 0,
+        "_extraData": {
+          "Detalle": "",
+          "Fecha": "22/10 14:40",
+          "Total Bultos": 0,
+          "Área / Departamento": "Inventario Garcia",
+          "Últimos Dígitos": ""
+        },
+        "Área": "Inventario Garcia 2026-10-23"
+      },
+      {
+        "Fecha_Captura": "26/10 08:42",
+        "Código": "7506557626852",
+        "Nombre": "PANTALETA DAMA",
+        "Caducidad": "",
+        "Bultos": 240,
+        "Piezas": 1,
+        "Total": 240,
+        "Precio": 0,
+        "_extraData": {
+          "Detalle": "",
+          "Fecha": "22/10 14:35",
+          "Total Bultos": 1,
+          "Área / Departamento": "Inventario Garcia",
+          "Últimos Dígitos": ""
+        },
+        "Área": "Inventario Garcia 2026-10-23"
+      },
+      {
+        "Fecha_Captura": "26/10 08:42",
+        "Código": "7506557644917",
+        "Nombre": "SHORT NIÑA",
+        "Caducidad": "",
+        "Bultos": 100,
+        "Piezas": 1,
+        "Total": 100,
+        "Precio": 0,
+        "_extraData": {
+          "Detalle": "",
+          "Fecha": "22/10 14:31",
+          "Total Bultos": 1,
+          "Área / Departamento": "Inventario Garcia",
+          "Últimos Dígitos": ""
+        },
+        "Área": "Inventario Garcia 2026-10-23"
+      },
+      {
+        "Fecha_Captura": "26/10 08:42",
+        "Código": "681307556560",
+        "Nombre": "SUETER DAMA",
+        "Caducidad": "",
+        "Bultos": 1,
+        "Piezas": 10,
+        "Total": 10,
+        "Precio": 0,
+        "_extraData": {
+          "Detalle": "",
+          "Fecha": "22/10 15:59",
+          "Total Bultos": 0,
+          "Área / Departamento": "Inventario Garcia",
+          "Últimos Dígitos": ""
+        },
+        "Área": "Inventario Garcia 2026-10-23"
+      },
+      {
+        "Fecha_Captura": "26/10 08:42",
+        "Código": "681307553781",
+        "Nombre": "S/N",
+        "Caducidad": "",
+        "Bultos": 36,
+        "Piezas": 1,
+        "Total": 36,
+        "Precio": 0,
+        "_extraData": {
+          "Detalle": "",
+          "Fecha": "22/10 14:25",
+          "Total Bultos": 1,
+          "Área / Departamento": "Inventario Garcia",
+          "Últimos Dígitos": ""
+        },
+        "Área": "Inventario Garcia 2026-10-23"
+      },
+      {
+        "Fecha_Captura": "26/10 08:42",
+        "Código": "7506557626531",
+        "Nombre": "ROPA INTERIOR NIÑA",
+        "Caducidad": "",
+        "Bultos": 240,
+        "Piezas": 4,
+        "Total": 960,
+        "Precio": 0,
+        "_extraData": {
+          "Detalle": "",
+          "Fecha": "22/10 17:32",
+          "Total Bultos": 3,
+          "Área / Departamento": "Inventario Garcia",
+          "Últimos Dígitos": ""
+        },
+        "Área": "Inventario Garcia 2026-10-23"
+      },
+      {
+        "Fecha_Captura": "26/10 08:42",
+        "Código": "750655764611",
+        "Nombre": "SET CROP JUVENIL",
+        "Caducidad": "",
+        "Bultos": 30,
+        "Piezas": 1,
+        "Total": 30,
+        "Precio": 0,
+        "_extraData": {
+          "Detalle": "",
+          "Fecha": "22/10 13:14",
+          "Total Bultos": 1,
+          "Área / Departamento": "Inventario Garcia",
+          "Últimos Dígitos": ""
+        },
+        "Área": "Inventario Garcia 2026-10-23"
+      },
+      {
+        "Fecha_Captura": "26/10 08:42",
+        "Código": "7506557649530",
+        "Nombre": "S/N",
+        "Caducidad": "",
+        "Bultos": 1,
+        "Piezas": 37,
+        "Total": 37,
+        "Precio": 0,
+        "_extraData": {
+          "Detalle": "",
+          "Fecha": "22/10 17:39",
+          "Total Bultos": 0,
+          "Área / Departamento": "Inventario Garcia",
+          "Últimos Dígitos": ""
+        },
+        "Área": "Inventario Garcia 2026-10-23"
+      },
+      {
+        "Fecha_Captura": "26/10 08:42",
+        "Código": "681307557789",
+        "Nombre": "VARIEDAD",
+        "Caducidad": "",
+        "Bultos": 1,
+        "Piezas": 1,
+        "Total": 1,
+        "Precio": 0,
+        "_extraData": {
+          "Detalle": "",
+          "Fecha": "22/10 13:10",
+          "Total Bultos": 0,
+          "Área / Departamento": "Inventario Garcia",
+          "Últimos Dígitos": ""
+        },
+        "Área": "Inventario Garcia 2026-10-23"
+      },
+      {
+        "Fecha_Captura": "26/10 08:42",
+        "Código": "7506557649448",
+        "Nombre": "S/N",
+        "Caducidad": "",
+        "Bultos": 1,
+        "Piezas": 1,
+        "Total": 1,
+        "Precio": 0,
+        "_extraData": {
+          "Detalle": "",
+          "Fecha": "22/10 13:07",
+          "Total Bultos": 0,
+          "Área / Departamento": "Inventario Garcia",
+          "Últimos Dígitos": ""
+        },
+        "Área": "Inventario Garcia 2026-10-23"
+      },
+      {
+        "Fecha_Captura": "26/10 08:42",
+        "Código": "7506557624018",
+        "Nombre": "S/N",
+        "Caducidad": "",
+        "Bultos": 1,
+        "Piezas": 1,
+        "Total": 1,
+        "Precio": 0,
+        "_extraData": {
+          "Detalle": "",
+          "Fecha": "22/10 13:07",
+          "Total Bultos": 0,
+          "Área / Departamento": "Inventario Garcia",
+          "Últimos Dígitos": ""
+        },
+        "Área": "Inventario Garcia 2026-10-23"
+      },
+      {
+        "Fecha_Captura": "26/10 08:42",
+        "Código": "7506557640902",
+        "Nombre": "S/N",
+        "Caducidad": "",
+        "Bultos": 1,
+        "Piezas": 1,
+        "Total": 1,
+        "Precio": 0,
+        "_extraData": {
+          "Detalle": "",
+          "Fecha": "22/10 13:06",
+          "Total Bultos": 0,
+          "Área / Departamento": "Inventario Garcia",
+          "Últimos Dígitos": ""
+        },
+        "Área": "Inventario Garcia 2026-10-23"
+      },
+      {
+        "Fecha_Captura": "26/10 08:42",
+        "Código": "7506557649554",
+        "Nombre": "S/N",
+        "Caducidad": "",
+        "Bultos": 1,
+        "Piezas": 2,
+        "Total": 2,
+        "Precio": 0,
+        "_extraData": {
+          "Detalle": "",
+          "Fecha": "22/10 14:59",
+          "Total Bultos": 0,
+          "Área / Departamento": "Inventario Garcia",
+          "Últimos Dígitos": ""
+        },
+        "Área": "Inventario Garcia 2026-10-23"
+      },
+      {
+        "Fecha_Captura": "26/10 08:42",
+        "Código": "7506557649837",
+        "Nombre": "CONJUNTO DAMA",
+        "Caducidad": "",
+        "Bultos": 2,
+        "Piezas": 1,
+        "Total": 2,
+        "Precio": 0,
+        "_extraData": {
+          "Detalle": "",
+          "Fecha": "22/10 13:05",
+          "Total Bultos": 0,
+          "Área / Departamento": "Inventario Garcia",
+          "Últimos Dígitos": ""
+        },
+        "Área": "Inventario Garcia 2026-10-23"
+      },
+      {
+        "Fecha_Captura": "26/10 08:42",
+        "Código": "7506557645129",
+        "Nombre": "S/N",
+        "Caducidad": "",
+        "Bultos": 1,
+        "Piezas": 37,
+        "Total": 37,
+        "Precio": 0,
+        "_extraData": {
+          "Detalle": "",
+          "Fecha": "22/10 16:27",
+          "Total Bultos": 0,
+          "Área / Departamento": "Inventario Garcia",
+          "Últimos Dígitos": ""
+        },
+        "Área": "Inventario Garcia 2026-10-23"
+      },
+      {
+        "Fecha_Captura": "26/10 08:42",
+        "Código": "7506557645136",
+        "Nombre": "S/N",
+        "Caducidad": "",
+        "Bultos": 1,
+        "Piezas": 1,
+        "Total": 1,
+        "Precio": 0,
+        "_extraData": {
+          "Detalle": "",
+          "Fecha": "22/10 13:04",
+          "Total Bultos": 0,
+          "Área / Departamento": "Inventario Garcia",
+          "Últimos Dígitos": ""
+        },
+        "Área": "Inventario Garcia 2026-10-23"
+      },
+      {
+        "Fecha_Captura": "26/10 08:42",
+        "Código": "7506557649370",
+        "Nombre": "BLUSA CASUAL",
+        "Caducidad": "",
+        "Bultos": 1,
+        "Piezas": 20,
+        "Total": 20,
+        "Precio": 0,
+        "_extraData": {
+          "Detalle": "",
+          "Fecha": "22/10 15:17",
+          "Total Bultos": 0,
+          "Área / Departamento": "Inventario Garcia",
+          "Últimos Dígitos": ""
+        },
+        "Área": "Inventario Garcia 2026-10-23"
+      },
+      {
+        "Fecha_Captura": "26/10 08:42",
+        "Código": "7506557649585",
+        "Nombre": "PANTALON CASUAL",
+        "Caducidad": "",
+        "Bultos": 1,
+        "Piezas": 81,
+        "Total": 81,
+        "Precio": 0,
+        "_extraData": {
+          "Detalle": "",
+          "Fecha": "22/10 15:24",
+          "Total Bultos": 0,
+          "Área / Departamento": "Inventario Garcia",
+          "Últimos Dígitos": ""
+        },
+        "Área": "Inventario Garcia 2026-10-23"
+      },
+      {
+        "Fecha_Captura": "26/10 08:42",
+        "Código": "7506557616075",
+        "Nombre": "BLUSA CASUAL",
+        "Caducidad": "",
+        "Bultos": 2,
+        "Piezas": 1,
+        "Total": 2,
+        "Precio": 0,
+        "_extraData": {
+          "Detalle": "",
+          "Fecha": "22/10 13:03",
+          "Total Bultos": 0,
+          "Área / Departamento": "Inventario Garcia",
+          "Últimos Dígitos": ""
+        },
+        "Área": "Inventario Garcia 2026-10-23"
+      },
+      {
+        "Fecha_Captura": "26/10 08:42",
+        "Código": "7506557644276",
+        "Nombre": "CONJUNTO DAMA",
+        "Caducidad": "",
+        "Bultos": 1,
+        "Piezas": 3,
+        "Total": 3,
+        "Precio": 0,
+        "_extraData": {
+          "Detalle": "",
+          "Fecha": "22/10 15:10",
+          "Total Bultos": 0,
+          "Área / Departamento": "Inventario Garcia",
+          "Últimos Dígitos": ""
+        },
+        "Área": "Inventario Garcia 2026-10-23"
+      },
+      {
+        "Fecha_Captura": "26/10 08:42",
+        "Código": "681307552289",
+        "Nombre": "BLUSA NIÑA",
+        "Caducidad": "",
+        "Bultos": 2,
+        "Piezas": 1,
+        "Total": 2,
+        "Precio": 0,
+        "_extraData": {
+          "Detalle": "",
+          "Fecha": "22/10 13:02",
+          "Total Bultos": 0,
+          "Área / Departamento": "Inventario Garcia",
+          "Últimos Dígitos": ""
+        },
+        "Área": "Inventario Garcia 2026-10-23"
+      },
+      {
+        "Fecha_Captura": "26/10 08:42",
+        "Código": "7506557647420",
+        "Nombre": "BLUSA DE NIÑA",
+        "Caducidad": "",
+        "Bultos": 27,
+        "Piezas": 1,
+        "Total": 31,
+        "Precio": 0,
+        "_extraData": {
+          "Detalle": "",
+          "Fecha": "22/10 13:02",
+          "Total Bultos": 0,
+          "Área / Departamento": "Inventario Garcia",
+          "Últimos Dígitos": ""
+        },
+        "Área": "Inventario Garcia 2026-10-23"
+      },
+      {
+        "Fecha_Captura": "26/10 08:42",
+        "Código": "7506352899154",
+        "Nombre": "CHALECO",
+        "Caducidad": "",
+        "Bultos": 1,
+        "Piezas": 1,
+        "Total": 1,
+        "Precio": 0,
+        "_extraData": {
+          "Detalle": "",
+          "Fecha": "22/10 12:59",
+          "Total Bultos": 0,
+          "Área / Departamento": "Inventario Garcia",
+          "Últimos Dígitos": ""
+        },
+        "Área": "Inventario Garcia 2026-10-23"
+      },
+      {
+        "Fecha_Captura": "26/10 08:42",
+        "Código": "681307556195",
+        "Nombre": "PANTALÓN",
+        "Caducidad": "",
+        "Bultos": 36,
+        "Piezas": 1,
+        "Total": 36,
+        "Precio": 0,
+        "_extraData": {
+          "Detalle": "",
+          "Fecha": "22/10 12:57",
+          "Total Bultos": 1,
+          "Área / Departamento": "Inventario Garcia",
+          "Últimos Dígitos": ""
+        },
+        "Área": "Inventario Garcia 2026-10-23"
+      },
+      {
+        "Fecha_Captura": "26/10 08:42",
+        "Código": "7506352891523",
+        "Nombre": "SHORT PLAYA NIÑO",
+        "Caducidad": "",
+        "Bultos": 13,
+        "Piezas": 1,
+        "Total": 13,
+        "Precio": 0,
+        "_extraData": {
+          "Detalle": "",
+          "Fecha": "22/10 12:56",
+          "Total Bultos": 0,
+          "Área / Departamento": "Inventario Garcia",
+          "Últimos Dígitos": ""
+        },
+        "Área": "Inventario Garcia 2026-10-23"
+      },
+      {
+        "Fecha_Captura": "26/10 08:42",
+        "Código": "7506557644542",
+        "Nombre": "SHORT FALDA NIÑA",
+        "Caducidad": "",
+        "Bultos": 23,
+        "Piezas": 1,
+        "Total": 23,
+        "Precio": 0,
+        "_extraData": {
+          "Detalle": "",
+          "Fecha": "22/10 12:53",
+          "Total Bultos": 0,
+          "Área / Departamento": "Inventario Garcia",
+          "Últimos Dígitos": ""
+        },
+        "Área": "Inventario Garcia 2026-10-23"
+      },
+      {
+        "Fecha_Captura": "26/10 08:42",
+        "Código": "7506557647598",
+        "Nombre": "BLUSA CASUAL DAMA",
+        "Caducidad": "",
+        "Bultos": 30,
+        "Piezas": 1,
+        "Total": 32,
+        "Precio": 0,
+        "_extraData": {
+          "Detalle": "",
+          "Fecha": "22/10 13:01",
+          "Total Bultos": 0,
+          "Área / Departamento": "Inventario Garcia",
+          "Últimos Dígitos": ""
+        },
+        "Área": "Inventario Garcia 2026-10-23"
+      },
+      {
+        "Fecha_Captura": "26/10 08:42",
+        "Código": "7506557618727",
+        "Nombre": "PANTALÓN ELEGANTE",
+        "Caducidad": "",
+        "Bultos": 1,
+        "Piezas": 1,
+        "Total": 1,
+        "Precio": 0,
+        "_extraData": {
+          "Detalle": "",
+          "Fecha": "22/10 12:50",
+          "Total Bultos": 0,
+          "Área / Departamento": "Inventario Garcia",
+          "Últimos Dígitos": ""
+        },
+        "Área": "Inventario Garcia 2026-10-23"
+      },
+      {
+        "Fecha_Captura": "26/10 08:42",
+        "Código": "7506557614965",
+        "Nombre": "VESTIDO",
+        "Caducidad": "",
+        "Bultos": 2,
+        "Piezas": 7,
+        "Total": 14,
+        "Precio": 0,
+        "_extraData": {
+          "Detalle": "",
+          "Fecha": "22/10 15:21",
+          "Total Bultos": 0,
+          "Área / Departamento": "Inventario Garcia",
+          "Últimos Dígitos": ""
+        },
+        "Área": "Inventario Garcia 2026-10-23"
+      },
+      {
+        "Fecha_Captura": "26/10 08:42",
+        "Código": "681307543935",
+        "Nombre": "BLUSA SIN MANGAS",
+        "Caducidad": "",
+        "Bultos": 1,
+        "Piezas": 8,
+        "Total": 8,
+        "Precio": 0,
+        "_extraData": {
+          "Detalle": "",
+          "Fecha": "22/10 15:20",
+          "Total Bultos": 0,
+          "Área / Departamento": "Inventario Garcia",
+          "Últimos Dígitos": ""
+        },
+        "Área": "Inventario Garcia 2026-10-23"
+      },
+      {
+        "Fecha_Captura": "26/10 08:42",
+        "Código": "7506557625916",
+        "Nombre": "SHORT NIÑA",
+        "Caducidad": "",
+        "Bultos": 2,
+        "Piezas": 3,
+        "Total": 6,
+        "Precio": 0,
+        "_extraData": {
+          "Detalle": "",
+          "Fecha": "22/10 13:11",
+          "Total Bultos": 0,
+          "Área / Departamento": "Inventario Garcia",
+          "Últimos Dígitos": ""
+        },
+        "Área": "Inventario Garcia 2026-10-23"
+      },
+      {
+        "Fecha_Captura": "26/10 08:42",
+        "Código": "7506557616181",
+        "Nombre": "BLUSA DAMA",
+        "Caducidad": "",
+        "Bultos": 2,
+        "Piezas": 2,
+        "Total": 3,
+        "Precio": 0,
+        "_extraData": {
+          "Detalle": "",
+          "Fecha": "22/10 13:07",
+          "Total Bultos": 0,
+          "Área / Departamento": "Inventario Garcia",
+          "Últimos Dígitos": ""
+        },
+        "Área": "Inventario Garcia 2026-10-23"
+      },
+      {
+        "Fecha_Captura": "26/10 08:42",
+        "Código": "7506557615535",
+        "Nombre": "BLUSA CAMPESINA",
+        "Caducidad": "",
+        "Bultos": 4,
+        "Piezas": 2,
+        "Total": 8,
+        "Precio": 0,
+        "_extraData": {
+          "Detalle": "",
+          "Fecha": "22/10 13:09",
+          "Total Bultos": 0,
+          "Área / Departamento": "Inventario Garcia",
+          "Últimos Dígitos": ""
+        },
+        "Área": "Inventario Garcia 2026-10-23"
+      },
+      {
+        "Fecha_Captura": "26/10 08:42",
+        "Código": "7506352899840",
+        "Nombre": "BLUSA DAMA",
+        "Caducidad": "",
+        "Bultos": 6,
+        "Piezas": 2,
+        "Total": 12,
+        "Precio": 0,
+        "_extraData": {
+          "Detalle": "",
+          "Fecha": "22/10 13:09",
+          "Total Bultos": 0,
+          "Área / Departamento": "Inventario Garcia",
+          "Últimos Dígitos": ""
+        },
+        "Área": "Inventario Garcia 2026-10-23"
+      },
+      {
+        "Fecha_Captura": "26/10 08:42",
+        "Código": "7506557616273",
+        "Nombre": "BLUSA DAMA",
+        "Caducidad": "",
+        "Bultos": 19,
+        "Piezas": 2,
+        "Total": 39,
+        "Precio": 0,
+        "_extraData": {
+          "Detalle": "",
+          "Fecha": "22/10 16:51",
+          "Total Bultos": 0,
+          "Área / Departamento": "Inventario Garcia",
+          "Últimos Dígitos": ""
+        },
+        "Área": "Inventario Garcia 2026-10-23"
+      },
+      {
+        "Fecha_Captura": "26/10 08:42",
+        "Código": "7506557645167",
+        "Nombre": "EB SET TOP Y SHORT DAMA",
+        "Caducidad": "",
+        "Bultos": 1,
+        "Piezas": 1,
+        "Total": 1,
+        "Precio": 0,
+        "_extraData": {
+          "Detalle": "",
+          "Fecha": "22/10 12:36",
+          "Total Bultos": 0,
+          "Área / Departamento": "Inventario Garcia",
+          "Últimos Dígitos": ""
+        },
+        "Área": "Inventario Garcia 2026-10-23"
+      },
+      {
+        "Fecha_Captura": "26/10 08:42",
+        "Código": "750655762130",
+        "Nombre": "SUDADERA LIGERA DAMA",
+        "Caducidad": "",
+        "Bultos": 9,
+        "Piezas": 1,
+        "Total": 9,
+        "Precio": 0,
+        "_extraData": {
+          "Detalle": "",
+          "Fecha": "22/10 12:34",
+          "Total Bultos": 0,
+          "Área / Departamento": "Inventario Garcia",
+          "Últimos Dígitos": ""
+        },
+        "Área": "Inventario Garcia 2026-10-23"
+      },
+      {
+        "Fecha_Captura": "26/10 08:42",
+        "Código": "7506557615320",
+        "Nombre": "BLUSAS",
+        "Caducidad": "",
+        "Bultos": 36,
+        "Piezas": 1,
+        "Total": 36,
+        "Precio": 0,
+        "_extraData": {
+          "Detalle": "",
+          "Fecha": "22/10 12:33",
+          "Total Bultos": 1,
+          "Área / Departamento": "Inventario Garcia",
+          "Últimos Dígitos": ""
+        },
+        "Área": "Inventario Garcia 2026-10-23"
+      },
+      {
+        "Fecha_Captura": "26/10 08:42",
+        "Código": "7506557647819",
+        "Nombre": "CHAMARRA DE CUERO",
+        "Caducidad": "",
+        "Bultos": 1,
+        "Piezas": 1,
+        "Total": 1,
+        "Precio": 0,
+        "_extraData": {
+          "Detalle": "",
+          "Fecha": "22/10 12:32",
+          "Total Bultos": 0,
+          "Área / Departamento": "Inventario Garcia",
+          "Últimos Dígitos": ""
+        },
+        "Área": "Inventario Garcia 2026-10-23"
+      },
+      {
+        "Fecha_Captura": "26/10 08:42",
+        "Código": "7506557608230",
+        "Nombre": "CHAMARRA DAMA",
+        "Caducidad": "",
+        "Bultos": 2,
+        "Piezas": 1,
+        "Total": 2,
+        "Precio": 0,
+        "_extraData": {
+          "Detalle": "",
+          "Fecha": "22/10 12:31",
+          "Total Bultos": 0,
+          "Área / Departamento": "Inventario Garcia",
+          "Últimos Dígitos": ""
+        },
+        "Área": "Inventario Garcia 2026-10-23"
+      },
+      {
+        "Fecha_Captura": "26/10 08:42",
+        "Código": "7506352899697",
+        "Nombre": "CHAMARRA",
+        "Caducidad": "",
+        "Bultos": 1,
+        "Piezas": 1,
+        "Total": 1,
+        "Precio": 0,
+        "_extraData": {
+          "Detalle": "",
+          "Fecha": "22/10 12:31",
+          "Total Bultos": 0,
+          "Área / Departamento": "Inventario Garcia",
+          "Últimos Dígitos": ""
+        },
+        "Área": "Inventario Garcia 2026-10-23"
+      },
+      {
+        "Fecha_Captura": "26/10 08:42",
+        "Código": "6953935003445",
+        "Nombre": "BRASIER",
+        "Caducidad": "",
+        "Bultos": 1,
+        "Piezas": 1,
+        "Total": 1,
+        "Precio": 0,
+        "_extraData": {
+          "Detalle": "",
+          "Fecha": "22/10 12:30",
+          "Total Bultos": 0,
+          "Área / Departamento": "Inventario Garcia",
+          "Últimos Dígitos": ""
+        },
+        "Área": "Inventario Garcia 2026-10-23"
+      },
+      {
+        "Fecha_Captura": "26/10 08:42",
+        "Código": "7506352877954",
+        "Nombre": "PANTALÓN DAMA",
+        "Caducidad": "",
+        "Bultos": 9,
+        "Piezas": 1,
+        "Total": 9,
+        "Precio": 0,
+        "_extraData": {
+          "Detalle": "",
+          "Fecha": "22/10 12:30",
+          "Total Bultos": 0,
+          "Área / Departamento": "Inventario Garcia",
+          "Últimos Dígitos": ""
+        },
+        "Área": "Inventario Garcia 2026-10-23"
+      },
+      {
+        "Fecha_Captura": "26/10 08:42",
+        "Código": "7506557620317",
+        "Nombre": "SUDADERA NIÑO",
+        "Caducidad": "",
+        "Bultos": 1,
+        "Piezas": 1,
+        "Total": 1,
+        "Precio": 0,
+        "_extraData": {
+          "Detalle": "",
+          "Fecha": "22/10 12:29",
+          "Total Bultos": 0,
+          "Área / Departamento": "Inventario Garcia",
+          "Últimos Dígitos": ""
+        },
+        "Área": "Inventario Garcia 2026-10-23"
+      },
+      {
+        "Fecha_Captura": "26/10 08:42",
+        "Código": "7506352863025",
+        "Nombre": "BLUSA",
+        "Caducidad": "",
+        "Bultos": 1,
+        "Piezas": 2,
+        "Total": 2,
+        "Precio": 0,
+        "_extraData": {
+          "Detalle": "",
+          "Fecha": "22/10 12:29",
+          "Total Bultos": 0,
+          "Área / Departamento": "Inventario Garcia",
+          "Últimos Dígitos": ""
+        },
+        "Área": "Inventario Garcia 2026-10-23"
+      },
+      {
+        "Fecha_Captura": "26/10 08:42",
+        "Código": "7506352897211",
+        "Nombre": "S/N",
+        "Caducidad": "",
+        "Bultos": 7,
+        "Piezas": 1,
+        "Total": 7,
+        "Precio": 0,
+        "_extraData": {
+          "Detalle": "",
+          "Fecha": "22/10 12:28",
+          "Total Bultos": 0,
+          "Área / Departamento": "Inventario Garcia",
+          "Últimos Dígitos": ""
+        },
+        "Área": "Inventario Garcia 2026-10-23"
+      },
+      {
+        "Fecha_Captura": "26/10 08:42",
+        "Código": "7506557622267",
+        "Nombre": "PANTALÓN DAMA CASUAL",
+        "Caducidad": "",
+        "Bultos": 1,
+        "Piezas": 1,
+        "Total": 1,
+        "Precio": 0,
+        "_extraData": {
+          "Detalle": "",
+          "Fecha": "22/10 12:27",
+          "Total Bultos": 0,
+          "Área / Departamento": "Inventario Garcia",
+          "Últimos Dígitos": ""
+        },
+        "Área": "Inventario Garcia 2026-10-23"
+      },
+      {
+        "Fecha_Captura": "26/10 08:42",
+        "Código": "7506557614361",
+        "Nombre": "PANTALÓN DAMA CASUAL",
+        "Caducidad": "",
+        "Bultos": 2,
+        "Piezas": 1,
+        "Total": 2,
+        "Precio": 0,
+        "_extraData": {
+          "Detalle": "",
+          "Fecha": "22/10 12:27",
+          "Total Bultos": 0,
+          "Área / Departamento": "Inventario Garcia",
+          "Últimos Dígitos": ""
+        },
+        "Área": "Inventario Garcia 2026-10-23"
+      },
+      {
+        "Fecha_Captura": "26/10 08:42",
+        "Código": "7506352886932",
+        "Nombre": "PANTALÓN DAMA CASUAL",
+        "Caducidad": "",
+        "Bultos": 7,
+        "Piezas": 1,
+        "Total": 8,
+        "Precio": 0,
+        "_extraData": {
+          "Detalle": "",
+          "Fecha": "22/10 12:27",
+          "Total Bultos": 0,
+          "Área / Departamento": "Inventario Garcia",
+          "Últimos Dígitos": ""
+        },
+        "Área": "Inventario Garcia 2026-10-23"
+      },
+      {
+        "Fecha_Captura": "26/10 08:42",
+        "Código": "7506557613722",
+        "Nombre": "PANTALÓN DEPORTIVO DAMA",
+        "Caducidad": "",
+        "Bultos": 9,
+        "Piezas": 1,
+        "Total": 9,
+        "Precio": 0,
+        "_extraData": {
+          "Detalle": "",
+          "Fecha": "22/10 12:24",
+          "Total Bultos": 0,
+          "Área / Departamento": "Inventario Garcia",
+          "Últimos Dígitos": ""
+        },
+        "Área": "Inventario Garcia 2026-10-23"
+      },
+      {
+        "Fecha_Captura": "26/10 08:42",
+        "Código": "7506557613715",
+        "Nombre": "PANTALÓN DEPORTIVO DAMA",
+        "Caducidad": "",
+        "Bultos": 34,
+        "Piezas": 1,
+        "Total": 34,
+        "Precio": 0,
+        "_extraData": {
+          "Detalle": "",
+          "Fecha": "22/10 12:24",
+          "Total Bultos": 0,
+          "Área / Departamento": "Inventario Garcia",
+          "Últimos Dígitos": ""
+        },
+        "Área": "Inventario Garcia 2026-10-23"
+      },
+      {
+        "Fecha_Captura": "26/10 08:42",
+        "Código": "7506557602818",
+        "Nombre": "CAPRI DAMA",
+        "Caducidad": "",
+        "Bultos": 5,
+        "Piezas": 1,
+        "Total": 5,
+        "Precio": 0,
+        "_extraData": {
+          "Detalle": "",
+          "Fecha": "22/10 12:23",
+          "Total Bultos": 0,
+          "Área / Departamento": "Inventario Garcia",
+          "Últimos Dígitos": ""
+        },
+        "Área": "Inventario Garcia 2026-10-23"
+      },
+      {
+        "Fecha_Captura": "26/10 08:42",
+        "Código": "7506557614248",
+        "Nombre": "PANTALÓN DEPORTIVO DAMA",
+        "Caducidad": "",
+        "Bultos": 6,
+        "Piezas": 1,
+        "Total": 6,
+        "Precio": 0,
+        "_extraData": {
+          "Detalle": "",
+          "Fecha": "22/10 12:23",
+          "Total Bultos": 0,
+          "Área / Departamento": "Inventario Garcia",
+          "Últimos Dígitos": ""
+        },
+        "Área": "Inventario Garcia 2026-10-23"
+      },
+      {
+        "Fecha_Captura": "26/10 08:42",
+        "Código": "7506557600425",
+        "Nombre": "PANTALÓN DEPORTIVO DAMA",
+        "Caducidad": "",
+        "Bultos": 1,
+        "Piezas": 1,
+        "Total": 1,
+        "Precio": 0,
+        "_extraData": {
+          "Detalle": "",
+          "Fecha": "22/10 12:23",
+          "Total Bultos": 0,
+          "Área / Departamento": "Inventario Garcia",
+          "Últimos Dígitos": ""
+        },
+        "Área": "Inventario Garcia 2026-10-23"
+      },
+      {
+        "Fecha_Captura": "26/10 08:42",
+        "Código": "7506557613708",
+        "Nombre": "PANTALON",
+        "Caducidad": "",
+        "Bultos": 7,
+        "Piezas": 1,
+        "Total": 7,
+        "Precio": 0,
+        "_extraData": {
+          "Detalle": "",
+          "Fecha": "22/10 12:22",
+          "Total Bultos": 0,
+          "Área / Departamento": "Inventario Garcia",
+          "Últimos Dígitos": ""
+        },
+        "Área": "Inventario Garcia 2026-10-23"
+      },
+      {
+        "Fecha_Captura": "26/10 08:42",
+        "Código": "7506557600449",
+        "Nombre": "PANTALÓN DAMA CASUAL",
+        "Caducidad": "",
+        "Bultos": 6,
+        "Piezas": 1,
+        "Total": 6,
+        "Precio": 0,
+        "_extraData": {
+          "Detalle": "",
+          "Fecha": "22/10 12:22",
+          "Total Bultos": 0,
+          "Área / Departamento": "Inventario Garcia",
+          "Últimos Dígitos": ""
+        },
+        "Área": "Inventario Garcia 2026-10-23"
+      },
+      {
+        "Fecha_Captura": "26/10 08:42",
+        "Código": "7506352888776",
+        "Nombre": "PANTALÓN DE MANO DE MEZCLILLA",
+        "Caducidad": "",
+        "Bultos": 1,
+        "Piezas": 1,
+        "Total": 1,
+        "Precio": 0,
+        "_extraData": {
+          "Detalle": "",
+          "Fecha": "22/10 12:21",
+          "Total Bultos": 0,
+          "Área / Departamento": "Inventario Garcia",
+          "Últimos Dígitos": ""
+        },
+        "Área": "Inventario Garcia 2026-10-23"
+      },
+      {
+        "Fecha_Captura": "26/10 08:42",
+        "Código": "7506557604409",
+        "Nombre": "SUÉTER NIÑA",
+        "Caducidad": "",
+        "Bultos": 4,
+        "Piezas": 4,
+        "Total": 14,
+        "Precio": 0,
+        "_extraData": {
+          "Detalle": "",
+          "Fecha": "22/10 12:16",
+          "Total Bultos": 0,
+          "Área / Departamento": "Inventario Garcia",
+          "Últimos Dígitos": ""
+        },
+        "Área": "Inventario Garcia 2026-10-23"
+      },
+      {
+        "Fecha_Captura": "26/10 08:42",
+        "Código": "7506352891530",
+        "Nombre": "SHORT PLAYERO",
+        "Caducidad": "",
+        "Bultos": 120,
+        "Piezas": 1,
+        "Total": 162,
+        "Precio": 0,
+        "_extraData": {
+          "Detalle": "",
+          "Fecha": "22/10 12:55",
+          "Total Bultos": 0,
+          "Área / Departamento": "Inventario Garcia",
+          "Últimos Dígitos": ""
+        },
+        "Área": "Inventario Garcia 2026-10-23"
+      },
+      {
+        "Fecha_Captura": "26/10 08:42",
+        "Código": "7506557649349",
+        "Nombre": "BLUSA OBLINGUERA",
+        "Caducidad": "",
+        "Bultos": 18,
+        "Piezas": 3,
+        "Total": 59,
+        "Precio": 0,
+        "_extraData": {
+          "Detalle": "",
+          "Fecha": "22/10 16:30",
+          "Total Bultos": 0,
+          "Área / Departamento": "Inventario Garcia",
+          "Últimos Dígitos": ""
+        },
+        "Área": "Inventario Garcia 2026-10-23"
+      },
+      {
+        "Fecha_Captura": "26/10 08:42",
+        "Código": "7506557621727",
+        "Nombre": "SUDADERA ABORREGADA",
+        "Caducidad": "",
+        "Bultos": 1,
+        "Piezas": 1,
+        "Total": 1,
+        "Precio": 0,
+        "_extraData": {
+          "Detalle": "",
+          "Fecha": "22/10 11:57",
+          "Total Bultos": 0,
+          "Área / Departamento": "Inventario Garcia",
+          "Últimos Dígitos": ""
+        },
+        "Área": "Inventario Garcia 2026-10-23"
+      },
+      {
+        "Fecha_Captura": "26/10 08:42",
+        "Código": "7506557603808",
+        "Nombre": "CHAMARRA NIÑO",
+        "Caducidad": "",
+        "Bultos": 1,
+        "Piezas": 1,
+        "Total": 1,
+        "Precio": 0,
+        "_extraData": {
+          "Detalle": "",
+          "Fecha": "22/10 11:53",
+          "Total Bultos": 0,
+          "Área / Departamento": "Inventario Garcia",
+          "Últimos Dígitos": ""
+        },
+        "Área": "Inventario Garcia 2026-10-23"
+      },
+      {
+        "Fecha_Captura": "26/10 08:42",
+        "Código": "7506557621239",
+        "Nombre": "SUDADERA DAMA",
+        "Caducidad": "",
+        "Bultos": 2,
+        "Piezas": 1,
+        "Total": 2,
+        "Precio": 0,
+        "_extraData": {
+          "Detalle": "",
+          "Fecha": "22/10 11:53",
+          "Total Bultos": 0,
+          "Área / Departamento": "Inventario Garcia",
+          "Últimos Dígitos": ""
+        },
+        "Área": "Inventario Garcia 2026-10-23"
+      },
+      {
+        "Fecha_Captura": "26/10 08:42",
+        "Código": "6901839555423",
+        "Nombre": "CHAMARRA NIÑO",
+        "Caducidad": "",
+        "Bultos": 1,
+        "Piezas": 1,
+        "Total": 1,
+        "Precio": 0,
+        "_extraData": {
+          "Detalle": "",
+          "Fecha": "22/10 11:34",
+          "Total Bultos": 0,
+          "Área / Departamento": "Inventario Garcia",
+          "Últimos Dígitos": ""
+        },
+        "Área": "Inventario Garcia 2026-10-23"
+      },
+      {
+        "Fecha_Captura": "26/10 08:42",
+        "Código": "7506557602948",
+        "Nombre": "BLUSA TIPO CAMPESINO",
+        "Caducidad": "",
+        "Bultos": 1,
+        "Piezas": 50,
+        "Total": 50,
+        "Precio": 0,
+        "_extraData": {
+          "Detalle": "",
+          "Fecha": "22/10 16:49",
+          "Total Bultos": 0,
+          "Área / Departamento": "Inventario Garcia",
+          "Últimos Dígitos": ""
+        },
+        "Área": "Inventario Garcia 2026-10-23"
+      },
+      {
+        "Fecha_Captura": "26/10 08:42",
+        "Código": "7506557613678",
+        "Nombre": "PANTALÓN DEPORTIVO",
+        "Caducidad": "",
+        "Bultos": 1,
+        "Piezas": 6,
+        "Total": 6,
+        "Precio": 0,
+        "_extraData": {
+          "Detalle": "",
+          "Fecha": "22/10 12:24",
+          "Total Bultos": 0,
+          "Área / Departamento": "Inventario Garcia",
+          "Últimos Dígitos": ""
+        },
+        "Área": "Inventario Garcia 2026-10-23"
+      },
+      {
+        "Fecha_Captura": "26/10 08:42",
+        "Código": "7500003900256",
+        "Nombre": "EB",
+        "Caducidad": "",
+        "Bultos": 36,
+        "Piezas": 1,
+        "Total": 36,
+        "Precio": 0,
+        "_extraData": {
+          "Detalle": "",
+          "Fecha": "22/10 11:32",
+          "Total Bultos": 1,
+          "Área / Departamento": "Inventario Garcia",
+          "Últimos Dígitos": ""
+        },
+        "Área": "Inventario Garcia 2026-10-23"
+      },
+      {
+        "Fecha_Captura": "26/10 08:42",
+        "Código": "7506557636448",
+        "Nombre": "SHORT TIPO PESQUERO",
+        "Caducidad": "",
+        "Bultos": 1,
+        "Piezas": 7,
+        "Total": 7,
+        "Precio": 0,
+        "_extraData": {
+          "Detalle": "",
+          "Fecha": "22/10 11:31",
+          "Total Bultos": 0,
+          "Área / Departamento": "Inventario Garcia",
+          "Últimos Dígitos": ""
+        },
+        "Área": "Inventario Garcia 2026-10-23"
+      },
+      {
+        "Fecha_Captura": "26/10 08:42",
+        "Código": "7506352891516",
+        "Nombre": "SHORT PKAYERO CABALLERO",
+        "Caducidad": "",
+        "Bultos": 1,
+        "Piezas": 73,
+        "Total": 73,
+        "Precio": 0,
+        "_extraData": {
+          "Detalle": "",
+          "Fecha": "22/10 12:25",
+          "Total Bultos": 1,
+          "Área / Departamento": "Inventario Garcia",
+          "Últimos Dígitos": ""
+        },
+        "Área": "Inventario Garcia 2026-10-23"
+      },
+      {
+        "Fecha_Captura": "26/10 08:42",
+        "Código": "7506557635199",
+        "Nombre": "CHAMARRA NIÑO",
+        "Caducidad": "",
+        "Bultos": 1,
+        "Piezas": 1,
+        "Total": 1,
+        "Precio": 0,
+        "_extraData": {
+          "Detalle": "",
+          "Fecha": "22/10 11:26",
+          "Total Bultos": 0,
+          "Área / Departamento": "Inventario Garcia",
+          "Últimos Dígitos": ""
+        },
+        "Área": "Inventario Garcia 2026-10-23"
+      },
+      {
+        "Fecha_Captura": "26/10 08:42",
+        "Código": "7506557635137",
+        "Nombre": "SUDADERA CABALLERO AMARILLO",
+        "Caducidad": "",
+        "Bultos": 9,
+        "Piezas": 1,
+        "Total": 9,
+        "Precio": 0,
+        "_extraData": {
+          "Detalle": "",
+          "Fecha": "22/10 11:25",
+          "Total Bultos": 0,
+          "Área / Departamento": "Inventario Garcia",
+          "Últimos Dígitos": ""
+        },
+        "Área": "Inventario Garcia 2026-10-23"
+      },
+      {
+        "Fecha_Captura": "26/10 08:42",
+        "Código": "7506557617928",
+        "Nombre": "SUDADERA NIÑA",
+        "Caducidad": "",
+        "Bultos": 5,
+        "Piezas": 1,
+        "Total": 5,
+        "Precio": 0,
+        "_extraData": {
+          "Detalle": "",
+          "Fecha": "22/10 11:21",
+          "Total Bultos": 0,
+          "Área / Departamento": "Inventario Garcia",
+          "Últimos Dígitos": ""
+        },
+        "Área": "Inventario Garcia 2026-10-23"
+      },
+      {
+        "Fecha_Captura": "26/10 08:42",
+        "Código": "7506557636400",
+        "Nombre": "BERMUDA",
+        "Caducidad": "",
+        "Bultos": 5,
+        "Piezas": 1,
+        "Total": 7,
+        "Precio": 0,
+        "_extraData": {
+          "Detalle": "",
+          "Fecha": "22/10 11:32",
+          "Total Bultos": 0,
+          "Área / Departamento": "Inventario Garcia",
+          "Últimos Dígitos": ""
+        },
+        "Área": "Inventario Garcia 2026-10-23"
+      },
+      {
+        "Fecha_Captura": "26/10 08:42",
+        "Código": "7506557626920",
+        "Nombre": "SHORT CORTO PAPERBAG",
+        "Caducidad": "",
+        "Bultos": 34,
+        "Piezas": 1,
+        "Total": 39,
+        "Precio": 0,
+        "_extraData": {
+          "Detalle": "",
+          "Fecha": "22/10 11:33",
+          "Total Bultos": 0,
+          "Área / Departamento": "Inventario Garcia",
+          "Últimos Dígitos": ""
+        },
+        "Área": "Inventario Garcia 2026-10-23"
+      },
+      {
+        "Fecha_Captura": "26/10 08:42",
+        "Código": "7506557624704",
+        "Nombre": "EB PANTALON DAMA LEGGIN",
+        "Caducidad": "",
+        "Bultos": 1,
+        "Piezas": 1,
+        "Total": 1,
+        "Precio": 0,
+        "_extraData": {
+          "Detalle": "",
+          "Fecha": "22/10 11:08",
+          "Total Bultos": 0,
+          "Área / Departamento": "Inventario Garcia",
+          "Últimos Dígitos": ""
+        },
+        "Área": "Inventario Garcia 2026-10-23"
+      },
+      {
+        "Fecha_Captura": "26/10 08:42",
+        "Código": "7506352891301",
+        "Nombre": "GORRO INVERNAL DAMA",
+        "Caducidad": "",
+        "Bultos": 18,
+        "Piezas": 1,
+        "Total": 18,
+        "Precio": 0,
+        "_extraData": {
+          "Detalle": "",
+          "Fecha": "22/10 11:07",
+          "Total Bultos": 0,
+          "Área / Departamento": "Inventario Garcia",
+          "Últimos Dígitos": ""
+        },
+        "Área": "Inventario Garcia 2026-10-23"
+      },
+      {
+        "Fecha_Captura": "26/10 08:42",
+        "Código": "7506352890700",
+        "Nombre": "GORRO INVERNAL CABALLERO",
+        "Caducidad": "",
+        "Bultos": 62,
+        "Piezas": 4,
+        "Total": 242,
+        "Precio": 0,
+        "_extraData": {
+          "Detalle": "",
+          "Fecha": "22/10 16:57",
+          "Total Bultos": 1,
+          "Área / Departamento": "Inventario Garcia",
+          "Últimos Dígitos": ""
+        },
+        "Área": "Inventario Garcia 2026-10-23"
+      },
+      {
+        "Fecha_Captura": "26/10 08:42",
+        "Código": "1506557609602",
+        "Nombre": "TRGT VARIEDAD ARTICULOS",
+        "Caducidad": "",
+        "Bultos": 1,
+        "Piezas": 1,
+        "Total": 1,
+        "Precio": 0,
+        "_extraData": {
+          "Detalle": "",
+          "Fecha": "22/10 11:05",
+          "Total Bultos": 0,
+          "Área / Departamento": "Inventario Garcia",
+          "Últimos Dígitos": ""
+        },
+        "Área": "Inventario Garcia 2026-10-23"
+      },
+      {
+        "Fecha_Captura": "26/10 08:42",
+        "Código": "7506557640742",
+        "Nombre": "TRGT VARIEDAD ARTICULOS",
+        "Caducidad": "",
+        "Bultos": 1,
+        "Piezas": 8,
+        "Total": 8,
+        "Precio": 0,
+        "_extraData": {
+          "Detalle": "",
+          "Fecha": "22/10 15:15",
+          "Total Bultos": 1,
+          "Área / Departamento": "Inventario Garcia",
+          "Últimos Dígitos": ""
+        },
+        "Área": "Inventario Garcia 2026-10-23"
+      },
+      {
+        "Fecha_Captura": "26/10 08:42",
+        "Código": "7506557601125",
+        "Nombre": "EB PANTALON DAMA CASUAL",
+        "Caducidad": "",
+        "Bultos": 32,
+        "Piezas": 1,
+        "Total": 32,
+        "Precio": 0,
+        "_extraData": {
+          "Detalle": "",
+          "Fecha": "22/10 11:03",
+          "Total Bultos": 1,
+          "Área / Departamento": "Inventario Garcia",
+          "Últimos Dígitos": ""
+        },
+        "Área": "Inventario Garcia 2026-10-23"
+      },
+      {
+        "Fecha_Captura": "26/10 08:42",
+        "Código": "7502020400256",
+        "Nombre": "MARIBEL",
+        "Caducidad": "",
+        "Bultos": 36,
+        "Piezas": 1,
+        "Total": 36,
+        "Precio": 0,
+        "_extraData": {
+          "Detalle": "",
+          "Fecha": "22/10 11:02",
+          "Total Bultos": 1,
+          "Área / Departamento": "Inventario Garcia",
+          "Últimos Dígitos": ""
+        },
+        "Área": "Inventario Garcia 2026-10-23"
+      },
+      {
+        "Fecha_Captura": "26/10 08:42",
+        "Código": "7506557603082",
+        "Nombre": "CLK FALDA DAMA BUBBLE",
+        "Caducidad": "",
+        "Bultos": 60,
+        "Piezas": 1,
+        "Total": 60,
+        "Precio": 0,
+        "_extraData": {
+          "Detalle": "",
+          "Fecha": "22/10 10:59",
+          "Total Bultos": 1,
+          "Área / Departamento": "Inventario Garcia",
+          "Últimos Dígitos": ""
+        },
+        "Área": "Inventario Garcia 2026-10-23"
+      },
+      {
+        "Fecha_Captura": "26/10 08:42",
+        "Código": "7506557633720",
+        "Nombre": "BLUSA DAMA",
+        "Caducidad": "",
+        "Bultos": 60,
+        "Piezas": 1,
+        "Total": 60,
+        "Precio": 0,
+        "_extraData": {
+          "Detalle": "",
+          "Fecha": "22/10 10:50",
+          "Total Bultos": 1,
+          "Área / Departamento": "Inventario Garcia",
+          "Últimos Dígitos": ""
+        },
+        "Área": "Inventario Garcia 2026-10-23"
+      },
+      {
+        "Fecha_Captura": "26/10 08:42",
+        "Código": "681307536203",
+        "Nombre": "S/N",
+        "Caducidad": "",
+        "Bultos": 36,
+        "Piezas": 1,
+        "Total": 36,
+        "Precio": 0,
+        "_extraData": {
+          "Detalle": "",
+          "Fecha": "22/10 10:49",
+          "Total Bultos": 1,
+          "Área / Departamento": "Inventario Garcia",
+          "Últimos Dígitos": ""
+        },
+        "Área": "Inventario Garcia 2026-10-23"
+      },
+      {
+        "Fecha_Captura": "26/10 08:42",
+        "Código": "7506557633652",
+        "Nombre": "CLK GORRO INFANTIL REDONDO",
+        "Caducidad": "",
+        "Bultos": 60,
+        "Piezas": 1,
+        "Total": 60,
+        "Precio": 0,
+        "_extraData": {
+          "Detalle": "",
+          "Fecha": "22/10 10:49",
+          "Total Bultos": 1,
+          "Área / Departamento": "Inventario Garcia",
+          "Últimos Dígitos": ""
+        },
+        "Área": "Inventario Garcia 2026-10-23"
+      },
+      {
+        "Fecha_Captura": "26/10 08:42",
+        "Código": "7506557644207",
+        "Nombre": "EB BLUSA MANGALARGA JUVENIL",
+        "Caducidad": "",
+        "Bultos": 40,
+        "Piezas": 1,
+        "Total": 40,
+        "Precio": 0,
+        "_extraData": {
+          "Detalle": "",
+          "Fecha": "22/10 10:44",
+          "Total Bultos": 1,
+          "Área / Departamento": "Inventario Garcia",
+          "Últimos Dígitos": ""
+        },
+        "Área": "Inventario Garcia 2026-10-23"
+      },
+      {
+        "Fecha_Captura": "26/10 08:42",
+        "Código": "7506557635465",
+        "Nombre": "EB CALCETINES BEBÉ",
+        "Caducidad": "",
+        "Bultos": 240,
+        "Piezas": 1,
+        "Total": 240,
+        "Precio": 0,
+        "_extraData": {
+          "Detalle": "",
+          "Fecha": "22/10 10:43",
+          "Total Bultos": 1,
+          "Área / Departamento": "Inventario Garcia",
+          "Últimos Dígitos": ""
+        },
+        "Área": "Inventario Garcia 2026-10-23"
+      },
+      {
+        "Fecha_Captura": "26/10 08:42",
+        "Código": "7506557647970",
+        "Nombre": "ZT GORRO INVERNAL DAMA",
+        "Caducidad": "",
+        "Bultos": 60,
+        "Piezas": 1,
+        "Total": 60,
+        "Precio": 0,
+        "_extraData": {
+          "Detalle": "",
+          "Fecha": "22/10 10:42",
+          "Total Bultos": 1,
+          "Área / Departamento": "Inventario Garcia",
+          "Últimos Dígitos": ""
+        },
+        "Área": "Inventario Garcia 2026-10-23"
+      },
+      {
+        "Fecha_Captura": "26/10 08:42",
+        "Código": "7506557603747",
+        "Nombre": "BRASIER PARA DAMA",
+        "Caducidad": "",
+        "Bultos": 60,
+        "Piezas": 1,
+        "Total": 60,
+        "Precio": 0,
+        "_extraData": {
+          "Detalle": "",
+          "Fecha": "22/10 10:41",
+          "Total Bultos": 1,
+          "Área / Departamento": "Inventario Garcia",
+          "Últimos Dígitos": ""
+        },
+        "Área": "Inventario Garcia 2026-10-23"
+      },
+      {
+        "Fecha_Captura": "26/10 08:42",
+        "Código": "75065557648038",
+        "Nombre": "EB CALCETINES TIPO PANTUFLA DAMA",
+        "Caducidad": "",
+        "Bultos": 26,
+        "Piezas": 1,
+        "Total": 26,
+        "Precio": 0,
+        "_extraData": {
+          "Detalle": "",
+          "Fecha": "22/10 10:38",
+          "Total Bultos": 1,
+          "Área / Departamento": "Inventario Garcia",
+          "Últimos Dígitos": ""
+        },
+        "Área": "Inventario Garcia 2026-10-23"
+      },
+      {
+        "Fecha_Captura": "26/10 08:42",
+        "Código": "7506557600067",
+        "Nombre": "CLK FALDA DAMA ELÁSTICO VISIBLE",
+        "Caducidad": "",
+        "Bultos": 60,
+        "Piezas": 1,
+        "Total": 80,
+        "Precio": 0,
+        "_extraData": {
+          "Detalle": "",
+          "Fecha": "22/10 10:40",
+          "Total Bultos": 2,
+          "Área / Departamento": "Inventario Garcia",
+          "Últimos Dígitos": ""
+        },
+        "Área": "Inventario Garcia 2026-10-23"
+      },
+      {
+        "Fecha_Captura": "26/10 08:42",
+        "Código": "7506557649660",
+        "Nombre": "TRGT PLAYERA VARIEDAD INFANTIL",
+        "Caducidad": "",
+        "Bultos": 60,
+        "Piezas": 1,
+        "Total": 60,
+        "Precio": 0,
+        "_extraData": {
+          "Detalle": "",
+          "Fecha": "22/10 10:36",
+          "Total Bultos": 1,
+          "Área / Departamento": "Inventario Garcia",
+          "Últimos Dígitos": ""
+        },
+        "Área": "Inventario Garcia 2026-10-23"
+      },
+      {
+        "Fecha_Captura": "26/10 08:42",
+        "Código": "7506557625312",
+        "Nombre": "EB DAMA CURVY HOMBRO PASADO",
+        "Caducidad": "",
+        "Bultos": 60,
+        "Piezas": 1,
+        "Total": 60,
+        "Precio": 0,
+        "_extraData": {
+          "Detalle": "",
+          "Fecha": "22/10 10:34",
+          "Total Bultos": 1,
+          "Área / Departamento": "Inventario Garcia",
+          "Últimos Dígitos": ""
+        },
+        "Área": "Inventario Garcia 2026-10-23"
+      },
+      {
+        "Fecha_Captura": "26/10 08:42",
+        "Código": "7506352895545",
+        "Nombre": "FALDA",
+        "Caducidad": "",
+        "Bultos": 60,
+        "Piezas": 1,
+        "Total": 60,
+        "Precio": 0,
+        "_extraData": {
+          "Detalle": "",
+          "Fecha": "22/10 10:33",
+          "Total Bultos": 1,
+          "Área / Departamento": "Inventario Garcia",
+          "Últimos Dígitos": ""
+        },
+        "Área": "Inventario Garcia 2026-10-23"
+      },
+      {
+        "Fecha_Captura": "26/10 08:42",
+        "Código": "7506557640247",
+        "Nombre": "EB FALDA DAMA TABLEADA",
+        "Caducidad": "",
+        "Bultos": 60,
+        "Piezas": 1,
+        "Total": 60,
+        "Precio": 0,
+        "_extraData": {
+          "Detalle": "",
+          "Fecha": "22/10 10:27",
+          "Total Bultos": 1,
+          "Área / Departamento": "Inventario Garcia",
+          "Últimos Dígitos": ""
+        },
+        "Área": "Inventario Garcia 2026-10-23"
+      },
+      {
+        "Fecha_Captura": "26/10 08:42",
+        "Código": "7506557625299",
+        "Nombre": "EB BLUSA DAMA JUVENIL",
+        "Caducidad": "",
+        "Bultos": 60,
+        "Piezas": 3,
+        "Total": 180,
+        "Precio": 0,
+        "_extraData": {
+          "Detalle": "",
+          "Fecha": "22/10 10:37",
+          "Total Bultos": 3,
+          "Área / Departamento": "Inventario Garcia",
+          "Últimos Dígitos": ""
+        },
+        "Área": "Inventario Garcia 2026-10-23"
+      },
+      {
+        "Fecha_Captura": "26/10 08:42",
+        "Código": "7506557625831",
+        "Nombre": "CLK BLUSA DAMA 3/4 ESCAROLA",
+        "Caducidad": "",
+        "Bultos": 60,
+        "Piezas": 1,
+        "Total": 60,
+        "Precio": 0,
+        "_extraData": {
+          "Detalle": "",
+          "Fecha": "22/10 10:24",
+          "Total Bultos": 1,
+          "Área / Departamento": "Inventario Garcia",
+          "Últimos Dígitos": ""
+        },
+        "Área": "Inventario Garcia 2026-10-23"
+      },
+      {
+        "Fecha_Captura": "26/10 08:42",
+        "Código": "7506352893015",
+        "Nombre": "PANTALETA JUVENIL FRANCÉS EST",
+        "Caducidad": "",
+        "Bultos": 300,
+        "Piezas": 1,
+        "Total": 300,
+        "Precio": 0,
+        "_extraData": {
+          "Detalle": "",
+          "Fecha": "22/10 10:23",
+          "Total Bultos": 1,
+          "Área / Departamento": "Inventario Garcia",
+          "Últimos Dígitos": ""
+        },
+        "Área": "Inventario Garcia 2026-10-23"
+      },
+      {
+        "Fecha_Captura": "26/10 08:42",
+        "Código": "7506557650666",
+        "Nombre": "LOGIN VARIEDAD BUFANDA GUANTES UNA PIEZA",
+        "Caducidad": "",
+        "Bultos": 60,
+        "Piezas": 1,
+        "Total": 60,
+        "Precio": 0,
+        "_extraData": {
+          "Detalle": "",
+          "Fecha": "22/10 10:21",
+          "Total Bultos": 1,
+          "Área / Departamento": "Inventario Garcia",
+          "Últimos Dígitos": ""
+        },
+        "Área": "Inventario Garcia 2026-10-23"
+      },
+      {
+        "Fecha_Captura": "26/10 08:42",
+        "Código": "7506557636035",
+        "Nombre": "EB PULOVER DAMA CASUAL",
+        "Caducidad": "",
+        "Bultos": 70,
+        "Piezas": 1,
+        "Total": 70,
+        "Precio": 0,
+        "_extraData": {
+          "Detalle": "",
+          "Fecha": "22/10 10:19",
+          "Total Bultos": 1,
+          "Área / Departamento": "Inventario Garcia",
+          "Últimos Dígitos": ""
+        },
+        "Área": "Inventario Garcia 2026-10-23"
+      },
+      {
+        "Fecha_Captura": "26/10 08:42",
+        "Código": "681307557758",
+        "Nombre": "PLAYERA PARA NIÑO",
+        "Caducidad": "",
+        "Bultos": 20,
+        "Piezas": 1,
+        "Total": 20,
+        "Precio": 0,
+        "_extraData": {
+          "Detalle": "",
+          "Fecha": "22/10 10:13",
+          "Total Bultos": 1,
+          "Área / Departamento": "Inventario Garcia",
+          "Últimos Dígitos": ""
+        },
+        "Área": "Inventario Garcia 2026-10-23"
+      },
+      {
+        "Fecha_Captura": "26/10 08:42",
+        "Código": "7506352891363",
+        "Nombre": "OREJAS INVERNALES PARA DAMA",
+        "Caducidad": "",
+        "Bultos": 29,
+        "Piezas": 1,
+        "Total": 29,
+        "Precio": 0,
+        "_extraData": {
+          "Detalle": "",
+          "Fecha": "22/10 10:11",
+          "Total Bultos": 1,
+          "Área / Departamento": "Inventario Garcia",
+          "Últimos Dígitos": ""
+        },
+        "Área": "Inventario Garcia 2026-10-23"
+      },
+      {
+        "Fecha_Captura": "26/10 08:42",
+        "Código": "7506352891318",
+        "Nombre": "GORRO INVERNAL DAMA",
+        "Caducidad": "",
+        "Bultos": 1,
+        "Piezas": 1,
+        "Total": 1,
+        "Precio": 0,
+        "_extraData": {
+          "Detalle": "",
+          "Fecha": "22/10 10:10",
+          "Total Bultos": 0,
+          "Área / Departamento": "Inventario Garcia",
+          "Últimos Dígitos": ""
+        },
+        "Área": "Inventario Garcia 2026-10-23"
+      },
+      {
+        "Fecha_Captura": "26/10 08:42",
+        "Código": "7506557633935",
+        "Nombre": "EB GORRO NIÑA INVERNAL",
+        "Caducidad": "",
+        "Bultos": 3,
+        "Piezas": 41,
+        "Total": 123,
+        "Precio": 0,
+        "_extraData": {
+          "Detalle": "",
+          "Fecha": "22/10 10:51",
+          "Total Bultos": 3,
+          "Área / Departamento": "Inventario Garcia",
+          "Últimos Dígitos": ""
+        },
+        "Área": "Inventario Garcia 2026-10-23"
+      },
+      {
+        "Fecha_Captura": "26/10 08:42",
+        "Código": "7506557663652",
+        "Nombre": "CLK GORRO INFANTIL REDONDO",
+        "Caducidad": "",
+        "Bultos": 6,
+        "Piezas": 1,
+        "Total": 6,
+        "Precio": 0,
+        "_extraData": {
+          "Detalle": "",
+          "Fecha": "22/10 10:08",
+          "Total Bultos": 0,
+          "Área / Departamento": "Inventario Garcia",
+          "Últimos Dígitos": ""
+        },
+        "Área": "Inventario Garcia 2026-10-23"
+      },
+      {
+        "Fecha_Captura": "26/10 08:42",
+        "Código": "7506557647956",
+        "Nombre": "ZT GORRO INVERNAL NIÑA",
+        "Caducidad": "",
+        "Bultos": 26,
+        "Piezas": 1,
+        "Total": 26,
+        "Precio": 0,
+        "_extraData": {
+          "Detalle": "",
+          "Fecha": "22/10 10:07",
+          "Total Bultos": 1,
+          "Área / Departamento": "Inventario Garcia",
+          "Últimos Dígitos": ""
+        },
+        "Área": "Inventario Garcia 2026-10-23"
+      },
+      {
+        "Fecha_Captura": "26/10 08:42",
+        "Código": "7506557649455",
+        "Nombre": "MARIO",
+        "Caducidad": "",
+        "Bultos": 36,
+        "Piezas": 1,
+        "Total": 36,
+        "Precio": 0,
+        "_extraData": {
+          "Detalle": "",
+          "Fecha": "22/10 10:05",
+          "Total Bultos": 1,
+          "Área / Departamento": "Inventario Garcia",
+          "Últimos Dígitos": ""
+        },
+        "Área": "Inventario Garcia 2026-10-23"
+      },
+      {
+        "Fecha_Captura": "26/10 08:42",
+        "Código": "7502020400274",
+        "Nombre": "MARIO",
+        "Caducidad": "",
+        "Bultos": 36,
+        "Piezas": 1,
+        "Total": 36,
+        "Precio": 0,
+        "_extraData": {
+          "Detalle": "",
+          "Fecha": "22/10 10:04",
+          "Total Bultos": 1,
+          "Área / Departamento": "Inventario Garcia",
+          "Últimos Dígitos": ""
+        },
+        "Área": "Inventario Garcia 2026-10-23"
+      },
+      {
+        "Fecha_Captura": "26/10 08:42",
+        "Código": "7506557647987",
+        "Nombre": "ZT GORRO INVERNAL DAMA",
+        "Caducidad": "",
+        "Bultos": 60,
+        "Piezas": 2,
+        "Total": 120,
+        "Precio": 0,
+        "_extraData": {
+          "Detalle": "",
+          "Fecha": "22/10 10:06",
+          "Total Bultos": 2,
+          "Área / Departamento": "Inventario Garcia",
+          "Últimos Dígitos": ""
+        },
+        "Área": "Inventario Garcia 2026-10-23"
+      },
+      {
+        "Fecha_Captura": "26/10 08:42",
+        "Código": "7506557608377",
+        "Nombre": "BUFANDA",
+        "Caducidad": "",
+        "Bultos": 50,
+        "Piezas": 3,
+        "Total": 150,
+        "Precio": 0,
+        "_extraData": {
+          "Detalle": "",
+          "Fecha": "22/10 17:11",
+          "Total Bultos": 1,
+          "Área / Departamento": "Inventario Garcia",
+          "Últimos Dígitos": ""
+        },
+        "Área": "Inventario Garcia 2026-10-23"
+      },
+      {
+        "Fecha_Captura": "26/10 08:42",
+        "Código": "7506557649950",
+        "Nombre": "MARIO",
+        "Caducidad": "",
+        "Bultos": 60,
+        "Piezas": 1,
+        "Total": 60,
+        "Precio": 0,
+        "_extraData": {
+          "Detalle": "",
+          "Fecha": "22/10 09:40",
+          "Total Bultos": 1,
+          "Área / Departamento": "Inventario Garcia",
+          "Últimos Dígitos": ""
+        },
+        "Área": "Inventario Garcia 2026-10-23"
+      },
+      {
+        "Fecha_Captura": "26/10 08:42",
+        "Código": "7506557608360",
+        "Nombre": "MARIO",
+        "Caducidad": "",
+        "Bultos": 60,
+        "Piezas": 14,
+        "Total": 840,
+        "Precio": 0,
+        "_extraData": {
+          "Detalle": "",
+          "Fecha": "22/10 17:08",
+          "Total Bultos": 9,
+          "Área / Departamento": "Inventario Garcia",
+          "Últimos Dígitos": ""
+        },
+        "Área": "Inventario Garcia 2026-10-23"
+      },
+      {
+        "Fecha_Captura": "26/10 08:42",
+        "Código": "7506557634277",
+        "Nombre": "FERNANDA (VERANO)",
+        "Caducidad": "",
+        "Bultos": 100,
+        "Piezas": 1,
+        "Total": 123,
+        "Precio": 0,
+        "_extraData": {
+          "Detalle": "",
+          "Fecha": "22/10 16:55",
+          "Total Bultos": 1,
+          "Área / Departamento": "Inventario Garcia",
+          "Últimos Dígitos": ""
+        },
+        "Área": "Inventario Garcia 2026-10-23"
+      },
+      {
+        "Fecha_Captura": "26/10 08:42",
+        "Código": "681307557826",
+        "Nombre": "MARIO",
+        "Caducidad": "",
+        "Bultos": 100,
+        "Piezas": 1,
+        "Total": 100,
+        "Precio": 0,
+        "_extraData": {
+          "Detalle": "",
+          "Fecha": "22/10 09:37",
+          "Total Bultos": 1,
+          "Área / Departamento": "Inventario Garcia",
+          "Últimos Dígitos": ""
+        },
+        "Área": "Inventario Garcia 2026-10-23"
+      },
+      {
+        "Fecha_Captura": "26/10 08:42",
+        "Código": "7506557634802",
+        "Nombre": "EB BLUSA LIGAS EN MANGAS JUVENIL",
+        "Caducidad": "",
+        "Bultos": 60,
+        "Piezas": 1,
+        "Total": 60,
+        "Precio": 0,
+        "_extraData": {
+          "Detalle": "",
+          "Fecha": "22/10 09:36",
+          "Total Bultos": 1,
+          "Área / Departamento": "Inventario Garcia",
+          "Últimos Dígitos": ""
+        },
+        "Área": "Inventario Garcia 2026-10-23"
+      },
+      {
+        "Fecha_Captura": "26/10 08:42",
+        "Código": "7502020400363",
+        "Nombre": "VERONICA",
+        "Caducidad": "",
+        "Bultos": 36,
+        "Piezas": 1,
+        "Total": 36,
+        "Precio": 0,
+        "_extraData": {
+          "Detalle": "",
+          "Fecha": "22/10 09:34",
+          "Total Bultos": 1,
+          "Área / Departamento": "Inventario Garcia",
+          "Últimos Dígitos": ""
+        },
+        "Área": "Inventario Garcia 2026-10-23"
+      },
+      {
+        "Fecha_Captura": "26/10 08:42",
+        "Código": "681307557772",
+        "Nombre": "PLAYERA NIÑO",
+        "Caducidad": "",
+        "Bultos": 60,
+        "Piezas": 1,
+        "Total": 62,
+        "Precio": 0,
+        "_extraData": {
+          "Detalle": "",
+          "Fecha": "22/10 16:52",
+          "Total Bultos": 1,
+          "Área / Departamento": "Inventario Garcia",
+          "Últimos Dígitos": ""
+        },
+        "Área": "Inventario Garcia 2026-10-23"
+      },
+      {
+        "Fecha_Captura": "26/10 08:42",
+        "Código": "7506557634284",
+        "Nombre": "ELZ ARTICULOS VARIOS DEV",
+        "Caducidad": "",
+        "Bultos": 10,
+        "Piezas": 1,
+        "Total": 10,
+        "Precio": 0,
+        "_extraData": {
+          "Detalle": "",
+          "Fecha": "22/10 09:31",
+          "Total Bultos": 1,
+          "Área / Departamento": "Inventario Garcia",
+          "Últimos Dígitos": ""
+        },
+        "Área": "Inventario Garcia 2026-10-23"
+      },
+      {
+        "Fecha_Captura": "26/10 08:42",
+        "Código": "681307557727",
+        "Nombre": "FERNANDA",
+        "Caducidad": "",
+        "Bultos": 36,
+        "Piezas": 1,
+        "Total": 36,
+        "Precio": 0,
+        "_extraData": {
+          "Detalle": "",
+          "Fecha": "22/10 09:30",
+          "Total Bultos": 1,
+          "Área / Departamento": "Inventario Garcia",
+          "Últimos Dígitos": ""
+        },
+        "Área": "Inventario Garcia 2026-10-23"
+      },
+      {
+        "Fecha_Captura": "26/10 08:42",
+        "Código": "7506352889278",
+        "Nombre": "BLUSA DAMA",
+        "Caducidad": "",
+        "Bultos": 3,
+        "Piezas": 1,
+        "Total": 3,
+        "Precio": 0,
+        "_extraData": {
+          "Detalle": "",
+          "Fecha": "22/10 09:27",
+          "Total Bultos": 1,
+          "Área / Departamento": "Inventario Garcia",
+          "Últimos Dígitos": ""
+        },
+        "Área": "Inventario Garcia 2026-10-23"
+      },
+      {
+        "Fecha_Captura": "26/10 08:42",
+        "Código": "7506557600036",
+        "Nombre": "DAMA BLUSA",
+        "Caducidad": "",
+        "Bultos": 9,
+        "Piezas": 1,
+        "Total": 9,
+        "Precio": 0,
+        "_extraData": {
+          "Detalle": "",
+          "Fecha": "22/10 09:27",
+          "Total Bultos": 1,
+          "Área / Departamento": "Inventario Garcia",
+          "Últimos Dígitos": ""
+        },
+        "Área": "Inventario Garcia 2026-10-23"
+      },
+      {
+        "Fecha_Captura": "26/10 08:42",
+        "Código": "7506557635526",
+        "Nombre": "MARIO",
+        "Caducidad": "",
+        "Bultos": 60,
+        "Piezas": 1,
+        "Total": 60,
+        "Precio": 0,
+        "_extraData": {
+          "Detalle": "",
+          "Fecha": "22/10 09:24",
+          "Total Bultos": 1,
+          "Área / Departamento": "Inventario Garcia",
+          "Últimos Dígitos": ""
+        },
+        "Área": "Inventario Garcia 2026-10-23"
+      },
+      {
+        "Fecha_Captura": "26/10 08:42",
+        "Código": "7506557635502",
+        "Nombre": "EB PANTALON PIJAMA NIÑA POLAR",
+        "Caducidad": "",
+        "Bultos": 2,
+        "Piezas": 1,
+        "Total": 2,
+        "Precio": 0,
+        "_extraData": {
+          "Detalle": "",
+          "Fecha": "22/10 09:22",
+          "Total Bultos": 1,
+          "Área / Departamento": "Inventario Garcia",
+          "Últimos Dígitos": ""
+        },
+        "Área": "Inventario Garcia 2026-10-23"
+      },
+      {
+        "Fecha_Captura": "26/10 08:42",
+        "Código": "7506352895492",
+        "Nombre": "PIJAMA PANTALON DAMA POLAR2018",
+        "Caducidad": "",
+        "Bultos": 7,
+        "Piezas": 1,
+        "Total": 7,
+        "Precio": 0,
+        "_extraData": {
+          "Detalle": "",
+          "Fecha": "22/10 09:21",
+          "Total Bultos": 1,
+          "Área / Departamento": "Inventario Garcia",
+          "Últimos Dígitos": ""
+        },
+        "Área": "Inventario Garcia 2026-10-23"
+      },
+      {
+        "Fecha_Captura": "26/10 08:42",
+        "Código": "7506557648090",
+        "Nombre": "VERONICA",
+        "Caducidad": "",
+        "Bultos": 48,
+        "Piezas": 1,
+        "Total": 48,
+        "Precio": 0,
+        "_extraData": {
+          "Detalle": "",
+          "Fecha": "22/10 09:17",
+          "Total Bultos": 1,
+          "Área / Departamento": "Inventario Garcia",
+          "Últimos Dígitos": ""
+        },
+        "Área": "Inventario Garcia 2026-10-23"
+      },
+      {
+        "Fecha_Captura": "26/10 08:42",
+        "Código": "7506557644894",
+        "Nombre": "EB VARIEDAD ARTICULOS FABRICA",
+        "Caducidad": "",
+        "Bultos": 200,
+        "Piezas": 2,
+        "Total": 400,
+        "Precio": 0,
+        "_extraData": {
+          "Detalle": "",
+          "Fecha": "22/10 09:17",
+          "Total Bultos": 2,
+          "Área / Departamento": "Inventario Garcia",
+          "Últimos Dígitos": ""
+        },
+        "Área": "Inventario Garcia 2026-10-23"
+      },
+      {
+        "Fecha_Captura": "26/10 08:42",
+        "Código": "681307555358",
+        "Nombre": "EB CHAMARRA CAPUCHA POLIÉSTER NIÑA",
+        "Caducidad": "",
+        "Bultos": 36,
+        "Piezas": 1,
+        "Total": 36,
+        "Precio": 0,
+        "_extraData": {
+          "Detalle": "",
+          "Fecha": "22/10 08:58",
+          "Total Bultos": 1,
+          "Área / Departamento": "Inventario Garcia",
+          "Últimos Dígitos": ""
+        },
+        "Área": "Inventario Garcia 2026-10-23"
+      },
+      {
+        "Fecha_Captura": "26/10 08:42",
+        "Código": "7506557624698",
+        "Nombre": "CHAMARRA PARA DAMA",
+        "Caducidad": "",
+        "Bultos": 11,
+        "Piezas": 2,
+        "Total": 25,
+        "Precio": 0,
+        "_extraData": {
+          "Detalle": "",
+          "Fecha": "22/10 08:54",
+          "Total Bultos": 2,
+          "Área / Departamento": "Inventario Garcia",
+          "Últimos Dígitos": ""
+        },
+        "Área": "Inventario Garcia 2026-10-23"
+      },
+      {
+        "Fecha_Captura": "26/10 08:42",
+        "Código": "7506557620164",
+        "Nombre": "CONJUNTO NIÑA INVIERNO",
+        "Caducidad": "",
+        "Bultos": 36,
+        "Piezas": 1,
+        "Total": 36,
+        "Precio": 0,
+        "_extraData": {
+          "Detalle": "",
+          "Fecha": "22/10 08:53",
+          "Total Bultos": 1,
+          "Área / Departamento": "Inventario Garcia",
+          "Últimos Dígitos": ""
+        },
+        "Área": "Inventario Garcia 2026-10-23"
+      },
+      {
+        "Fecha_Captura": "26/10 08:42",
+        "Código": "7506557644887",
+        "Nombre": "S/N",
+        "Caducidad": "",
+        "Bultos": 200,
+        "Piezas": 1,
+        "Total": 200,
+        "Precio": 0,
+        "_extraData": {
+          "Detalle": "",
+          "Fecha": "22/10 08:30",
+          "Total Bultos": 1,
+          "Área / Departamento": "Inventario Garcia",
+          "Últimos Dígitos": ""
+        },
+        "Área": "Inventario Garcia 2026-10-23"
+      },
+      {
+        "Fecha_Captura": "26/10 08:42",
+        "Código": "7506352888752",
+        "Nombre": "JEANS MODELAJE DAMA",
+        "Caducidad": "",
+        "Bultos": 17,
+        "Piezas": 1,
+        "Total": 17,
+        "Precio": 0,
+        "_extraData": {
+          "Detalle": "",
+          "Fecha": "22/10 08:29",
+          "Total Bultos": 1,
+          "Área / Departamento": "Inventario Garcia",
+          "Últimos Dígitos": ""
+        },
+        "Área": "Inventario Garcia 2026-10-23"
+      },
+      {
+        "Fecha_Captura": "26/10 08:42",
+        "Código": "7506557645150",
+        "Nombre": "SHORT CABALLERO",
+        "Caducidad": "",
+        "Bultos": 28,
+        "Piezas": 1,
+        "Total": 31,
+        "Precio": 0,
+        "_extraData": {
+          "Detalle": "",
+          "Fecha": "22/10 13:06",
+          "Total Bultos": 1,
+          "Área / Departamento": "Inventario Garcia",
+          "Últimos Dígitos": ""
+        },
+        "Área": "Inventario Garcia 2026-10-23"
+      },
+      {
+        "Fecha_Captura": "26/10 08:42",
+        "Código": "7506557614156",
+        "Nombre": "PANTALÓN CASUAL DAMA",
+        "Caducidad": "",
+        "Bultos": 26,
+        "Piezas": 3,
+        "Total": 70,
+        "Precio": 0,
+        "_extraData": {
+          "Detalle": "",
+          "Fecha": "22/10 12:21",
+          "Total Bultos": 2,
+          "Área / Departamento": "Inventario Garcia",
+          "Últimos Dígitos": ""
+        },
+        "Área": "Inventario Garcia 2026-10-23"
+      },
+      {
+        "Fecha_Captura": "26/10 08:42",
+        "Código": "7506557636424",
+        "Nombre": "DINO PANTALON CABALLERO MEZCLILLA",
+        "Caducidad": "",
+        "Bultos": 52,
+        "Piezas": 2,
+        "Total": 200,
+        "Precio": 0,
+        "_extraData": {
+          "Detalle": "50 c/u",
+          "Fecha": "21/10 21:12",
+          "Total Bultos": 2,
+          "Área / Departamento": "Inventario Garcia",
+          "Últimos Dígitos": "6424"
+        },
+        "Área": "Inventario Garcia 2026-10-23, bodega ropa"
+      },
+      {
+        "Fecha_Captura": "26/10 08:42",
+        "Código": "7506557641800",
+        "Nombre": "DINO PANTALON CABALLERO MEZCLILLA",
+        "Caducidad": "",
+        "Bultos": 62,
+        "Piezas": 14,
+        "Total": 840,
+        "Precio": 0,
+        "_extraData": {
+          "Detalle": "7 bultos de 72 pcs + 5 bultos de 48 pcs",
+          "Fecha": "22/10 11:01",
+          "Total Bultos": 14,
+          "Área / Departamento": "Inventario Garcia",
+          "Últimos Dígitos": "1800"
+        },
+        "Área": "Inventario Garcia 2026-10-23"
+      },
+      {
+        "Fecha_Captura": "26/10 08:42",
+        "Código": "7506557644962",
+        "Nombre": "ITEM 100123818 (MONICA A.)",
+        "Caducidad": "",
+        "Bultos": 50,
+        "Piezas": 1,
+        "Total": 50,
+        "Precio": 0,
+        "_extraData": {
+          "Detalle": "50 c/u",
+          "Fecha": "21/10 11:34",
+          "Total Bultos": 1,
+          "Área / Departamento": "Inventario Garcia",
+          "Últimos Dígitos": "4962"
+        },
+        "Área": "Inventario Garcia 2026-10-23"
+      },
+      {
+        "Fecha_Captura": "26/10 08:42",
+        "Código": "7506557648076",
+        "Nombre": "EB PANTALÓN DAMA (CONTROL-80021 / 74840 / 71881)",
+        "Caducidad": "",
+        "Bultos": 48,
+        "Piezas": 5,
+        "Total": 240,
+        "Precio": 0,
+        "_extraData": {
+          "Detalle": "48 c/u",
+          "Fecha": "22/10 09:42",
+          "Total Bultos": 5,
+          "Área / Departamento": "Inventario Garcia",
+          "Últimos Dígitos": "8076"
+        },
+        "Área": "Inventario Garcia 2026-10-23"
+      },
+      {
+        "Fecha_Captura": "26/10 08:42",
+        "Código": "7506557626517",
+        "Nombre": "FZ PANTALON CABALLERO MEZCLILLA",
+        "Caducidad": "",
+        "Bultos": 48,
+        "Piezas": 2,
+        "Total": 98,
+        "Precio": 0,
+        "_extraData": {
+          "Detalle": "48 c/u (+1 pc en bulto mixto)",
+          "Fecha": "22/10 17:59",
+          "Total Bultos": 2,
+          "Área / Departamento": "Inventario Garcia",
+          "Últimos Dígitos": "6517"
+        },
+        "Área": "Inventario Garcia 2026-10-23"
+      },
+      {
+        "Fecha_Captura": "26/10 08:42",
+        "Código": "7506557644023",
+        "Nombre": "FZ PANTALON PIJAMA CABALLERO POLAR",
+        "Caducidad": "",
+        "Bultos": 82,
+        "Piezas": 5,
+        "Total": 444,
+        "Precio": 0,
+        "_extraData": {
+          "Detalle": "2 bultos de 36 pcs + 1 bulto de 84 pcs + 2 bultos de 252 pcs",
+          "Fecha": "22/10 10:34",
+          "Total Bultos": 6,
+          "Área / Departamento": "Inventario Garcia",
+          "Últimos Dígitos": "4023"
+        },
+        "Área": "Inventario Garcia 2026-10-23"
+      },
+      {
+        "Fecha_Captura": "26/10 08:42",
+        "Código": "7506557623578",
+        "Nombre": "FZ PANTALON DEPORTIVO CABALLERO",
+        "Caducidad": "",
+        "Bultos": 60,
+        "Piezas": 6,
+        "Total": 345,
+        "Precio": 0,
+        "_extraData": {
+          "Detalle": "60 c/u",
+          "Fecha": "22/10 14:25",
+          "Total Bultos": 6,
+          "Área / Departamento": "Inventario Garcia",
+          "Últimos Dígitos": "3578"
+        },
+        "Área": "Inventario Garcia 2026-10-23"
+      },
+      {
+        "Fecha_Captura": "26/10 08:42",
+        "Código": "7506557635014",
+        "Nombre": "EB PANTALON PIJAMA DAMA ESTAMPADO",
+        "Caducidad": "",
+        "Bultos": 96,
+        "Piezas": 4,
+        "Total": 387,
+        "Precio": 0,
+        "_extraData": {
+          "Detalle": "96 c/u",
+          "Fecha": "22/10 09:20",
+          "Total Bultos": 4,
+          "Área / Departamento": "Inventario Garcia",
+          "Últimos Dígitos": "5014"
+        },
+        "Área": "Inventario Garcia 2026-10-23"
+      },
+      {
+        "Fecha_Captura": "26/10 08:42",
+        "Código": "681307557796",
+        "Nombre": "PLAYERA CABALLERO (TARGET SM#31 #35)",
+        "Caducidad": "",
+        "Bultos": 60,
+        "Piezas": 2,
+        "Total": 120,
+        "Precio": 0,
+        "_extraData": {
+          "Detalle": "60 c/u",
+          "Fecha": "21/10 11:34",
+          "Total Bultos": 2,
+          "Área / Departamento": "Inventario Garcia",
+          "Últimos Dígitos": "7796"
+        },
+        "Área": "Inventario Garcia 2026-10-23"
+      },
+      {
+        "Fecha_Captura": "26/10 08:42",
+        "Código": "7506557626609",
+        "Nombre": "DINO PANTALON NINA MEZCLILLA",
+        "Caducidad": "",
+        "Bultos": 60,
+        "Piezas": 1,
+        "Total": 60,
+        "Precio": 0,
+        "_extraData": {
+          "Detalle": "60 c/u",
+          "Fecha": "21/10 11:34",
+          "Total Bultos": 1,
+          "Área / Departamento": "Inventario Garcia",
+          "Últimos Dígitos": "6609"
+        },
+        "Área": "Inventario Garcia 2026-10-23"
+      },
+      {
+        "Fecha_Captura": "26/10 08:42",
+        "Código": "7506557648069",
+        "Nombre": "FZ PANTALON VAQUERO CABALLERO",
+        "Caducidad": "",
+        "Bultos": 48,
+        "Piezas": 5,
+        "Total": 240,
+        "Precio": 0,
+        "_extraData": {
+          "Detalle": "48 c/u",
+          "Fecha": "21/10 11:34",
+          "Total Bultos": 5,
+          "Área / Departamento": "Inventario Garcia",
+          "Últimos Dígitos": "8069"
+        },
+        "Área": "Inventario Garcia 2026-10-23"
+      },
+      {
+        "Fecha_Captura": "26/10 08:42",
+        "Código": "7506657626494",
+        "Nombre": "EB SHORT DAMA MEZCLILLA",
+        "Caducidad": "",
+        "Bultos": 72,
+        "Piezas": 2,
+        "Total": 118,
+        "Precio": 0,
+        "_extraData": {
+          "Detalle": "72 c/u (+46 pcs en bulto mixto)",
+          "Fecha": "21/10 11:34",
+          "Total Bultos": 2,
+          "Área / Departamento": "Inventario Garcia",
+          "Últimos Dígitos": "6494"
+        },
+        "Área": "Inventario Garcia 2026-10-23"
+      },
+      {
+        "Fecha_Captura": "26/10 08:42",
+        "Código": "7506557636288",
+        "Nombre": "FZ PANTS NINO",
+        "Caducidad": "",
+        "Bultos": 60,
+        "Piezas": 1,
+        "Total": 60,
+        "Precio": 0,
+        "_extraData": {
+          "Detalle": "60 c/u",
+          "Fecha": "21/10 11:34",
+          "Total Bultos": 1,
+          "Área / Departamento": "Inventario Garcia",
+          "Últimos Dígitos": "6288"
+        },
+        "Área": "Inventario Garcia 2026-10-23"
+      },
+      {
+        "Fecha_Captura": "26/10 08:42",
+        "Código": "7506557649462",
+        "Nombre": "FALDA JUVENIL",
+        "Caducidad": "",
+        "Bultos": 60,
+        "Piezas": 1,
+        "Total": 64,
+        "Precio": 0,
+        "_extraData": {
+          "Detalle": "60 c/u",
+          "Fecha": "22/10 11:30",
+          "Total Bultos": 1,
+          "Área / Departamento": "Inventario Garcia",
+          "Últimos Dígitos": "9462"
+        },
+        "Área": "Inventario Garcia 2026-10-23"
+      },
+      {
+        "Fecha_Captura": "26/10 08:42",
+        "Código": "7506557644559",
+        "Nombre": "SHORTIFALDA ESTAMPADO JUVENIL",
+        "Caducidad": "",
+        "Bultos": 60,
+        "Piezas": 1,
+        "Total": 60,
+        "Precio": 0,
+        "_extraData": {
+          "Detalle": "60 c/u",
+          "Fecha": "21/10 11:34",
+          "Total Bultos": 1,
+          "Área / Departamento": "Inventario Garcia",
+          "Últimos Dígitos": "4559"
+        },
+        "Área": "Inventario Garcia 2026-10-23"
+      },
+      {
+        "Fecha_Captura": "26/10 08:42",
+        "Código": "7506352894807",
+        "Nombre": "FALDA LARGA CON PLISADO",
+        "Caducidad": "",
+        "Bultos": 60,
+        "Piezas": 1,
+        "Total": 71,
+        "Precio": 0,
+        "_extraData": {
+          "Detalle": "60 c/u",
+          "Fecha": "22/10 10:22",
+          "Total Bultos": 2,
+          "Área / Departamento": "Inventario Garcia",
+          "Últimos Dígitos": "4807"
+        },
+        "Área": "Inventario Garcia 2026-10-23"
+      },
+      {
+        "Fecha_Captura": "26/10 08:42",
+        "Código": "7506557618420",
+        "Nombre": "EB FALDA DAMA PLISADA",
+        "Caducidad": "",
+        "Bultos": 60,
+        "Piezas": 1,
+        "Total": 66,
+        "Precio": 0,
+        "_extraData": {
+          "Detalle": "60 c/u + 6 pcs (mixto)",
+          "Fecha": "21/10 11:34",
+          "Total Bultos": 2,
+          "Área / Departamento": "Inventario Garcia",
+          "Últimos Dígitos": "8420"
+        },
+        "Área": "Inventario Garcia 2026-10-23"
+      },
+      {
+        "Fecha_Captura": "26/10 08:42",
+        "Código": "7506557626586",
+        "Nombre": "DINO PANTALON NINA MEZCLILLA",
+        "Caducidad": "",
+        "Bultos": 72,
+        "Piezas": 2,
+        "Total": 144,
+        "Precio": 0,
+        "_extraData": {
+          "Detalle": "72 c/u",
+          "Fecha": "21/10 11:34",
+          "Total Bultos": 2,
+          "Área / Departamento": "Inventario Garcia",
+          "Últimos Dígitos": "6586"
+        },
+        "Área": "Inventario Garcia 2026-10-23"
+      },
+      {
+        "Fecha_Captura": "26/10 08:42",
+        "Código": "7506557628061",
+        "Nombre": "EB SHORTIFALDA DAMA",
+        "Caducidad": "",
+        "Bultos": 60,
+        "Piezas": 1,
+        "Total": 60,
+        "Precio": 0,
+        "_extraData": {
+          "Detalle": "60 c/u",
+          "Fecha": "21/10 11:34",
+          "Total Bultos": 1,
+          "Área / Departamento": "Inventario Garcia",
+          "Últimos Dígitos": "8061"
+        },
+        "Área": "Inventario Garcia 2026-10-23"
+      },
+      {
+        "Fecha_Captura": "26/10 08:42",
+        "Código": "7506557650451",
+        "Nombre": "BLUSA HOMBRO PASADO DAMA",
+        "Caducidad": "",
+        "Bultos": 60,
+        "Piezas": 1,
+        "Total": 60,
+        "Precio": 0,
+        "_extraData": {
+          "Detalle": "60 c/u",
+          "Fecha": "21/10 11:34",
+          "Total Bultos": 1,
+          "Área / Departamento": "Inventario Garcia",
+          "Últimos Dígitos": "451"
+        },
+        "Área": "Inventario Garcia 2026-10-23"
+      },
+      {
+        "Fecha_Captura": "26/10 08:42",
+        "Código": "7506557645044",
+        "Nombre": "EB SET PLAYERA Y PANTS JUVENIL",
+        "Caducidad": "",
+        "Bultos": 60,
+        "Piezas": 1,
+        "Total": 60,
+        "Precio": 0,
+        "_extraData": {
+          "Detalle": "60 c/u",
+          "Fecha": "21/10 11:34",
+          "Total Bultos": 1,
+          "Área / Departamento": "Inventario Garcia",
+          "Últimos Dígitos": "5044"
+        },
+        "Área": "Inventario Garcia 2026-10-23"
+      },
+      {
+        "Fecha_Captura": "26/10 08:42",
+        "Código": "7506557635519",
+        "Nombre": "FZ SUDADERA CABALLERO CON GORRO",
+        "Caducidad": "",
+        "Bultos": 60,
+        "Piezas": 2,
+        "Total": 120,
+        "Precio": 0,
+        "_extraData": {
+          "Detalle": "60 c/u",
+          "Fecha": "21/10 11:34",
+          "Total Bultos": 2,
+          "Área / Departamento": "Inventario Garcia",
+          "Últimos Dígitos": "5519"
+        },
+        "Área": "Inventario Garcia 2026-10-23"
+      },
+      {
+        "Fecha_Captura": "26/10 08:42",
+        "Código": "7506557647369",
+        "Nombre": "EB VARIEDAD ARTICULOS FABRICA",
+        "Caducidad": "",
+        "Bultos": 25,
+        "Piezas": 9,
+        "Total": 225,
+        "Precio": 0,
+        "_extraData": {
+          "Detalle": "25 c/u + 200 pcs",
+          "Fecha": "22/10 09:10 (-)",
+          "Total Bultos": 2,
+          "Área / Departamento": "Inventario Garcia",
+          "Últimos Dígitos": "7369"
+        },
+        "Área": "Inventario Garcia 2026-10-23"
+      },
+      {
+        "Fecha_Captura": "26/10 08:42",
+        "Código": "7506557635458",
+        "Nombre": "EB COBIHOODIE DAMA CAPUCHA",
+        "Caducidad": "",
+        "Bultos": 30,
+        "Piezas": 2,
+        "Total": 60,
+        "Precio": 0,
+        "_extraData": {
+          "Detalle": "30 c/u",
+          "Fecha": "21/10 11:34",
+          "Total Bultos": 2,
+          "Área / Departamento": "Inventario Garcia",
+          "Últimos Dígitos": "5458"
+        },
+        "Área": "Inventario Garcia 2026-10-23"
+      },
+      {
+        "Fecha_Captura": "26/10 08:42",
+        "Código": "7506557624766",
+        "Nombre": "EB CHAMARRA DAMA MEZCLILLA",
+        "Caducidad": "",
+        "Bultos": 36,
+        "Piezas": 5,
+        "Total": 168,
+        "Precio": 0,
+        "_extraData": {
+          "Detalle": "36 c/u + 1 bulto de 24 pcs",
+          "Fecha": "21/10 21:59",
+          "Total Bultos": 3,
+          "Área / Departamento": "Inventario Garcia",
+          "Últimos Dígitos": "4766"
+        },
+        "Área": "Inventario Garcia 2026-10-23"
+      },
+      {
+        "Fecha_Captura": "26/10 08:42",
+        "Código": "7506557620126",
+        "Nombre": "EB CHALECO DAMA CAPITONADO",
+        "Caducidad": "",
+        "Bultos": 8,
+        "Piezas": 1,
+        "Total": 8,
+        "Precio": 0,
+        "_extraData": {
+          "Detalle": "8 c/u",
+          "Fecha": "21/10 11:34",
+          "Total Bultos": 1,
+          "Área / Departamento": "Inventario Garcia",
+          "Últimos Dígitos": "126"
+        },
+        "Área": "Inventario Garcia 2026-10-23"
+      },
+      {
+        "Fecha_Captura": "26/10 08:42",
+        "Código": "7506352881777",
+        "Nombre": "CLK COBIJA ESTAMPADA",
+        "Caducidad": "",
+        "Bultos": 100,
+        "Piezas": 2,
+        "Total": 202,
+        "Precio": 0,
+        "_extraData": {
+          "Detalle": "100 c/u",
+          "Fecha": "22/10 09:25",
+          "Total Bultos": 2,
+          "Área / Departamento": "Inventario Garcia",
+          "Últimos Dígitos": "1777"
+        },
+        "Área": "Inventario Garcia 2026-10-23"
+      },
+      {
+        "Fecha_Captura": "26/10 08:42",
+        "Código": "7506557600166",
+        "Nombre": "TOALLA PARA PLAYA",
+        "Caducidad": "",
+        "Bultos": 60,
+        "Piezas": 1,
+        "Total": 60,
+        "Precio": 0,
+        "_extraData": {
+          "Detalle": "60 c/u",
+          "Fecha": "21/10 11:34",
+          "Total Bultos": 1,
+          "Área / Departamento": "Inventario Garcia",
+          "Últimos Dígitos": "166"
+        },
+        "Área": "Inventario Garcia 2026-10-23"
+      },
+      {
+        "Fecha_Captura": "26/10 08:42",
+        "Código": "7506557632389",
+        "Nombre": "COBIJA CON FORRO",
+        "Caducidad": "",
+        "Bultos": 25,
+        "Piezas": 1,
+        "Total": 25,
+        "Precio": 0,
+        "_extraData": {
+          "Detalle": "25 c/u",
+          "Fecha": "21/10 11:34",
+          "Total Bultos": 1,
+          "Área / Departamento": "Inventario Garcia",
+          "Últimos Dígitos": "2389"
+        },
+        "Área": "Inventario Garcia 2026-10-23"
+      },
+      {
+        "Fecha_Captura": "26/10 08:42",
+        "Código": "7506557607882",
+        "Nombre": "SUDADERA PARA DAMA",
+        "Caducidad": "",
+        "Bultos": 17,
+        "Piezas": 1,
+        "Total": 18,
+        "Precio": 0,
+        "_extraData": {
+          "Detalle": "17 pcs (bulto mixto)",
+          "Fecha": "22/10 11:57",
+          "Total Bultos": 0,
+          "Área / Departamento": "Inventario Garcia",
+          "Últimos Dígitos": "7882"
+        },
+        "Área": "Inventario Garcia 2026-10-23"
+      },
+      {
+        "Fecha_Captura": "26/10 08:42",
+        "Código": "7506557624810",
+        "Nombre": "SUDADERA CR COMB ESTAMP DAMA",
+        "Caducidad": "",
+        "Bultos": 19,
+        "Piezas": 1,
+        "Total": 22,
+        "Precio": 0,
+        "_extraData": {
+          "Detalle": "19 pcs + bulto mixto",
+          "Fecha": "21/10 11:34",
+          "Total Bultos": 1,
+          "Área / Departamento": "Inventario Garcia",
+          "Últimos Dígitos": "4810"
+        },
+        "Área": "Inventario Garcia 2026-10-23"
+      },
+      {
+        "Fecha_Captura": "26/10 08:42",
+        "Código": "7506557624896",
+        "Nombre": "TMU CHAMARRA DAMA VARIEDAD",
+        "Caducidad": "",
+        "Bultos": 6,
+        "Piezas": 1,
+        "Total": 7,
+        "Precio": 0,
+        "_extraData": {
+          "Detalle": "6 pcs (bulto mixto)",
+          "Fecha": "22/10 11:55",
+          "Total Bultos": 0,
+          "Área / Departamento": "Inventario Garcia",
+          "Últimos Dígitos": "4896"
+        },
+        "Área": "Inventario Garcia 2026-10-23"
+      },
+      {
+        "Fecha_Captura": "26/10 08:42",
+        "Código": "7506557640773",
+        "Nombre": "TRGT VARIEDAD ARTICULOS",
+        "Caducidad": "",
+        "Bultos": 40,
+        "Piezas": 1,
+        "Total": 50,
+        "Precio": 0,
+        "_extraData": {
+          "Detalle": "40 pcs (bulto mixto)",
+          "Fecha": "22/10 17:59",
+          "Total Bultos": 1,
+          "Área / Departamento": "Inventario Garcia",
+          "Últimos Dígitos": "773"
+        },
+        "Área": "Inventario Garcia 2026-10-23"
+      },
+      {
+        "Fecha_Captura": "26/10 08:42",
+        "Código": "750820308002",
+        "Nombre": "PRODUCTO UPC 750820308002",
+        "Caducidad": "",
+        "Bultos": 24,
+        "Piezas": 1,
+        "Total": 24,
+        "Precio": 0,
+        "_extraData": {
+          "Detalle": "24 pcs (mismo bulto 0773)",
+          "Fecha": "21/10 11:34",
+          "Total Bultos": 0,
+          "Área / Departamento": "Inventario Garcia",
+          "Últimos Dígitos": "8002"
+        },
+        "Área": "Inventario Garcia 2026-10-23"
+      },
+      {
+        "Fecha_Captura": "26/10 08:42",
+        "Código": "7506557607813",
+        "Nombre": "SUDADERA CASUAL PARA DAMA",
+        "Caducidad": "",
+        "Bultos": 2,
+        "Piezas": 1,
+        "Total": 2,
+        "Precio": 0,
+        "_extraData": {
+          "Detalle": "2 pcs (bulto mixto 1)",
+          "Fecha": "21/10 11:34",
+          "Total Bultos": 0,
+          "Área / Departamento": "Inventario Garcia",
+          "Últimos Dígitos": "7813"
+        },
+        "Área": "Inventario Garcia 2026-10-23"
+      },
+      {
+        "Fecha_Captura": "26/10 08:42",
+        "Código": "7506557625244",
+        "Nombre": "EB SUDADERA DAMA CIR",
+        "Caducidad": "",
+        "Bultos": 5,
+        "Piezas": 1,
+        "Total": 6,
+        "Precio": 0,
+        "_extraData": {
+          "Detalle": "5 pcs (bulto mixto 1)",
+          "Fecha": "22/10 18:00",
+          "Total Bultos": 0,
+          "Área / Departamento": "Inventario Garcia",
+          "Últimos Dígitos": "25244"
+        },
+        "Área": "Inventario Garcia 2026-10-23"
+      },
+      {
+        "Fecha_Captura": "26/10 08:42",
+        "Código": "7506557635489",
+        "Nombre": "EB CONJUNTO PIJAMA DAMA POLAR",
+        "Caducidad": "",
+        "Bultos": 2,
+        "Piezas": 52,
+        "Total": 104,
+        "Precio": 0,
+        "_extraData": {
+          "Detalle": "2 pcs (bulto mixto 1)",
+          "Fecha": "22/10 09:35",
+          "Total Bultos": 2,
+          "Área / Departamento": "Inventario Garcia",
+          "Últimos Dígitos": "5489"
+        },
+        "Área": "Inventario Garcia 2026-10-23"
+      },
+      {
+        "Fecha_Captura": "26/10 08:42",
+        "Código": "7506557650055",
+        "Nombre": "LOGIN SUDADERA DELGADA DAMA",
+        "Caducidad": "",
+        "Bultos": 14,
+        "Piezas": 1,
+        "Total": 15,
+        "Precio": 0,
+        "_extraData": {
+          "Detalle": "14 pcs total",
+          "Fecha": "22/10 13:10",
+          "Total Bultos": 0,
+          "Área / Departamento": "Inventario Garcia",
+          "Últimos Dígitos": "55"
+        },
+        "Área": "Inventario Garcia 2026-10-23"
+      },
+      {
+        "Fecha_Captura": "26/10 08:42",
+        "Código": "7506557635854",
+        "Nombre": "EB SUDADERA DAMA LIGERA APLICACION",
+        "Caducidad": "",
+        "Bultos": 23,
+        "Piezas": 2,
+        "Total": 40,
+        "Precio": 0,
+        "_extraData": {
+          "Detalle": "23 pcs + bulto mixto",
+          "Fecha": "21/10 11:34",
+          "Total Bultos": 1,
+          "Área / Departamento": "Inventario Garcia",
+          "Últimos Dígitos": "5854"
+        },
+        "Área": "Inventario Garcia 2026-10-23"
+      },
+      {
+        "Fecha_Captura": "26/10 08:42",
+        "Código": "7506557601477",
+        "Nombre": "EB BLUSA DAMA CASUAL",
+        "Caducidad": "",
+        "Bultos": 12,
+        "Piezas": 1,
+        "Total": 12,
+        "Precio": 0,
+        "_extraData": {
+          "Detalle": "12 pcs (bulto mixto 2)",
+          "Fecha": "21/10 11:34",
+          "Total Bultos": 0,
+          "Área / Departamento": "Inventario Garcia",
+          "Últimos Dígitos": "1477"
+        },
+        "Área": "Inventario Garcia 2026-10-23"
+      },
+      {
+        "Fecha_Captura": "26/10 08:42",
+        "Código": "7506352899963",
+        "Nombre": "EB BLUSA DAMA CASUAL",
+        "Caducidad": "",
+        "Bultos": 1,
+        "Piezas": 10,
+        "Total": 10,
+        "Precio": 0,
+        "_extraData": {
+          "Detalle": "1 pc (bulto mixto 2)",
+          "Fecha": "22/10 12:29",
+          "Total Bultos": 0,
+          "Área / Departamento": "Inventario Garcia",
+          "Últimos Dígitos": "9963"
+        },
+        "Área": "Inventario Garcia 2026-10-23"
+      },
+      {
+        "Fecha_Captura": "26/10 08:42",
+        "Código": "7506557609640",
+        "Nombre": "TRGT VARIEDAD ARTICULOS 1P",
+        "Caducidad": "",
+        "Bultos": 70,
+        "Piezas": 1,
+        "Total": 78,
+        "Precio": 0,
+        "_extraData": {
+          "Detalle": "70 pcs + 7 pcs",
+          "Fecha": "22/10 15:32",
+          "Total Bultos": 2,
+          "Área / Departamento": "Inventario Garcia",
+          "Últimos Dígitos": "9640"
+        },
+        "Área": "Inventario Garcia 2026-10-23"
+      },
+      {
+        "Fecha_Captura": "26/10 08:42",
+        "Código": "7506557625978",
+        "Nombre": "SPT SUDADERA UNISEX CANGURO GORRO",
+        "Caducidad": "",
+        "Bultos": 3,
+        "Piezas": 1,
+        "Total": 3,
+        "Precio": 0,
+        "_extraData": {
+          "Detalle": "3 pcs (bulto mixto 2)",
+          "Fecha": "21/10 11:34",
+          "Total Bultos": 0,
+          "Área / Departamento": "Inventario Garcia",
+          "Últimos Dígitos": "5978"
+        },
+        "Área": "Inventario Garcia 2026-10-23"
+      },
+      {
+        "Fecha_Captura": "26/10 08:42",
+        "Código": "7506557604058",
+        "Nombre": "FZ CHAMARRA CABALLERO",
+        "Caducidad": "",
+        "Bultos": 12,
+        "Piezas": 1,
+        "Total": 12,
+        "Precio": 0,
+        "_extraData": {
+          "Detalle": "12 pcs (bulto mixto 3)",
+          "Fecha": "21/10 11:34",
+          "Total Bultos": 0,
+          "Área / Departamento": "Inventario Garcia",
+          "Últimos Dígitos": "4058"
+        },
+        "Área": "Inventario Garcia 2026-10-23"
+      },
+      {
+        "Fecha_Captura": "26/10 08:42",
+        "Código": "7506352898638",
+        "Nombre": "CHAMARRA PARA CABALLERO",
+        "Caducidad": "",
+        "Bultos": 5,
+        "Piezas": 1,
+        "Total": 5,
+        "Precio": 0,
+        "_extraData": {
+          "Detalle": "5 pcs (bulto mixto 3)",
+          "Fecha": "21/10 11:34",
+          "Total Bultos": 0,
+          "Área / Departamento": "Inventario Garcia",
+          "Últimos Dígitos": "8638"
+        },
+        "Área": "Inventario Garcia 2026-10-23"
+      },
+      {
+        "Fecha_Captura": "26/10 08:42",
+        "Código": "7506557603907",
+        "Nombre": "FZ CHAMARRA CABALLERO",
+        "Caducidad": "",
+        "Bultos": 5,
+        "Piezas": 1,
+        "Total": 5,
+        "Precio": 0,
+        "_extraData": {
+          "Detalle": "5 pcs (bulto mixto 3)",
+          "Fecha": "21/10 11:34",
+          "Total Bultos": 0,
+          "Área / Departamento": "Inventario Garcia",
+          "Últimos Dígitos": "3907"
+        },
+        "Área": "Inventario Garcia 2026-10-23"
+      },
+      {
+        "Fecha_Captura": "26/10 08:42",
+        "Código": "7506557604102",
+        "Nombre": "FZ CHAMARRA CABALLERO",
+        "Caducidad": "",
+        "Bultos": 5,
+        "Piezas": 1,
+        "Total": 5,
+        "Precio": 0,
+        "_extraData": {
+          "Detalle": "5 pcs (bulto mixto 3)",
+          "Fecha": "21/10 11:34",
+          "Total Bultos": 0,
+          "Área / Departamento": "Inventario Garcia",
+          "Últimos Dígitos": "4102"
+        },
+        "Área": "Inventario Garcia 2026-10-23"
+      },
+      {
+        "Fecha_Captura": "26/10 08:42",
+        "Código": "7506557647741",
+        "Nombre": "EB CHAMARRA CAPITONADA FORRO DAMA",
+        "Caducidad": "",
+        "Bultos": 30,
+        "Piezas": 10,
+        "Total": 288,
+        "Precio": 0,
+        "_extraData": {
+          "Detalle": "30 c/u + bulto adicional (9 bultos)",
+          "Fecha": "22/10 11:55",
+          "Total Bultos": 9,
+          "Área / Departamento": "Inventario Garcia",
+          "Últimos Dígitos": "7741"
+        },
+        "Área": "Inventario Garcia 2026-10-23"
+      },
+      {
+        "Fecha_Captura": "26/10 08:42",
+        "Código": "7506557625572",
+        "Nombre": "BLUSA CAMPESINA SMOCK DAMA",
+        "Caducidad": "",
+        "Bultos": 38,
+        "Piezas": 1,
+        "Total": 38,
+        "Precio": 0,
+        "_extraData": {
+          "Detalle": "38 pcs (bulto mixto 4)",
+          "Fecha": "21/10 11:34",
+          "Total Bultos": 0,
+          "Área / Departamento": "Inventario Garcia",
+          "Últimos Dígitos": "5572"
+        },
+        "Área": "Inventario Garcia 2026-10-23"
+      },
+      {
+        "Fecha_Captura": "26/10 08:42",
+        "Código": "7506352899826",
+        "Nombre": "BLUSA CASUAL DAMA",
+        "Caducidad": "",
+        "Bultos": 2,
+        "Piezas": 19,
+        "Total": 38,
+        "Precio": 0,
+        "_extraData": {
+          "Detalle": "2 pcs (bulto mixto 4)",
+          "Fecha": "22/10 17:36",
+          "Total Bultos": 0,
+          "Área / Departamento": "Inventario Garcia",
+          "Últimos Dígitos": "9826"
+        },
+        "Área": "Inventario Garcia 2026-10-23"
+      },
+      {
+        "Fecha_Captura": "26/10 08:42",
+        "Código": "7506352899819",
+        "Nombre": "EB BLUSA DAMA CASUAL",
+        "Caducidad": "",
+        "Bultos": 3,
+        "Piezas": 2,
+        "Total": 5,
+        "Precio": 0,
+        "_extraData": {
+          "Detalle": "3 pcs (bulto mixto 4)",
+          "Fecha": "22/10 15:11",
+          "Total Bultos": 0,
+          "Área / Departamento": "Inventario Garcia",
+          "Últimos Dígitos": "9819"
+        },
+        "Área": "Inventario Garcia 2026-10-23"
+      },
+      {
+        "Fecha_Captura": "26/10 08:42",
+        "Código": "7506557615856",
+        "Nombre": "EB BLUSA DAMA CASUAL",
+        "Caducidad": "",
+        "Bultos": 15,
+        "Piezas": 1,
+        "Total": 15,
+        "Precio": 0,
+        "_extraData": {
+          "Detalle": "15 pcs (bulto mixto 4)",
+          "Fecha": "21/10 11:34",
+          "Total Bultos": 0,
+          "Área / Departamento": "Inventario Garcia",
+          "Últimos Dígitos": "5856"
+        },
+        "Área": "Inventario Garcia 2026-10-23"
+      },
+      {
+        "Fecha_Captura": "26/10 08:42",
+        "Código": "7506557616198",
+        "Nombre": "BLUSA CASUAL DAMA",
+        "Caducidad": "",
+        "Bultos": 1,
+        "Piezas": 1,
+        "Total": 1,
+        "Precio": 0,
+        "_extraData": {
+          "Detalle": "1 pc (bulto mixto 4)",
+          "Fecha": "21/10 11:34",
+          "Total Bultos": 0,
+          "Área / Departamento": "Inventario Garcia",
+          "Últimos Dígitos": "6198"
+        },
+        "Área": "Inventario Garcia 2026-10-23"
+      },
+      {
+        "Fecha_Captura": "26/10 08:42",
+        "Código": "7506352898270",
+        "Nombre": "VESTIDO PARA DAMA",
+        "Caducidad": "",
+        "Bultos": 15,
+        "Piezas": 1,
+        "Total": 15,
+        "Precio": 0,
+        "_extraData": {
+          "Detalle": "15 pcs total",
+          "Fecha": "21/10 11:34",
+          "Total Bultos": 0,
+          "Área / Departamento": "Inventario Garcia",
+          "Últimos Dígitos": "8270"
+        },
+        "Área": "Inventario Garcia 2026-10-23"
+      },
+      {
+        "Fecha_Captura": "26/10 08:42",
+        "Código": "7506557645143",
+        "Nombre": "EB SHORT SIMULACION FALDA DAMA",
+        "Caducidad": "",
+        "Bultos": 3,
+        "Piezas": 1,
+        "Total": 3,
+        "Precio": 0,
+        "_extraData": {
+          "Detalle": "3 pcs (bulto mixto 4)",
+          "Fecha": "21/10 11:34",
+          "Total Bultos": 0,
+          "Área / Departamento": "Inventario Garcia",
+          "Últimos Dígitos": "5143"
+        },
+        "Área": "Inventario Garcia 2026-10-23"
+      },
+      {
+        "Fecha_Captura": "26/10 08:42",
+        "Código": "7506557601866",
+        "Nombre": "BLUSA CASUAL PARA DAMA",
+        "Caducidad": "",
+        "Bultos": 8,
+        "Piezas": 6,
+        "Total": 48,
+        "Precio": 0,
+        "_extraData": {
+          "Detalle": "8 pcs + 4 pcs",
+          "Fecha": "22/10 17:48",
+          "Total Bultos": 0,
+          "Área / Departamento": "Inventario Garcia",
+          "Últimos Dígitos": "1866"
+        },
+        "Área": "Inventario Garcia 2026-10-23"
+      },
+      {
+        "Fecha_Captura": "26/10 08:42",
+        "Código": "7506557647437",
+        "Nombre": "EB SHORT SIMULACION FALDA DAMA",
+        "Caducidad": "",
+        "Bultos": 3,
+        "Piezas": 1,
+        "Total": 3,
+        "Precio": 0,
+        "_extraData": {
+          "Detalle": "3 pcs (bulto mixto 4)",
+          "Fecha": "21/10 11:34",
+          "Total Bultos": 0,
+          "Área / Departamento": "Inventario Garcia",
+          "Últimos Dígitos": "7437"
+        },
+        "Área": "Inventario Garcia 2026-10-23"
+      },
+      {
+        "Fecha_Captura": "26/10 08:42",
+        "Código": "7506557625558",
+        "Nombre": "CAMISON HOMBRO PASADO DAMA",
+        "Caducidad": "",
+        "Bultos": 10,
+        "Piezas": 1,
+        "Total": 10,
+        "Precio": 0,
+        "_extraData": {
+          "Detalle": "10 pcs (bulto mixto 4)",
+          "Fecha": "21/10 11:34",
+          "Total Bultos": 0,
+          "Área / Departamento": "Inventario Garcia",
+          "Últimos Dígitos": "5558"
+        },
+        "Área": "Inventario Garcia 2026-10-23"
+      },
+      {
+        "Fecha_Captura": "26/10 08:42",
+        "Código": "7506557636240",
+        "Nombre": "EB FALDA DAMA CASUAL PRETINA",
+        "Caducidad": "",
+        "Bultos": 2,
+        "Piezas": 1,
+        "Total": 2,
+        "Precio": 0,
+        "_extraData": {
+          "Detalle": "2 pcs (bulto mixto 4)",
+          "Fecha": "21/10 11:34",
+          "Total Bultos": 0,
+          "Área / Departamento": "Inventario Garcia",
+          "Últimos Dígitos": "6240"
+        },
+        "Área": "Inventario Garcia 2026-10-23"
+      },
+      {
+        "Fecha_Captura": "26/10 08:42",
+        "Código": "681307532748",
+        "Nombre": "ITEM 100139990",
+        "Caducidad": "",
+        "Bultos": 36,
+        "Piezas": 1,
+        "Total": 36,
+        "Precio": 0,
+        "_extraData": {
+          "Detalle": "36 c/u",
+          "Fecha": "21/10 11:34",
+          "Total Bultos": 1,
+          "Área / Departamento": "Inventario Garcia",
+          "Últimos Dígitos": "2748"
+        },
+        "Área": "Inventario Garcia 2026-10-23"
+      },
+      {
+        "Fecha_Captura": "26/10 08:42",
+        "Código": "7506557647840",
+        "Nombre": "FZ CHAMARRA CAPITONADA CABALLERO",
+        "Caducidad": "",
+        "Bultos": 36,
+        "Piezas": 3,
+        "Total": 112,
+        "Precio": 0,
+        "_extraData": {
+          "Detalle": "36 c/u + bulto adicional",
+          "Fecha": "22/10 12:17",
+          "Total Bultos": 2,
+          "Área / Departamento": "Inventario Garcia",
+          "Últimos Dígitos": "7840"
+        },
+        "Área": "Inventario Garcia 2026-10-23"
+      },
+      {
+        "Fecha_Captura": "26/10 08:42",
+        "Código": "7506557649288",
+        "Nombre": "EB SET TOP FRUNCE Y PANTALON DAMA",
+        "Caducidad": "",
+        "Bultos": 40,
+        "Piezas": 1,
+        "Total": 40,
+        "Precio": 0,
+        "_extraData": {
+          "Detalle": "40 c/u",
+          "Fecha": "21/10 11:34",
+          "Total Bultos": 1,
+          "Área / Departamento": "Inventario Garcia",
+          "Últimos Dígitos": "9288"
+        },
+        "Área": "Inventario Garcia 2026-10-23"
+      },
+      {
+        "Fecha_Captura": "26/10 08:42",
+        "Código": "7506557612466",
+        "Nombre": "CLK COJIN DECORATIVO",
+        "Caducidad": "",
+        "Bultos": 30,
+        "Piezas": 1,
+        "Total": 30,
+        "Precio": 0,
+        "_extraData": {
+          "Detalle": "30 c/u",
+          "Fecha": "21/10 11:34",
+          "Total Bultos": 1,
+          "Área / Departamento": "Inventario Garcia",
+          "Últimos Dígitos": "2466"
+        },
+        "Área": "Inventario Garcia 2026-10-23"
+      },
+      {
+        "Fecha_Captura": "26/10 08:42",
+        "Código": "7506557641817",
+        "Nombre": "DINO PANTALON DE MEZCLILLA DAMA",
+        "Caducidad": "",
+        "Bultos": 48,
+        "Piezas": 1,
+        "Total": 48,
+        "Precio": 0,
+        "_extraData": {
+          "Detalle": "48 c/u",
+          "Fecha": "21/10 11:34",
+          "Total Bultos": 1,
+          "Área / Departamento": "Inventario Garcia",
+          "Últimos Dígitos": "1817"
+        },
+        "Área": "Inventario Garcia 2026-10-23"
+      },
+      {
+        "Fecha_Captura": "26/10 08:42",
+        "Código": "7506557644467",
+        "Nombre": "EB SET TOP Y SHORT JUVENIL",
+        "Caducidad": "",
+        "Bultos": 60,
+        "Piezas": 1,
+        "Total": 60,
+        "Precio": 0,
+        "_extraData": {
+          "Detalle": "60 c/u",
+          "Fecha": "21/10 11:34",
+          "Total Bultos": 1,
+          "Área / Departamento": "Inventario Garcia",
+          "Últimos Dígitos": "4467"
+        },
+        "Área": "Inventario Garcia 2026-10-23"
+      },
+      {
+        "Fecha_Captura": "26/10 08:42",
+        "Código": "7506557616518",
+        "Nombre": "VARIEDAD DE ARTICULOS MEZCLILLA",
+        "Caducidad": "",
+        "Bultos": 20,
+        "Piezas": 1,
+        "Total": 24,
+        "Precio": 0,
+        "_extraData": {
+          "Detalle": "20 c/u + 4 pcs",
+          "Fecha": "21/10 11:34",
+          "Total Bultos": 2,
+          "Área / Departamento": "Inventario Garcia",
+          "Últimos Dígitos": "6518"
+        },
+        "Área": "Inventario Garcia 2026-10-23"
+      },
+      {
+        "Fecha_Captura": "26/10 08:42",
+        "Código": "7506557640780",
+        "Nombre": "TRGT VARIEDAD ARTICULOS",
+        "Caducidad": "",
+        "Bultos": 52,
+        "Piezas": 1,
+        "Total": 53,
+        "Precio": 0,
+        "_extraData": {
+          "Detalle": "52 pcs (bulto mixto 5)",
+          "Fecha": "22/10 17:59",
+          "Total Bultos": 0,
+          "Área / Departamento": "Inventario Garcia",
+          "Últimos Dígitos": "780"
+        },
+        "Área": "Inventario Garcia 2026-10-23"
+      },
+      {
+        "Fecha_Captura": "26/10 08:42",
+        "Código": "7506557665003",
+        "Nombre": "ARTICULO VARIADO",
+        "Caducidad": "",
+        "Bultos": 1,
+        "Piezas": 1,
+        "Total": 1,
+        "Precio": 0,
+        "_extraData": {
+          "Detalle": "1 pc (bulto mixto 5)",
+          "Fecha": "21/10 11:34",
+          "Total Bultos": 0,
+          "Área / Departamento": "Inventario Garcia",
+          "Últimos Dígitos": "5003"
+        },
+        "Área": "Inventario Garcia 2026-10-23"
+      },
+      {
+        "Fecha_Captura": "26/10 08:42",
+        "Código": "7506557650529",
+        "Nombre": "LOGIN CHAMARRA BIG DAMA",
+        "Caducidad": "",
+        "Bultos": 2,
+        "Piezas": 3,
+        "Total": 5,
+        "Precio": 0,
+        "_extraData": {
+          "Detalle": "2 pcs + 1 pc (mixto)",
+          "Fecha": "22/10 12:30",
+          "Total Bultos": 0,
+          "Área / Departamento": "Inventario Garcia",
+          "Últimos Dígitos": "529"
+        },
+        "Área": "Inventario Garcia 2026-10-23"
+      },
+      {
+        "Fecha_Captura": "26/10 08:42",
+        "Código": "7506557634154",
+        "Nombre": "VARIEDAD CHAMARRAS DAMA",
+        "Caducidad": "",
+        "Bultos": 1,
+        "Piezas": 2,
+        "Total": 2,
+        "Precio": 0,
+        "_extraData": {
+          "Detalle": "1 pc (bulto mixto chamarras)",
+          "Fecha": "22/10 11:54",
+          "Total Bultos": 0,
+          "Área / Departamento": "Inventario Garcia",
+          "Últimos Dígitos": "4154"
+        },
+        "Área": "Inventario Garcia 2026-10-23"
+      },
+      {
+        "Fecha_Captura": "26/10 08:42",
+        "Código": "7506557650024",
+        "Nombre": "LOGIN CHAMARRA DELGADA DAMA",
+        "Caducidad": "",
+        "Bultos": 2,
+        "Piezas": 3,
+        "Total": 5,
+        "Precio": 0,
+        "_extraData": {
+          "Detalle": "2 pcs + 1 pc (mixto)",
+          "Fecha": "22/10 12:18",
+          "Total Bultos": 0,
+          "Área / Departamento": "Inventario Garcia",
+          "Últimos Dígitos": "24"
+        },
+        "Área": "Inventario Garcia 2026-10-23"
+      },
+      {
+        "Fecha_Captura": "26/10 08:42",
+        "Código": "7506557624414",
+        "Nombre": "CHAMARRA DAMA (4414)",
+        "Caducidad": "",
+        "Bultos": 1,
+        "Piezas": 2,
+        "Total": 2,
+        "Precio": 0,
+        "_extraData": {
+          "Detalle": "1 pc (mixto)",
+          "Fecha": "22/10 12:18",
+          "Total Bultos": 0,
+          "Área / Departamento": "Inventario Garcia",
+          "Últimos Dígitos": "4414"
+        },
+        "Área": "Inventario Garcia 2026-10-23"
+      },
+      {
+        "Fecha_Captura": "26/10 08:42",
+        "Código": "7506557614996",
+        "Nombre": "EB FALDA DAMA CASUAL",
+        "Caducidad": "",
+        "Bultos": 16,
+        "Piezas": 1,
+        "Total": 16,
+        "Precio": 0,
+        "_extraData": {
+          "Detalle": "16 c/u",
+          "Fecha": "21/10 11:34",
+          "Total Bultos": 1,
+          "Área / Departamento": "Inventario Garcia",
+          "Últimos Dígitos": "14996"
+        },
+        "Área": "Inventario Garcia 2026-10-23"
+      },
+      {
+        "Fecha_Captura": "26/10 08:42",
+        "Código": "7506557615603",
+        "Nombre": "BLUSA CASUAL PARA DAMA",
+        "Caducidad": "",
+        "Bultos": 33,
+        "Piezas": 1,
+        "Total": 33,
+        "Precio": 0,
+        "_extraData": {
+          "Detalle": "33 c/u",
+          "Fecha": "21/10 11:34",
+          "Total Bultos": 1,
+          "Área / Departamento": "Inventario Garcia",
+          "Últimos Dígitos": "15603"
+        },
+        "Área": "Inventario Garcia 2026-10-23"
+      },
+      {
+        "Fecha_Captura": "26/10 08:42",
+        "Código": "7506352883825",
+        "Nombre": "CONJUNTO PIJAMA POLAR DAMA",
+        "Caducidad": "",
+        "Bultos": 11,
+        "Piezas": 1,
+        "Total": 11,
+        "Precio": 0,
+        "_extraData": {
+          "Detalle": "11 c/u",
+          "Fecha": "21/10 11:34",
+          "Total Bultos": 1,
+          "Área / Departamento": "Inventario Garcia",
+          "Últimos Dígitos": "3825"
+        },
+        "Área": "Inventario Garcia 2026-10-23"
+      },
+      {
+        "Fecha_Captura": "26/10 08:42",
+        "Código": "7506557617119",
+        "Nombre": "PIJAMA CABALLERO",
+        "Caducidad": "",
+        "Bultos": 11,
+        "Piezas": 1,
+        "Total": 11,
+        "Precio": 0,
+        "_extraData": {
+          "Detalle": "11 c/u",
+          "Fecha": "21/10 11:34",
+          "Total Bultos": 1,
+          "Área / Departamento": "Inventario Garcia",
+          "Últimos Dígitos": "7119"
+        },
+        "Área": "Inventario Garcia 2026-10-23"
+      },
+      {
+        "Fecha_Captura": "26/10 08:42",
+        "Código": "7506557626463",
+        "Nombre": "TOALLA DE BANO",
+        "Caducidad": "",
+        "Bultos": 120,
+        "Piezas": 1,
+        "Total": 120,
+        "Precio": 0,
+        "_extraData": {
+          "Detalle": "120 c/u",
+          "Fecha": "21/10 11:34",
+          "Total Bultos": 1,
+          "Área / Departamento": "Inventario Garcia",
+          "Últimos Dígitos": "6463"
+        },
+        "Área": "Inventario Garcia 2026-10-23"
+      },
+      {
+        "Fecha_Captura": "26/10 08:42",
+        "Código": "7506557640759",
+        "Nombre": "TRGT VARIEDAD ARTICULOS",
+        "Caducidad": "",
+        "Bultos": 16,
+        "Piezas": 1,
+        "Total": 16,
+        "Precio": 0,
+        "_extraData": {
+          "Detalle": "16 c/u",
+          "Fecha": "21/10 11:34",
+          "Total Bultos": 1,
+          "Área / Departamento": "Inventario Garcia",
+          "Últimos Dígitos": "759"
+        },
+        "Área": "Inventario Garcia 2026-10-23"
+      },
+      {
+        "Fecha_Captura": "26/10 08:42",
+        "Código": "7506557634895",
+        "Nombre": "EB SET DAMA PANTALON Y TOP",
+        "Caducidad": "",
+        "Bultos": 10,
+        "Piezas": 1,
+        "Total": 10,
+        "Precio": 0,
+        "_extraData": {
+          "Detalle": "10 c/u",
+          "Fecha": "21/10 11:34",
+          "Total Bultos": 1,
+          "Área / Departamento": "Inventario Garcia",
+          "Últimos Dígitos": "4895"
+        },
+        "Área": "Inventario Garcia 2026-10-23"
+      },
+      {
+        "Fecha_Captura": "26/10 08:42",
+        "Código": "7506352899338",
+        "Nombre": "SUDADERA DAMA CUELLO REDONDO",
+        "Caducidad": "",
+        "Bultos": 23,
+        "Piezas": 1,
+        "Total": 24,
+        "Precio": 0,
+        "_extraData": {
+          "Detalle": "23 c/u",
+          "Fecha": "22/10 11:57",
+          "Total Bultos": 1,
+          "Área / Departamento": "Inventario Garcia",
+          "Últimos Dígitos": "9338"
+        },
+        "Área": "Inventario Garcia 2026-10-23"
+      },
+      {
+        "Fecha_Captura": "26/10 08:42",
+        "Código": "7506352854092",
+        "Nombre": "FZ CALCETA CABALLERO DEPORTIVA 3PQ",
+        "Caducidad": "",
+        "Bultos": 200,
+        "Piezas": 2,
+        "Total": 400,
+        "Precio": 0,
+        "_extraData": {
+          "Detalle": "200 c/u",
+          "Fecha": "22/10 10:17",
+          "Total Bultos": 2,
+          "Área / Departamento": "Inventario Garcia",
+          "Últimos Dígitos": "4092"
+        },
+        "Área": "Inventario Garcia 2026-10-23"
+      },
+      {
+        "Fecha_Captura": "26/10 08:42",
+        "Código": "7506557648038",
+        "Nombre": "EB CALCETINES TIPO PANTUFLA DAMA",
+        "Caducidad": "",
+        "Bultos": 120,
+        "Piezas": 1,
+        "Total": 120,
+        "Precio": 0,
+        "_extraData": {
+          "Detalle": "120 c/u",
+          "Fecha": "21/10 11:34",
+          "Total Bultos": 1,
+          "Área / Departamento": "Inventario Garcia",
+          "Últimos Dígitos": "8038"
+        },
+        "Área": "Inventario Garcia 2026-10-23"
+      },
+      {
+        "Fecha_Captura": "26/10 08:42",
+        "Código": "681307555228",
+        "Nombre": "ITEM 100195396",
+        "Caducidad": "",
+        "Bultos": 72,
+        "Piezas": 1,
+        "Total": 72,
+        "Precio": 0,
+        "_extraData": {
+          "Detalle": "72 c/u",
+          "Fecha": "21/10 11:34",
+          "Total Bultos": 1,
+          "Área / Departamento": "Inventario Garcia",
+          "Últimos Dígitos": "5228"
+        },
+        "Área": "Inventario Garcia 2026-10-23"
+      },
+      {
+        "Fecha_Captura": "26/10 08:42",
+        "Código": "7506557636196",
+        "Nombre": "EB SUDADERA DAMA GORRO PELUCHE",
+        "Caducidad": "",
+        "Bultos": 36,
+        "Piezas": 1,
+        "Total": 36,
+        "Precio": 0,
+        "_extraData": {
+          "Detalle": "36 c/u",
+          "Fecha": "21/10 11:34",
+          "Total Bultos": 1,
+          "Área / Departamento": "Inventario Garcia",
+          "Últimos Dígitos": "6196"
+        },
+        "Área": "Inventario Garcia 2026-10-23"
+      },
+      {
+        "Fecha_Captura": "26/10 08:42",
+        "Código": "7506557647734",
+        "Nombre": "FZ SET SUDADERA Y PANTS NINO",
+        "Caducidad": "",
+        "Bultos": 48,
+        "Piezas": 1,
+        "Total": 48,
+        "Precio": 0,
+        "_extraData": {
+          "Detalle": "48 c/u",
+          "Fecha": "21/10 11:34",
+          "Total Bultos": 1,
+          "Área / Departamento": "Inventario Garcia",
+          "Últimos Dígitos": "7734"
+        },
+        "Área": "Inventario Garcia 2026-10-23"
+      },
+      {
+        "Fecha_Captura": "26/10 08:42",
+        "Código": "7506557647703",
+        "Nombre": "EB CONJUNTO DE SUDADERA DE PUNTO NINA",
+        "Caducidad": "",
+        "Bultos": 60,
+        "Piezas": 1,
+        "Total": 60,
+        "Precio": 0,
+        "_extraData": {
+          "Detalle": "60 c/u",
+          "Fecha": "21/10 11:34",
+          "Total Bultos": 1,
+          "Área / Departamento": "Inventario Garcia",
+          "Últimos Dígitos": "7703"
+        },
+        "Área": "Inventario Garcia 2026-10-23"
+      },
+      {
+        "Fecha_Captura": "26/10 08:42",
+        "Código": "0681307555358",
+        "Nombre": "EB CHAMARRA CAPUCHA",
+        "Caducidad": "",
+        "Bultos": 30,
+        "Piezas": 1,
+        "Total": 30,
+        "Precio": 0,
+        "_extraData": {
+          "Detalle": "30 c/u",
+          "Fecha": "21/10 11:34",
+          "Total Bultos": 1,
+          "Área / Departamento": "Inventario Garcia",
+          "Últimos Dígitos": "5358"
+        },
+        "Área": "Inventario Garcia 2026-10-23"
+      },
+      {
+        "Fecha_Captura": "26/10 08:42",
+        "Código": "681307556430",
+        "Nombre": "ITEM 681307556430",
+        "Caducidad": "",
+        "Bultos": 24,
+        "Piezas": 1,
+        "Total": 24,
+        "Precio": 0,
+        "_extraData": {
+          "Detalle": "24 c/u",
+          "Fecha": "21/10 11:34",
+          "Total Bultos": 1,
+          "Área / Departamento": "Inventario Garcia",
+          "Últimos Dígitos": "6430"
+        },
+        "Área": "Inventario Garcia 2026-10-23"
+      },
+      {
+        "Fecha_Captura": "26/10 08:42",
+        "Código": "7506557647833",
+        "Nombre": "FZ CHAMARRA FORRO LIGERA CABALLERO",
+        "Caducidad": "",
+        "Bultos": 30,
+        "Piezas": 1,
+        "Total": 30,
+        "Precio": 0,
+        "_extraData": {
+          "Detalle": "30 c/u",
+          "Fecha": "21/10 11:34",
+          "Total Bultos": 1,
+          "Área / Departamento": "Inventario Garcia",
+          "Últimos Dígitos": "7833"
+        },
+        "Área": "Inventario Garcia 2026-10-23"
+      },
+      {
+        "Fecha_Captura": "26/10 11:13",
+        "Código": "681307556577",
+        "Nombre": "EB FRAZADA VARIEDAD",
+        "Caducidad": "",
+        "Bultos": 7,
+        "Piezas": 7,
+        "Total": 350,
+        "Precio": 0,
+        "_extraData": {
+          "Detalle": "50 c/u (6 bultos)",
+          "Fecha": "22/10 08:12",
+          "Total Bultos": 7,
+          "Área / Departamento": "Inventario Garcia",
+          "Últimos Dígitos": "6577"
+        },
+        "Área": "Inventario Garcia 2026-10-23"
+      },
+      {
+        "Fecha_Captura": "26/10 08:42",
+        "Código": "7506557626593",
+        "Nombre": "EB CHAMARRA NINA MEZCLILLA",
+        "Caducidad": "",
+        "Bultos": 30,
+        "Piezas": 1,
+        "Total": 30,
+        "Precio": 0,
+        "_extraData": {
+          "Detalle": "30 c/u (ajustado por conteo físico)",
+          "Fecha": "21/10 11:34",
+          "Total Bultos": 1,
+          "Área / Departamento": "Inventario Garcia",
+          "Últimos Dígitos": "6593"
+        },
+        "Área": "Inventario Garcia 2026-10-23"
+      },
+      {
+        "Fecha_Captura": "26/10 08:42",
+        "Código": "7506557626647",
+        "Nombre": "V PANTALETAS DAMA",
+        "Caducidad": "",
+        "Bultos": 240,
+        "Piezas": 2,
+        "Total": 492,
+        "Precio": 0,
+        "_extraData": {
+          "Detalle": "240 c/u",
+          "Fecha": "22/10 11:57",
+          "Total Bultos": 2,
+          "Área / Departamento": "Inventario Garcia",
+          "Últimos Dígitos": "6647"
+        },
+        "Área": "Inventario Garcia 2026-10-23"
+      },
+      {
+        "Fecha_Captura": "26/10 08:42",
+        "Código": "7506557624360",
+        "Nombre": "CHAMARRA FORRO CIGORRO NINO",
+        "Caducidad": "",
+        "Bultos": 60,
+        "Piezas": 1,
+        "Total": 60,
+        "Precio": 0,
+        "_extraData": {
+          "Detalle": "60 c/u",
+          "Fecha": "21/10 11:34",
+          "Total Bultos": 1,
+          "Área / Departamento": "Inventario Garcia",
+          "Últimos Dígitos": "4360"
+        },
+        "Área": "Inventario Garcia 2026-10-23"
+      },
+      {
+        "Fecha_Captura": "26/10 08:42",
+        "Código": "681307555662",
+        "Nombre": "ITEM 681307555662",
+        "Caducidad": "",
+        "Bultos": 36,
+        "Piezas": 1,
+        "Total": 36,
+        "Precio": 0,
+        "_extraData": {
+          "Detalle": "36 c/u",
+          "Fecha": "21/10 11:34",
+          "Total Bultos": 1,
+          "Área / Departamento": "Inventario Garcia",
+          "Últimos Dígitos": "5662"
+        },
+        "Área": "Inventario Garcia 2026-10-23"
+      },
+      {
+        "Fecha_Captura": "26/10 08:42",
+        "Código": "681307555174",
+        "Nombre": "EB CHAMARRA GORRO DAMA",
+        "Caducidad": "",
+        "Bultos": 30,
+        "Piezas": 1,
+        "Total": 30,
+        "Precio": 0,
+        "_extraData": {
+          "Detalle": "30 c/u",
+          "Fecha": "21/10 11:34",
+          "Total Bultos": 1,
+          "Área / Departamento": "Inventario Garcia",
+          "Últimos Dígitos": "5174"
+        },
+        "Área": "Inventario Garcia 2026-10-23"
+      },
+      {
+        "Fecha_Captura": "26/10 08:42",
+        "Código": "7506352899369",
+        "Nombre": "SUDADERACAB CR NAS",
+        "Caducidad": "",
+        "Bultos": 2,
+        "Piezas": 1,
+        "Total": 2,
+        "Precio": 0,
+        "_extraData": {
+          "Detalle": "2 c/u",
+          "Fecha": "21/10 11:34",
+          "Total Bultos": 1,
+          "Área / Departamento": "Inventario Garcia",
+          "Últimos Dígitos": "9369"
+        },
+        "Área": "Inventario Garcia 2026-10-23"
+      }
+    ],
+    "bodega_ropa": [
+      {
+        "Bultos": 2,
+        "Caducidad": "",
+        "Código": "7506557636424",
+        "Fecha_Captura": "29/10 13:55",
+        "Nombre": "DINO PANTALON CABALLERO MEZCLILLA",
+        "Piezas": 50,
+        "Precio": 0,
+        "Total": 100,
+        "_extraData": {},
+        "Área": "bodega ropa"
+      }
+    ]
+  },
+  "ultimo_guardado": "2026-11-01T15:33:07.815688"
+}

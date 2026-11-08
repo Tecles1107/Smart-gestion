@@ -1,0 +1,104 @@
+@import "tailwindcss";
+
+/* Barcode reader container styling for mobile and desktop */
+#barcode-reader-container {
+  width: 100% !important;
+  height: 100% !important;
+  min-height: 170px !important;
+  max-height: 260px !important;
+  overflow: hidden !important;
+  background-color: #020617 !important;
+  border-radius: 0.5rem !important;
+}
+
+#barcode-reader-container video {
+  width: 100% !important;
+  height: 100% !important;
+  max-height: 260px !important;
+  object-fit: cover !important;
+  border-radius: 0.5rem !important;
+}
+
+#barcode-reader-container img {
+  display: none !important;
+}
+
+/* Custom scrollbars for industrial density */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #0f172a;
+}
+::-webkit-scrollbar-thumb {
+  background: #334155;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #475569;
+}
+
+/* Scanner visual confirmation frame animations */
+@keyframes scannerPulseSuccess {
+  0% {
+    box-shadow: inset 0 0 0 4px #10b981, inset 0 0 35px rgba(16, 185, 129, 0.7), 0 0 35px rgba(16, 185, 129, 0.85);
+    border-color: #10b981;
+  }
+  50% {
+    box-shadow: inset 0 0 0 6px #34d399, inset 0 0 55px rgba(16, 185, 129, 0.9), 0 0 50px rgba(52, 211, 153, 0.95);
+    border-color: #34d399;
+  }
+  100% {
+    box-shadow: inset 0 0 0 4px #10b981, inset 0 0 35px rgba(16, 185, 129, 0.7), 0 0 35px rgba(16, 185, 129, 0.85);
+    border-color: #10b981;
+  }
+}
+
+@keyframes scannerPulseError {
+  0% {
+    box-shadow: inset 0 0 0 4px #f43f5e, inset 0 0 35px rgba(244, 63, 94, 0.7), 0 0 35px rgba(244, 63, 94, 0.85);
+    border-color: #f43f5e;
+  }
+  50% {
+    box-shadow: inset 0 0 0 6px #fb7185, inset 0 0 55px rgba(244, 63, 94, 0.9), 0 0 50px rgba(251, 113, 133, 0.95);
+    border-color: #fb7185;
+  }
+  100% {
+    box-shadow: inset 0 0 0 4px #f43f5e, inset 0 0 35px rgba(244, 63, 94, 0.7), 0 0 35px rgba(244, 63, 94, 0.85);
+    border-color: #f43f5e;
+  }
+}
+
+@keyframes scannerFlash {
+  0% { opacity: 0.9; }
+  40% { opacity: 0.4; }
+  100% { opacity: 0; }
+}
+
+@keyframes laserSweep {
+  0% { transform: translateY(-40px); opacity: 0.6; }
+  50% { transform: translateY(40px); opacity: 1; }
+  100% { transform: translateY(-40px); opacity: 0.6; }
+}
+
+.scanner-frame-success {
+  animation: scannerPulseSuccess 1.2s ease-in-out infinite;
+}
+
+.scanner-frame-error {
+  animation: scannerPulseError 1.1s ease-in-out infinite;
+}
+
+.scanner-flash-green {
+  animation: scannerFlash 0.45s ease-out forwards;
+}
+
+.scanner-flash-red {
+  animation: scannerFlash 0.5s ease-out forwards;
+}
+
+.laser-sweeper {
+  animation: laserSweep 1.6s ease-in-out infinite;
+}
+
