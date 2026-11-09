@@ -16,6 +16,81 @@
     <link rel="icon" type="image/svg+xml" href="/icon.svg" />
     <meta property="og:type" content="website" />
     <meta name="twitter:card" content="summary_large_image" />
+    <script>
+      // Gracefully handle Vite HMR WebSocket disconnects in proxy/sandbox environments
+      (function() {
+        // 1. Mock 'vite-hmr' WebSocket so it doesn't fail against cloud dev proxy
+        try {
+          if (typeof window !== 'undefined' && window.WebSocket) {
+            const RealWebSocket = window.WebSocket;
+            window.WebSocket = function(url, protocols) {
+              const isViteHmr = 
+                (typeof protocols === 'string' && protocols.includes('vite-hmr')) ||
+                (Array.isArray(protocols) && protocols.includes('vite-hmr')) ||
+                (typeof url === 'string' && url.includes('vite-hmr'));
+
+              if (isViteHmr) {
+                return {
+                  binaryType: 'blob',
+                  readyState: 3, // CLOSED
+                  bufferedAmount: 0,
+                  extensions: '',
+                  protocol: 'vite-hmr',
+                  url: String(url),
+                  send: function() {},
+                  close: function() {},
+                  addEventListener: function() {},
+                  removeEventListener: function() {},
+                  dispatchEvent: function() { return false; },
+                  onopen: null,
+                  onclose: null,
+                  onerror: null,
+                  onmessage: null,
+                };
+              }
+              return new RealWebSocket(url, protocols);
+            };
+            window.WebSocket.prototype = RealWebSocket.prototype;
+          }
+        } catch (_) {}
+
+        // 2. Filter out console errors originating from Vite dev server connection attempts
+        const originalError = console.error;
+        console.error = function(...args) {
+          const isViteWsError = args.some(arg => {
+            if (!arg) return false;
+            const str = typeof arg === 'string' ? arg : (arg.message || arg.stack || '');
+            return typeof str === 'string' && (
+              str.includes('WebSocket closed without opened') ||
+              str.includes('vite-hmr') ||
+              (str.includes('[vite]') && (str.includes('WebSocket') || str.includes('server connection lost') || str.includes('failed')))
+            );
+          }) || (args[0] === '[vite]' && args.length > 1);
+
+          if (isViteWsError) {
+            return;
+          }
+          originalError.apply(console, args);
+        };
+
+        window.addEventListener('error', function(event) {
+          const msg = event?.message || event?.error?.message || '';
+          if (msg.includes('WebSocket closed without opened') || msg.includes('vite-hmr')) {
+            event.stopImmediatePropagation();
+            event.preventDefault();
+          }
+        }, true);
+
+        window.addEventListener('unhandledrejection', function(event) {
+          const reason = event?.reason;
+          const msg = (typeof reason === 'string' ? reason : reason?.message) || '';
+          if (msg.includes('WebSocket closed without opened') || msg.includes('vite-hmr')) {
+            event.stopImmediatePropagation();
+            event.preventDefault();
+          }
+        }, true);
+      })();
+    </script>
   </head>
   <body>
     <div id="root"></div>

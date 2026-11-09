@@ -11,11 +11,16 @@ export function exportInventory(
   items: InventoryItem[],
   activeArea: string,
   docType: ExportDocType,
-  format: ExportFormat
-) {
+  format: ExportFormat,
+  onError?: (msg: string) => void
+): boolean {
   if (!items || items.length === 0) {
-    alert('No hay registros en esta área para exportar.');
-    return;
+    if (onError) {
+      onError('No hay registros en esta área para exportar.');
+    } else {
+      console.warn('No hay registros en esta área para exportar.');
+    }
+    return false;
   }
 
   const cleanAreaName = activeArea.replace(/_/g, ' ');
@@ -65,7 +70,7 @@ export function exportInventory(
     const workbook = XLSX.utils.book_new();
     XLSX.utils.book_append_sheet(workbook, worksheet, cleanAreaName.slice(0, 31));
     XLSX.writeFile(workbook, `${fileNameBase}.xlsx`);
-    return;
+    return true;
   }
 
   if (docType === 'pdf') {
@@ -151,7 +156,7 @@ export function exportInventory(
     });
 
     doc.save(`${fileNameBase}.pdf`);
-    return;
+    return true;
   }
 
   if (docType === 'word') {
@@ -179,10 +184,17 @@ export function exportInventory(
     </html>`;
 
     const blob = new Blob(['\ufeff' + html], { type: 'application/msword' });
+    const objUrl = URL.createObjectURL(blob);
     const link = document.createElement('a');
-    link.href = URL.createObjectURL(blob);
+    link.href = objUrl;
     link.download = `${fileNameBase}.doc`;
     link.click();
-    return;
+    setTimeout(() => {
+      try {
+        URL.revokeObjectURL(objUrl);
+      } catch {}
+    }, 1500);
+    return true;
   }
+  return true;
 }

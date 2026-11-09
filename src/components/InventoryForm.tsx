@@ -11,8 +11,10 @@ import {
   Boxes,
   Trash2,
   Zap,
+  Camera,
 } from 'lucide-react';
 import { ScanMode } from '../types/inventory';
+import { validateBarcodeFormat } from '../utils/inventoryLogic';
 
 interface SubItem {
   codigo: string;
@@ -52,6 +54,9 @@ interface InventoryFormProps {
   knownNames: string[];
   onSubmit: (e: React.FormEvent) => void;
   onSoloPiezas: () => void;
+  imagen?: string;
+  onChangeImagen: (base64: string) => void;
+  existingBatches?: { caducidad: string; total: number; bultos?: number }[];
 }
 
 export const InventoryForm: React.FC<InventoryFormProps> = ({
@@ -84,6 +89,9 @@ export const InventoryForm: React.FC<InventoryFormProps> = ({
   knownNames,
   onSubmit,
   onSoloPiezas,
+  imagen,
+  onChangeImagen,
+  existingBatches,
 }) => {
   const piezasInputRef = useRef<HTMLInputElement>(null);
   const [subSku, setSubSku] = useState('');
@@ -166,57 +174,126 @@ export const InventoryForm: React.FC<InventoryFormProps> = ({
           aria-label="Modo Escaneo Rápido"
           className={`px-3 py-2 rounded-lg text-xs font-bold flex items-center gap-1.5 transition-all border ${
             quickScanMode
-              ? 'bg-amber-500 text-slate-950 border-amber-400 shadow-md animate-pulse'
-              : 'bg-slate-950 text-slate-400 border-slate-800 hover:text-white'
+              ? 'bg-amber-500 text-slate-950 border-amber-400 shadow-md font-black'
+              : 'bg-slate-950 text-amber-400 border-amber-500/50 hover:bg-amber-950/30'
           }`}
           title="Modo Escaneo Rápido: Autocompleta nombre al escanear SKUs ya registrados"
         >
           <Zap className="w-3.5 h-3.5" />
-          <span>Escaneo Rápido</span>
+          <span>⚡ Rápido: {quickScanMode ? 'ON' : 'OFF'}</span>
         </button>
       </div>
 
-      {/* Toggles: Caducidad, Precio, Caja Mixta */}
-      <div className="grid grid-cols-3 gap-1.5 p-2 bg-slate-950/60 rounded-lg border border-slate-800 text-xs">
-        <label className="flex items-center gap-1.5 cursor-pointer select-none">
-          <input
-            type="checkbox"
-            checked={showCaducidad}
-            onChange={(e) => onToggleCaducidad(e.target.checked)}
-            className="w-4 h-4 rounded text-rose-500 focus:ring-0 bg-slate-800 border-slate-700"
-          />
-          <span className="flex items-center gap-1 text-rose-300 font-semibold truncate">
-            <Calendar className="w-3.5 h-3.5 text-rose-400 shrink-0" />
-            <span>Caducidad</span>
+      {/* Toggles with Pill Switches & Emojis matching screenshot */}
+      <div className="grid grid-cols-3 gap-2 p-2.5 bg-slate-950 rounded-xl border border-slate-800 text-xs">
+        <label className="flex items-center gap-2 cursor-pointer select-none">
+          <div
+            onClick={() => onToggleCaducidad(!showCaducidad)}
+            className={`w-8 h-4.5 rounded-full p-0.5 transition-colors shrink-0 ${
+              showCaducidad ? 'bg-rose-500' : 'bg-slate-700'
+            }`}
+          >
+            <div
+              className={`w-3.5 h-3.5 rounded-full bg-white transition-transform ${
+                showCaducidad ? 'translate-x-3.5' : 'translate-x-0'
+              }`}
+            />
+          </div>
+          <span className="flex items-center gap-1 text-rose-300 font-bold text-xs truncate">
+            <span>⏳</span> Caducidad
           </span>
         </label>
 
-        <label className="flex items-center gap-1.5 cursor-pointer select-none">
-          <input
-            type="checkbox"
-            checked={showPrecio}
-            onChange={(e) => onTogglePrecio(e.target.checked)}
-            className="w-4 h-4 rounded text-emerald-500 focus:ring-0 bg-slate-800 border-slate-700"
-          />
-          <span className="flex items-center gap-1 text-emerald-300 font-semibold truncate">
-            <DollarSign className="w-3.5 h-3.5 text-emerald-400 shrink-0" />
-            <span>Precio</span>
+        <label className="flex items-center gap-2 cursor-pointer select-none">
+          <div
+            onClick={() => onTogglePrecio(!showPrecio)}
+            className={`w-8 h-4.5 rounded-full p-0.5 transition-colors shrink-0 ${
+              showPrecio ? 'bg-emerald-500' : 'bg-slate-700'
+            }`}
+          >
+            <div
+              className={`w-3.5 h-3.5 rounded-full bg-white transition-transform ${
+                showPrecio ? 'translate-x-3.5' : 'translate-x-0'
+              }`}
+            />
+          </div>
+          <span className="flex items-center gap-1 text-emerald-300 font-bold text-xs truncate">
+            <span>💰</span> Precio
           </span>
         </label>
 
-        <label className="flex items-center gap-1.5 cursor-pointer select-none">
-          <input
-            type="checkbox"
-            checked={showCajaMixta}
-            onChange={(e) => onToggleCajaMixta(e.target.checked)}
-            className="w-4 h-4 rounded text-purple-500 focus:ring-0 bg-slate-800 border-slate-700"
-          />
-          <span className="flex items-center gap-1 text-purple-300 font-semibold truncate">
-            <Boxes className="w-3.5 h-3.5 text-purple-400 shrink-0" />
-            <span>Caja Mixta</span>
+        <label className="flex items-center gap-2 cursor-pointer select-none">
+          <div
+            onClick={() => onToggleCajaMixta(!showCajaMixta)}
+            className={`w-8 h-4.5 rounded-full p-0.5 transition-colors shrink-0 ${
+              showCajaMixta ? 'bg-amber-500' : 'bg-slate-700'
+            }`}
+          >
+            <div
+              className={`w-3.5 h-3.5 rounded-full bg-white transition-transform ${
+                showCajaMixta ? 'translate-x-3.5' : 'translate-x-0'
+              }`}
+            />
+          </div>
+          <span className="flex items-center gap-1 text-amber-300 font-bold text-xs truncate">
+            <span>📦</span> Caja Mixta
           </span>
         </label>
       </div>
+
+      {/* Clones / Batches Detection & Helper */}
+      {sku.trim().length >= 2 && existingBatches && existingBatches.length > 0 && (
+        <div className="bg-slate-950/90 border border-blue-500/40 rounded-xl p-2.5 flex flex-col gap-2">
+          <div className="flex items-center justify-between">
+            <span className="text-[11px] font-black text-cyan-300 flex items-center gap-1.5 uppercase tracking-wide">
+              <Sparkles className="w-3.5 h-3.5 text-cyan-400" />
+              Lotes Detectados ({existingBatches.length})
+            </span>
+            <button
+              type="button"
+              onClick={() => {
+                onToggleCaducidad(true);
+                onChangeCaducidad('');
+              }}
+              className="px-2 py-1 bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-500 hover:to-indigo-500 text-white rounded-lg text-[10px] font-black uppercase tracking-wider flex items-center gap-1 shadow-md active:scale-95"
+            >
+              <span>+ Clonar / Nueva Caducidad</span>
+            </button>
+          </div>
+
+          <div className="flex flex-wrap gap-1.5">
+            {existingBatches.map((b, idx) => (
+              <button
+                key={idx}
+                type="button"
+                onClick={() => {
+                  if (b.caducidad && b.caducidad !== 'Sin caducidad') {
+                    onToggleCaducidad(true);
+                    onChangeCaducidad(b.caducidad);
+                  } else {
+                    onToggleCaducidad(false);
+                    onChangeCaducidad('');
+                  }
+                }}
+                className={`px-2 py-1 rounded-lg border text-[11px] font-mono flex items-center gap-1.5 transition-all ${
+                  caducidad === b.caducidad
+                    ? 'bg-blue-600/30 border-blue-400 text-white font-bold ring-1 ring-blue-500'
+                    : 'bg-slate-900 border-slate-800 text-slate-300 hover:border-slate-700'
+                }`}
+                title="Haz clic para seleccionar este lote existente"
+              >
+                <span className="text-amber-400 font-bold">{b.caducidad || 'Sin Fecha'}</span>
+                <span className="text-slate-600">•</span>
+                <span className="text-emerald-400 font-bold">{b.total} pzs</span>
+              </button>
+            ))}
+          </div>
+
+          <p className="text-[10px] text-slate-400 italic leading-snug">
+            💡 <strong>Regla de Almacén:</strong> Al ingresar una fecha de caducidad diferente se creará un clon independiente con sus propias piezas. Al ingresar la misma, se sumará al lote existente.
+          </p>
+        </div>
+      )}
 
       {/* Conditional Extra Fields */}
       {(showCaducidad || showPrecio) && (
@@ -339,33 +416,83 @@ export const InventoryForm: React.FC<InventoryFormProps> = ({
       <form onSubmit={onSubmit} className="flex flex-col gap-3">
         {/* SKU / Code */}
         <div className="flex flex-col gap-1">
-          <div className="flex items-center justify-between">
-            <label htmlFor="sku-input" className="text-xs font-bold text-slate-300">
-              SKU / CÓDIGO DE BARRAS <span className="text-rose-400">*</span>
+          <div className="flex items-center justify-between flex-wrap gap-1">
+            <label htmlFor="sku-input" className="text-xs font-bold text-cyan-400 tracking-wide flex items-center gap-1.5">
+              <span>SKU / CÓDIGO DE BARRAS</span>
+              <span className="text-rose-400">(*)</span>
+              {sku.trim().length > 0 && (() => {
+                const info = validateBarcodeFormat(sku);
+                return (
+                  <span className="text-[10px] font-mono px-1.5 py-0.2 rounded bg-cyan-950 text-cyan-300 border border-cyan-500/40">
+                    {info.format}
+                  </span>
+                );
+              })()}
             </label>
             {quickScanMode && (
               <span className="text-[10px] text-amber-400 font-bold bg-amber-950/80 px-2 py-0.5 rounded border border-amber-500/40">
-                ⚡ Modo Escaneo Rápido Activado
+                ⚡ Modo Rápido Activo
               </span>
             )}
           </div>
-          <input
-            id="sku-input"
-            type="text"
-            inputMode="numeric"
-            value={sku}
-            onChange={(e) => onChangeSku(e.target.value.toUpperCase())}
-            placeholder={showCajaMixta ? "Código de Caja Mixta (ej. MIX-001)..." : "Escanea o escribe código..."}
-            className="w-full bg-slate-950 border-2 border-blue-500/60 focus:border-blue-400 rounded-lg px-3 py-2 text-base sm:text-lg font-mono font-bold text-blue-300 tracking-wider focus:outline-none shadow-inner"
-            required
-            autoComplete="off"
-          />
+          <div className="flex items-center gap-2">
+            <div className="flex-1 relative">
+              <input
+                id="sku-input"
+                type="text"
+                inputMode="numeric"
+                value={sku}
+                onChange={(e) => onChangeSku(e.target.value.toUpperCase())}
+                placeholder={showCajaMixta ? "Código de Caja Mixta (ej. MIX-001)..." : "Escanea o escribe código..."}
+                className="w-full bg-[#070e1b] border-2 border-blue-500/60 focus:border-cyan-400 rounded-lg px-3 py-2 text-base sm:text-lg font-mono font-bold text-cyan-300 tracking-wider focus:outline-none shadow-inner"
+                required
+                autoComplete="off"
+              />
+              {imagen && (
+                <div className="absolute right-2 top-1/2 -translate-y-1/2 w-8 h-8 rounded-lg overflow-hidden border border-cyan-400 shadow-lg">
+                   <img src={imagen} className="w-full h-full object-cover" alt="" />
+                </div>
+              )}
+            </div>
+            
+            <button
+              type="button"
+              onClick={() => {
+                const input = document.getElementById('product-image-capture') as HTMLInputElement;
+                input?.click();
+              }}
+              className={`p-2.5 rounded-lg border flex items-center justify-center transition-all ${
+                sku.trim() 
+                  ? 'bg-blue-600/20 text-blue-400 border-blue-500/40 hover:bg-blue-600 hover:text-white' 
+                  : 'bg-slate-800 text-slate-600 border-slate-700 cursor-not-allowed'
+              }`}
+              title="Tomar foto del producto para identificación rápida"
+              disabled={!sku.trim()}
+            >
+              <Camera className="w-5 h-5" />
+            </button>
+            <input 
+              id="product-image-capture"
+              type="file"
+              accept="image/*"
+              capture="environment"
+              className="hidden"
+              onChange={(e) => {
+                const file = e.target.files?.[0];
+                if (file) {
+                  const reader = new FileReader();
+                  reader.onloadend = () => onChangeImagen(reader.result as string);
+                  reader.readAsDataURL(file);
+                }
+              }}
+            />
+          </div>
         </div>
 
         {/* Product Name (Auto Uppercase) */}
         <div className="flex flex-col gap-1">
-          <label htmlFor="nombre-input" className="text-xs font-bold text-slate-300">
-            NOMBRE DEL ARTÍCULO
+          <label htmlFor="nombre-input" className="text-xs font-bold text-cyan-400 tracking-wide">
+            NOMBRE DEL ARTÍCULO (MAYÚSCULAS)
           </label>
           <input
             id="nombre-input"
@@ -373,8 +500,8 @@ export const InventoryForm: React.FC<InventoryFormProps> = ({
             list="sugerencias-nombres-list"
             value={nombre}
             onChange={(e) => onChangeNombre(e.target.value.toUpperCase())}
-            placeholder="Descripción o nombre del producto..."
-            className="w-full bg-slate-950 border border-slate-700 focus:border-slate-500 rounded-lg px-3 py-1.5 text-xs sm:text-sm text-white uppercase focus:outline-none"
+            placeholder="DESCRIPCIÓN DEL PRODUCTO..."
+            className="w-full bg-[#070e1b] border border-slate-700 focus:border-cyan-400 rounded-lg px-3 py-2 text-xs sm:text-sm text-white uppercase focus:outline-none"
             autoComplete="off"
           />
           <datalist id="sugerencias-nombres-list">
@@ -388,25 +515,25 @@ export const InventoryForm: React.FC<InventoryFormProps> = ({
         {!showCajaMixta && (
           <div className="grid grid-cols-2 gap-2 pt-1">
             {/* Bultos input with quick +/- buttons */}
-            <div className="bg-slate-950 p-2 rounded-lg border border-slate-800 flex flex-col gap-1.5">
+            <div className="flex flex-col gap-1">
               <div className="flex items-center justify-between">
-                <label className="text-[11px] font-bold text-slate-400 flex items-center gap-1">
-                  <Package className="w-3.5 h-3.5 text-slate-400" /> BULTOS / CAJAS
+                <label className="text-xs font-bold text-slate-300 flex items-center gap-1">
+                  BULTOS / CAJAS
                 </label>
                 <button
                   type="button"
                   onClick={handleSoloPiezasClick}
-                  className="text-[10px] text-blue-400 hover:text-blue-300 font-semibold underline underline-offset-2"
+                  className="text-xs text-cyan-400 hover:text-cyan-300 font-semibold underline underline-offset-2"
                 >
                   Solo Pz
                 </button>
               </div>
 
-              <div className="flex items-center gap-1">
+              <div className="flex items-center bg-[#070e1b] rounded-lg border border-slate-700/80 p-1">
                 <button
                   type="button"
                   onClick={() => onChangeBultos(Math.max(0, bultos - 1))}
-                  className="w-8 h-8 rounded bg-slate-800 hover:bg-slate-700 text-rose-400 font-black text-base flex items-center justify-center active:scale-95 transition-all"
+                  className="w-8 h-8 rounded border border-rose-500/70 text-rose-400 font-black text-base flex items-center justify-center hover:bg-rose-950/30 active:scale-95 transition-all shrink-0"
                   title="Restar 1 bulto"
                 >
                   -
@@ -416,33 +543,46 @@ export const InventoryForm: React.FC<InventoryFormProps> = ({
                   min="0"
                   value={bultos}
                   onChange={(e) => onChangeBultos(Math.max(0, parseInt(e.target.value) || 0))}
-                  className="w-full bg-transparent text-center font-bold text-base sm:text-lg text-white border-0 focus:outline-none"
+                  className="w-full bg-transparent text-center font-bold text-lg text-white border-0 focus:outline-none"
                 />
                 <button
                   type="button"
                   onClick={() => onChangeBultos(bultos + 1)}
-                  className="w-8 h-8 rounded bg-slate-800 hover:bg-slate-700 text-emerald-400 font-black text-base flex items-center justify-center active:scale-95 transition-all"
+                  className="w-8 h-8 rounded border border-emerald-500/70 text-emerald-400 font-black text-base flex items-center justify-center hover:bg-emerald-950/30 active:scale-95 transition-all shrink-0"
                   title="Sumar 1 bulto"
                 >
                   +
                 </button>
               </div>
+
+              {/* Quick increment preset buttons for Bultos */}
+              <div className="flex items-center gap-1 pt-0.5">
+                {[1, 5, 10, 24].map((num) => (
+                  <button
+                    key={'bulto-plus-' + num}
+                    type="button"
+                    onClick={() => onChangeBultos(bultos + num)}
+                    className="flex-1 py-0.5 bg-slate-950 hover:bg-slate-800 text-[10px] font-bold text-slate-400 hover:text-emerald-400 rounded border border-slate-800 transition-colors"
+                  >
+                    +{num}
+                  </button>
+                ))}
+              </div>
             </div>
 
             {/* Piezas por bulto */}
-            <div className="bg-slate-950 p-2 rounded-lg border border-slate-800 flex flex-col gap-1.5">
+            <div className="flex flex-col gap-1">
               <div className="flex items-center justify-between">
-                <label className="text-[11px] font-bold text-slate-400 flex items-center gap-1">
-                  <Layers className="w-3.5 h-3.5 text-slate-400" /> PIEZAS / BTO
+                <label className="text-xs font-bold text-slate-300 flex items-center gap-1">
+                  PIEZAS / BTO
                 </label>
-                <span className="text-[10px] text-slate-500 font-mono">u/caja</span>
               </div>
 
-              <div className="flex items-center gap-1">
+              <div className="flex items-center bg-[#070e1b] rounded-lg border border-slate-700/80 p-1">
                 <button
                   type="button"
                   onClick={() => onChangePiezas(Math.max(0, piezas - 1))}
-                  className="w-8 h-8 rounded bg-slate-800 hover:bg-slate-700 text-rose-400 font-black text-base flex items-center justify-center active:scale-95 transition-all"
+                  className="w-8 h-8 rounded border border-rose-500/70 text-rose-400 font-black text-base flex items-center justify-center hover:bg-rose-950/30 active:scale-95 transition-all shrink-0"
                   title="Restar 1 pieza por bulto"
                 >
                   -
@@ -453,43 +593,47 @@ export const InventoryForm: React.FC<InventoryFormProps> = ({
                   min="0"
                   value={piezas}
                   onChange={(e) => onChangePiezas(Math.max(0, parseInt(e.target.value) || 0))}
-                  className="w-full bg-transparent text-center font-bold text-base sm:text-lg text-blue-400 border-0 focus:outline-none"
+                  className="w-full bg-transparent text-center font-bold text-lg text-white border-0 focus:outline-none"
                 />
                 <button
                   type="button"
                   onClick={() => onChangePiezas(piezas + 1)}
-                  className="w-8 h-8 rounded bg-slate-800 hover:bg-slate-700 text-emerald-400 font-black text-base flex items-center justify-center active:scale-95 transition-all"
+                  className="w-8 h-8 rounded border border-emerald-500/70 text-emerald-400 font-black text-base flex items-center justify-center hover:bg-emerald-950/30 active:scale-95 transition-all shrink-0"
                   title="Sumar 1 pieza por bulto"
                 >
                   +
                 </button>
               </div>
+
+              {/* Quick increment preset buttons for Piezas */}
+              <div className="flex items-center gap-1 pt-0.5">
+                {[1, 6, 12, 24, 50].map((num) => (
+                  <button
+                    key={'piezas-plus-' + num}
+                    type="button"
+                    onClick={() => onChangePiezas(piezas + num)}
+                    className="flex-1 py-0.5 bg-slate-950 hover:bg-slate-800 text-[10px] font-bold text-slate-400 hover:text-emerald-400 rounded border border-slate-800 transition-colors"
+                  >
+                    +{num}
+                  </button>
+                ))}
+              </div>
             </div>
           </div>
         )}
 
-        {/* Calculated Total Bar */}
-        <div className="p-2.5 bg-gradient-to-r from-slate-950 via-slate-900 to-slate-950 border border-slate-800 rounded-lg flex items-center justify-between">
-          <div className="flex flex-col">
-            <span className="text-[11px] font-bold text-slate-400 uppercase tracking-wide">
-              {showCajaMixta ? 'Total Piezas Caja Mixta:' : 'Total Piezas Tanda:'}
-            </span>
-            <span className="text-[10px] text-slate-500">
-              {showCajaMixta
-                ? `${cajaMixtaSubItems.length} productos configurados`
-                : bultos > 0
-                ? `${bultos} bultos × ${piezas} pzs`
-                : `${piezas} piezas sueltas`}
-            </span>
-          </div>
+        {/* Calculated Total Bar matching Termux layout */}
+        <div className="flex items-center justify-between gap-3 p-2 bg-[#070e1b] border border-slate-700/80 rounded-lg">
+          <span className="text-xs sm:text-sm font-bold text-slate-400 uppercase tracking-wide">
+            {showCajaMixta ? 'TOTAL PIEZAS CAJA MIXTA:' : 'TOTAL PIEZAS TANDA:'}
+          </span>
 
-          <div className="text-right">
-            <span className="text-2xl sm:text-3xl font-black text-emerald-400 tracking-tight font-mono">
+          <div className="bg-[#040810] border border-slate-700 rounded-md px-4 py-1.5 min-w-[120px] text-right">
+            <span className="text-2xl sm:text-3xl font-black text-white tracking-tight font-mono">
               {showCajaMixta
                 ? cajaMixtaSubItems.reduce((acc, s) => acc + s.piezas, 0)
                 : totalCalculated}
             </span>
-            <span className="text-xs text-slate-400 ml-1">pzs</span>
           </div>
         </div>
 

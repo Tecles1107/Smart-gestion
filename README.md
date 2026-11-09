@@ -73,9 +73,46 @@ La estructura actual de **14 directorios y 48 archivos** es la estructura **comp
 
 ---
 
+## 🌐 Despliegue en GitHub Pages (PWA Estática Gratuita)
+
+La aplicación está completamente preparada para desplegarse en **GitHub Pages**:
+
+### Método 1: Despliegue Automático con GitHub Actions (Recomendado)
+El proyecto ya cuenta con el flujo de trabajo configurado en `.github/workflows/deploy.yml`:
+
+1. Sube tu código al repositorio de GitHub:
+   ```bash
+   git add .
+   git commit -m "Deploy Smart Scanner PRO"
+   git push origin main
+   ```
+2. En GitHub, ve a **Settings** > **Pages**.
+3. En **Source** (Origen de compilación), selecciona **GitHub Actions**.
+4. ¡Listo! La acción compilará y publicará automáticamente tu aplicación en una URL pública con HTTPS (ejemplo: `https://tu-usuario.github.io/tu-repo/`).
+
+### Método 2: Despliegue Manual con la carpeta `dist`
+1. Compila el proyecto localmente:
+   ```bash
+   npm run build
+   ```
+2. Se generará la carpeta `dist/` con rutas relativas compatibles (`base: './'`).
+3. Sube el contenido de la carpeta `dist/` a la rama `gh-pages` de tu repositorio.
+
+> **Nota de Compatibilidad:**
+> En GitHub Pages la aplicación funciona al 100% como Progressive Web App (PWA):
+> - Escaneo con cámara y láser.
+> - Almacenamiento local persistente (`localStorage`).
+> - Módulo de Gestión, Merma y Búsqueda con Foto.
+> - Descargas de reportes en Excel, PDF y Word con fotos incrustadas.
+> - Funciona sin conexión a internet (offline).
+> *(La sincronización con servidor Node.js central solo se requiere si deseas enlazar múltiples dispositivos a un mismo archivo JSON en red local/Termux).*
+
+---
+
 ## 🛠️ Verificación y Compilación
 Para verificar que el código compila sin errores antes de desplegar o mover a un servidor:
 
 ```bash
 npm run lint
+npm run build
 ```

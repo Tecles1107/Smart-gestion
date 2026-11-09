@@ -76,10 +76,16 @@
   100% { opacity: 0; }
 }
 
-@keyframes laserSweep {
-  0% { transform: translateY(-40px); opacity: 0.6; }
-  50% { transform: translateY(40px); opacity: 1; }
-  100% { transform: translateY(-40px); opacity: 0.6; }
+@keyframes laserSweepVertical {
+  0% { top: 6%; opacity: 0.4; filter: drop-shadow(0 0 6px #ef4444); }
+  50% { top: 90%; opacity: 1; filter: drop-shadow(0 0 14px #06b6d4); }
+  100% { top: 6%; opacity: 0.4; filter: drop-shadow(0 0 6px #ef4444); }
+}
+
+@keyframes hudPulse {
+  0% { opacity: 0.6; transform: scale(1); }
+  50% { opacity: 1; transform: scale(1.02); }
+  100% { opacity: 0.6; transform: scale(1); }
 }
 
 .scanner-frame-success {
@@ -99,6 +105,10 @@
 }
 
 .laser-sweeper {
-  animation: laserSweep 1.6s ease-in-out infinite;
+  animation: laserSweepVertical 1.8s ease-in-out infinite;
+}
+
+.hud-pulse {
+  animation: hudPulse 2s ease-in-out infinite;
 }
 

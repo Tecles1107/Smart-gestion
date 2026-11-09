@@ -84,7 +84,6 @@ export const DiagnosticModal: React.FC<DiagnosticModalProps> = ({
             <button
               onClick={() => {
                 onForceSync();
-                alert('Sincronización forzada completada exitosamente.');
               }}
               className="w-full py-2.5 px-3 bg-blue-600 hover:bg-blue-500 active:scale-[0.99] text-white font-bold rounded-xl shadow transition-all flex items-center justify-center gap-2"
             >
@@ -92,12 +91,21 @@ export const DiagnosticModal: React.FC<DiagnosticModalProps> = ({
               <span>Sincronizar y Consolidar Todo</span>
             </button>
 
+            <a
+              href="/api/descargar_bd"
+              download="inventario_respaldo.json"
+              className="w-full py-2.5 px-3 bg-emerald-900/60 hover:bg-emerald-800 text-emerald-200 border border-emerald-600/40 font-bold rounded-xl transition-all flex items-center justify-center gap-2 text-center"
+            >
+              <Database className="w-4 h-4 text-emerald-400" />
+              <span>Descargar Copia de Seguridad (.json)</span>
+            </a>
+
             <button
               onClick={() => {
                 onLoadDemoData();
                 onClose();
               }}
-              className="w-full py-2.5 px-3 bg-slate-800 hover:bg-slate-700 active:scale-[0.99] text-amber-300 border border-amber-500/30 font-bold rounded-xl transition-all flex items-center justify-center gap-2"
+              className="w-full py-2 px-3 bg-slate-800 hover:bg-slate-700 active:scale-[0.99] text-amber-300 border border-amber-500/30 font-bold rounded-xl transition-all flex items-center justify-center gap-2"
             >
               <Sparkles className="w-4 h-4 text-amber-400" />
               <span>Cargar Datos de Demostración Industrial</span>

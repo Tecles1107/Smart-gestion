@@ -1,7 +1,7 @@
 import React, { useState, useMemo } from 'react';
 import { Search, X, Package, MapPin, Calendar, DollarSign, Layers, CheckCircle2, AlertCircle } from 'lucide-react';
 import { InventoryItem } from '../types/inventory';
-import { cleanNum, calculatePiecesPerBundle } from '../utils/inventoryLogic';
+import { cleanCode, calculatePiecesPerBundle } from '../utils/inventoryLogic';
 
 interface LookupModalProps {
   isOpen: boolean;
@@ -19,7 +19,7 @@ export const LookupModal: React.FC<LookupModalProps> = ({
   const [searchTerm, setSearchTerm] = useState('');
 
   const searchResults = useMemo(() => {
-    const clean = cleanNum(searchTerm);
+    const clean = cleanCode(searchTerm);
     const termUpper = searchTerm.trim().toUpperCase();
 
     if (!clean && !termUpper) return [];
@@ -28,7 +28,7 @@ export const LookupModal: React.FC<LookupModalProps> = ({
 
     Object.entries(allAreaItems).forEach(([areaKey, items]) => {
       items.forEach((it) => {
-        const itemCleanCode = cleanNum(it.Código);
+        const itemCleanCode = cleanCode(it.Código);
         const itemUpperName = (it.Nombre || '').toUpperCase();
 
         const matchCode = clean && itemCleanCode.includes(clean);

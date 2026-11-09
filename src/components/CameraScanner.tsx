@@ -23,6 +23,7 @@ interface CameraScannerProps {
   onResumeScan: () => void;
   onDiscardCode: () => void;
   externalFeedback?: 'success' | 'error' | null;
+  onNotification?: (msg: string, type: 'error' | 'success' | 'info') => void;
 }
 
 export const CameraScanner: React.FC<CameraScannerProps> = ({
@@ -32,6 +33,7 @@ export const CameraScanner: React.FC<CameraScannerProps> = ({
   onResumeScan,
   onDiscardCode,
   externalFeedback = null,
+  onNotification,
 }) => {
   const [isRunning, setIsRunning] = useState(false);
   const [isStarting, setIsStarting] = useState(false);
@@ -89,7 +91,7 @@ export const CameraScanner: React.FC<CameraScannerProps> = ({
     ? 'success'
     : localFeedback || externalFeedback || null;
 
-  // Helper to stop all active video tracks in navigator to release camera lock
+  // Helper to stop active video tracks safely without prompting for new stream
   const releaseActiveTracks = useCallback(async () => {
     try {
       if (scannerRef.current) {
@@ -103,11 +105,11 @@ export const CameraScanner: React.FC<CameraScannerProps> = ({
     }
 
     try {
-      if (typeof navigator !== 'undefined' && navigator.mediaDevices) {
-        const stream = await navigator.mediaDevices.getUserMedia({ video: true }).catch(() => null);
-        if (stream) {
-          stream.getTracks().forEach((t) => t.stop());
-        }
+      const videoEl = document.querySelector<HTMLVideoElement>(`#${readerElementId} video`);
+      if (videoEl && videoEl.srcObject && 'getTracks' in (videoEl.srcObject as any)) {
+        (videoEl.srcObject as MediaStream).getTracks().forEach((t) => {
+          try { t.stop(); } catch {}
+        });
       }
     } catch {
       // Ignore
@@ -139,15 +141,9 @@ export const CameraScanner: React.FC<CameraScannerProps> = ({
       });
 
     return () => {
-      if (scannerRef.current) {
-        try {
-          if (scannerRef.current.isScanning) {
-            scannerRef.current.stop().catch(() => {});
-          }
-        } catch {}
-      }
+      releaseActiveTracks();
     };
-  }, []);
+  }, [releaseActiveTracks]);
 
   const startCamera = async (cameraIdToUse?: string) => {
     if (isStarting) return;
@@ -331,7 +327,9 @@ export const CameraScanner: React.FC<CameraScannerProps> = ({
         setLocalFeedback(null);
         setShowFlash(null);
       }, 1500);
-      alert('No se detectó un código de barras claro en la imagen. Intenta con mejor iluminación o escribe el código manualmente.');
+      if (onNotification) {
+        onNotification('No se detectó un código de barras claro en la imagen. Intenta con mejor iluminación o escribe el código manualmente.', 'error');
+      }
     } finally {
       setIsScanningFile(false);
       if (e.target) e.target.value = '';
@@ -394,7 +392,9 @@ export const CameraScanner: React.FC<CameraScannerProps> = ({
       <div className="px-3 py-2 bg-slate-950/80 border-b border-slate-800 flex items-center justify-between gap-2">
         <div className="flex items-center gap-1.5">
           <div className={`w-2.5 h-2.5 rounded-full ${isRunning ? 'bg-emerald-500 animate-pulse' : 'bg-slate-600'}`} />
-          <span className="text-xs font-bold text-slate-200 tracking-wide">Escáner Láser Industrial</span>
+          <span className="text-xs font-bold text-cyan-400 tracking-wide flex items-center gap-1">
+            <span>|||||</span> Escáner Láser
+          </span>
         </div>
 
         <div className="flex items-center gap-1">
@@ -496,8 +496,8 @@ export const CameraScanner: React.FC<CameraScannerProps> = ({
           </div>
         )}
 
-        {/* Action Controls Bar */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
+        {/* Action Controls Bar matching screenshot */}
+        <div className="grid grid-cols-2 gap-2">
           {!isRunning ? (
             <button
               onClick={() => startCamera()}
@@ -506,7 +506,7 @@ export const CameraScanner: React.FC<CameraScannerProps> = ({
               className="py-2.5 px-3 bg-emerald-600 hover:bg-emerald-500 active:scale-[0.99] disabled:opacity-50 text-white font-bold text-xs sm:text-sm rounded-lg shadow transition-all flex items-center justify-center gap-2"
             >
               <Camera className="w-4 h-4" />
-              <span>{isStarting ? 'Conectando...' : 'Iniciar Cámara'}</span>
+              <span>{isStarting ? 'Conectando...' : 'Iniciar'}</span>
             </button>
           ) : (
             <button
@@ -515,7 +515,7 @@ export const CameraScanner: React.FC<CameraScannerProps> = ({
               className="py-2.5 px-3 bg-rose-600 hover:bg-rose-500 active:scale-[0.99] text-white font-bold text-xs sm:text-sm rounded-lg shadow transition-all flex items-center justify-center gap-2"
             >
               <CameraOff className="w-4 h-4" />
-              <span>Detener Cámara</span>
+              <span>⏹ Detener</span>
             </button>
           )}
 
@@ -524,11 +524,11 @@ export const CameraScanner: React.FC<CameraScannerProps> = ({
             onClick={() => fileInputRef.current?.click()}
             disabled={isScanningFile}
             aria-label="Tomar o Subir Foto de Código"
-            className="py-2.5 px-3 bg-slate-800 hover:bg-slate-700 border border-slate-700 active:scale-[0.99] text-slate-200 font-bold text-xs sm:text-sm rounded-lg transition-all flex items-center justify-center gap-2"
+            className="py-2.5 px-3 bg-[#111e38] hover:bg-slate-800 border border-slate-700 active:scale-[0.99] text-slate-100 font-bold text-xs sm:text-sm rounded-lg transition-all flex items-center justify-center gap-2"
             title="Escanear desde foto o cámara de Android sin usar stream continuo"
           >
             <ImageIcon className="w-4 h-4 text-cyan-400" />
-            <span>{isScanningFile ? 'Analizando...' : 'Tomar / Subir Foto'}</span>
+            <span>{isScanningFile ? 'Analizando...' : '📷 Foto'}</span>
           </button>
           <input
             ref={fileInputRef}
@@ -604,6 +604,37 @@ export const CameraScanner: React.FC<CameraScannerProps> = ({
               <p className="text-[11px] text-slate-500 max-w-[260px] mt-0.5">
                 Presiona "Iniciar Cámara", "Tomar / Subir Foto" o escribe el SKU directamente abajo.
               </p>
+            </div>
+          )}
+
+          {/* Industrial viewfinder framing brackets matching Termux layout with Universal Laser Sweeper */}
+          {isRunning && !activeFeedback && (
+            <div className="pointer-events-none absolute inset-0 z-10 flex items-center justify-center p-3">
+              <div className="relative w-64 h-32 sm:w-72 sm:h-36 border border-cyan-400/30 rounded-xl overflow-hidden shadow-[0_0_20px_rgba(6,182,212,0.15)] hud-pulse">
+                {/* Neon Corners */}
+                <div className="absolute top-0 left-0 w-5 h-5 border-t-2 border-l-2 border-cyan-400 shadow-[0_0_8px_#06b6d4]" />
+                <div className="absolute top-0 right-0 w-5 h-5 border-t-2 border-r-2 border-cyan-400 shadow-[0_0_8px_#06b6d4]" />
+                <div className="absolute bottom-0 left-0 w-5 h-5 border-b-2 border-l-2 border-cyan-400 shadow-[0_0_8px_#06b6d4]" />
+                <div className="absolute bottom-0 right-0 w-5 h-5 border-b-2 border-r-2 border-cyan-400 shadow-[0_0_8px_#06b6d4]" />
+
+                {/* Laser Beam Animated Sweeper */}
+                <div className="absolute left-1 right-1 h-0.5 bg-gradient-to-r from-cyan-500 via-rose-500 to-emerald-400 shadow-[0_0_12px_#06b6d4] laser-sweeper" />
+
+                {/* Center Reticle Radar Crosshair */}
+                <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-6 h-6 border border-cyan-400/40 rounded-full flex items-center justify-center">
+                  <div className="w-1.5 h-1.5 bg-cyan-400 rounded-full animate-ping" />
+                </div>
+
+                {/* Mode HUD badge */}
+                <div className="absolute top-1.5 left-1/2 -translate-x-1/2 bg-slate-950/80 px-2 py-0.5 rounded border border-cyan-500/40 text-[9px] font-mono text-cyan-300 tracking-wider uppercase font-bold flex items-center gap-1 shadow-sm">
+                  <span className="w-1.5 h-1.5 rounded-full bg-cyan-400 animate-pulse" />
+                  <span>ESCANEO ACTIVO (CUALQUIER MODO)</span>
+                </div>
+
+                <div className="absolute bottom-1 left-1/2 -translate-x-1/2 bg-slate-950/85 px-2 py-0.5 rounded text-[10px] text-emerald-300 font-mono border border-emerald-500/30">
+                  Apunta la cámara al código
+                </div>
+              </div>
             </div>
           )}
 

@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { X, Edit2, Save } from 'lucide-react';
+import { X, Edit2, Save, Camera, Image as ImageIcon } from 'lucide-react';
 import { InventoryItem } from '../types/inventory';
 import { calculateTotal } from '../utils/inventoryLogic';
 
@@ -21,6 +21,7 @@ export const EditItemModal: React.FC<EditItemModalProps> = ({
   const [piezas, setPiezas] = useState(0);
   const [caducidad, setCaducidad] = useState('');
   const [precio, setPrecio] = useState(0);
+  const [imagen, setImagen] = useState<string | undefined>(undefined);
 
   useEffect(() => {
     if (item) {
@@ -29,6 +30,7 @@ export const EditItemModal: React.FC<EditItemModalProps> = ({
       setPiezas(Number(item.Piezas) || 1);
       setCaducidad(item.Caducidad || '');
       setPrecio(Number(item.Precio) || 0);
+      setImagen(item.Imagen);
     }
   }, [item]);
 
@@ -46,7 +48,10 @@ export const EditItemModal: React.FC<EditItemModalProps> = ({
       Total: totalCalculated,
       Caducidad: caducidad,
       Precio: Math.max(0, precio),
-      Fecha_Captura: `${item.Fecha_Captura} (Ed)`,
+      Imagen: imagen,
+      Fecha_Captura: item.Fecha_Captura.includes('(Ed)')
+        ? item.Fecha_Captura
+        : `${item.Fecha_Captura} (Ed)`,
     });
     onClose();
   };
@@ -69,7 +74,7 @@ export const EditItemModal: React.FC<EditItemModalProps> = ({
           </button>
         </div>
 
-        <form onSubmit={handleSubmit} className="p-4 flex flex-col gap-3 text-xs">
+        <form onSubmit={handleSubmit} className="p-4 flex flex-col gap-3 text-xs overflow-y-auto max-h-[80vh]">
           {/* SKU read-only */}
           <div>
             <label className="text-[11px] font-bold text-slate-400 uppercase tracking-wider block mb-1">
@@ -81,6 +86,56 @@ export const EditItemModal: React.FC<EditItemModalProps> = ({
               readOnly
               className="w-full bg-slate-950/80 border border-slate-800 rounded-lg px-3 py-2 font-mono font-bold text-blue-400 text-sm cursor-not-allowed"
             />
+          </div>
+
+          {/* Image Editor Section */}
+          <div className="flex flex-col gap-1.5">
+            <label className="text-[11px] font-bold text-slate-400 uppercase tracking-wider">
+              Imagen del Producto:
+            </label>
+            <div className="flex items-center gap-3 bg-slate-950 border border-slate-800 p-2.5 rounded-xl">
+               <div className="w-20 h-20 rounded-lg overflow-hidden bg-slate-900 border border-slate-700 flex items-center justify-center shrink-0">
+                 {imagen ? (
+                   <img src={imagen} className="w-full h-full object-cover" alt="" />
+                 ) : (
+                   <ImageIcon className="w-8 h-8 text-slate-700" />
+                 )}
+               </div>
+               <div className="flex flex-col gap-2">
+                 <button
+                   type="button"
+                   onClick={() => document.getElementById('edit-image-capture')?.click()}
+                   className="flex items-center gap-2 px-3 py-1.5 bg-blue-600/20 text-blue-400 border border-blue-500/40 rounded-lg font-bold hover:bg-blue-600 hover:text-white transition-all"
+                 >
+                   <Camera className="w-4 h-4" />
+                   <span>{imagen ? 'Cambiar Foto' : 'Tomar Foto'}</span>
+                 </button>
+                 {imagen && (
+                    <button
+                      type="button"
+                      onClick={() => setImagen(undefined)}
+                      className="text-[10px] text-rose-400 font-bold hover:underline self-start"
+                    >
+                      Quitar imagen
+                    </button>
+                 )}
+                 <input 
+                   id="edit-image-capture"
+                   type="file" 
+                   accept="image/*" 
+                   capture="environment" 
+                   className="hidden"
+                   onChange={(e) => {
+                     const file = e.target.files?.[0];
+                     if (file) {
+                       const reader = new FileReader();
+                       reader.onloadend = () => setImagen(reader.result as string);
+                       reader.readAsDataURL(file);
+                     }
+                   }}
+                 />
+               </div>
+            </div>
           </div>
 
           {/* Nombre */}

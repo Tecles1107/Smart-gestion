@@ -39,6 +39,7 @@ export const ImportModal: React.FC<ImportModalProps> = ({
   });
   const [importTarget, setImportTarget] = useState<'current' | 'new'>('new');
   const [newAreaName, setNewAreaName] = useState('');
+  const [errorMsg, setErrorMsg] = useState<string | null>(null);
 
   if (!isOpen) return null;
 
@@ -60,7 +61,7 @@ export const ImportModal: React.FC<ImportModalProps> = ({
           rows = JSON.parse(event.target?.result as string);
         } else {
           const buffer = new Uint8Array(event.target?.result as ArrayBuffer);
-          const workbook = XLSX.read(buffer, { type: 'array' });
+          const workbook = XLSX.read(buffer, { type: 'array', cellDates: true });
           const firstSheetName = workbook.SheetNames[0];
           const sheet = workbook.Sheets[firstSheetName];
 
@@ -91,7 +92,7 @@ export const ImportModal: React.FC<ImportModalProps> = ({
         }
 
         if (!Array.isArray(rows) || rows.length === 0) {
-          alert('El archivo no contiene filas legibles.');
+          setErrorMsg('El archivo no contiene filas legibles.');
           return;
         }
 
@@ -105,6 +106,7 @@ export const ImportModal: React.FC<ImportModalProps> = ({
 
         setRawRows(rows);
         setAvailableColumns(cols);
+        setErrorMsg(null);
 
         // Smart column mapper auto-detection
         const findCol = (keywords: string[]) =>
@@ -119,8 +121,8 @@ export const ImportModal: React.FC<ImportModalProps> = ({
           caducidad: findCol(['cad', 'venc', 'fecha']),
           conservarExtras: true,
         });
-      } catch (err) {
-        alert('Error al leer el archivo: ' + err);
+      } catch (err: any) {
+        setErrorMsg('Error al leer el archivo: ' + (err?.message || err));
       }
     };
 
@@ -133,11 +135,11 @@ export const ImportModal: React.FC<ImportModalProps> = ({
 
   const handleConfirmImport = () => {
     if (!mapping.codigo) {
-      alert('Debes seleccionar al menos la columna del CÓDIGO / SKU.');
+      setErrorMsg('Debes seleccionar al menos la columna del CÓDIGO / SKU.');
       return;
     }
     if (!mapping.nombre) {
-      alert('Debes seleccionar la columna del NOMBRE.');
+      setErrorMsg('Debes seleccionar la columna del NOMBRE.');
       return;
     }
 
@@ -147,7 +149,7 @@ export const ImportModal: React.FC<ImportModalProps> = ({
 
     const parsedItems = parseImportedRows(rawRows, mapping, targetArea);
     if (parsedItems.length === 0) {
-      alert('No se pudieron extraer códigos válidos con el mapeo seleccionado.');
+      setErrorMsg('No se pudieron extraer códigos válidos con el mapeo seleccionado.');
       return;
     }
 
@@ -174,6 +176,19 @@ export const ImportModal: React.FC<ImportModalProps> = ({
         </div>
 
         <div className="p-4 flex flex-col gap-4 overflow-y-auto">
+          {errorMsg && (
+            <div className="p-3 bg-rose-950/80 border border-rose-500/50 rounded-xl text-rose-200 text-xs flex items-center justify-between animate-in fade-in">
+              <span>{errorMsg}</span>
+              <button
+                type="button"
+                onClick={() => setErrorMsg(null)}
+                className="text-rose-400 hover:text-white p-1"
+              >
+                ✕
+              </button>
+            </div>
+          )}
+
           {/* File Picker Zone */}
           {rawRows.length === 0 ? (
             <div className="border-2 border-dashed border-slate-700 hover:border-emerald-500 rounded-2xl p-6 text-center bg-slate-950/60 transition-colors flex flex-col items-center justify-center">

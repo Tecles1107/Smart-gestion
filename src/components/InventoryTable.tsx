@@ -18,7 +18,7 @@ import {
   Boxes,
 } from 'lucide-react';
 import { InventoryItem } from '../types/inventory';
-import { calculatePiecesPerBundle, SortOption } from '../utils/inventoryLogic';
+import { calculatePiecesPerBundle, calculateStockHealth, SortOption } from '../utils/inventoryLogic';
 import { ExportDocType, ExportFormat } from '../utils/export';
 
 interface InventoryTableProps {
@@ -109,41 +109,40 @@ export const InventoryTable: React.FC<InventoryTableProps> = ({
         </div>
       )}
 
-      {/* Top Bar with Totals & Actions */}
-      <div className="p-3 bg-slate-950/80 border-b border-slate-800 flex flex-wrap items-center justify-between gap-2.5">
-        <div className="flex items-center flex-wrap gap-2 text-xs">
-          <span className="font-bold text-slate-300">
-            Ítems: <span className="text-emerald-400 font-mono font-bold">{filteredItems.length}</span>
-            {searchQuery && <span className="text-slate-500 font-normal"> de {items.length}</span>}
+      {/* Top Bar with Totals & Actions matching screenshot */}
+      <div className="p-3 bg-[#0a1222] border-b border-slate-800 flex flex-wrap items-center justify-between gap-2.5">
+        <div className="flex items-center flex-wrap gap-2 text-xs font-mono">
+          <span className="font-bold text-white">
+            Ítems: <span className="text-cyan-400 font-bold">{filteredItems.length}</span>
           </span>
-          <span className="text-slate-600 hidden sm:inline">•</span>
-          <span className="text-slate-400">
-            Bultos: <strong className="text-white font-mono">{totalBultos}</strong>
+          <span className="text-slate-600">|</span>
+          <span className="font-bold text-white">
+            Bultos: <span className="text-cyan-400 font-bold">{totalBultos}</span>
           </span>
-          <span className="text-slate-600 hidden sm:inline">•</span>
-          <span className="text-slate-400">
-            Piezas: <strong className="text-cyan-400 font-mono">{totalPiezas}</strong>
+          <span className="text-slate-600">|</span>
+          <span className="font-bold text-white">
+            Pzs: <span className="text-cyan-400 font-bold">{totalPiezas}</span>
           </span>
           {totalValor > 0 && (
             <>
-              <span className="text-slate-600 hidden sm:inline">•</span>
-              <span className="text-emerald-400 font-semibold font-mono">
+              <span className="text-slate-600">|</span>
+              <span className="text-emerald-400 font-bold">
                 ${totalValor.toLocaleString('es-MX', { minimumFractionDigits: 2 })}
               </span>
             </>
           )}
         </div>
 
-        {/* Action Buttons */}
-        <div className="flex items-center gap-1.5 ml-auto">
+        {/* Action Buttons matching screenshot */}
+        <div className="flex items-center gap-2 ml-auto">
           <button
             onClick={onConsolidate}
             aria-label="Consolidar a Inventario General"
-            className="px-2.5 py-1.5 rounded-lg bg-blue-900/60 hover:bg-blue-800 text-blue-200 border border-blue-600/40 text-xs font-bold flex items-center gap-1 transition-all"
+            className="px-3 py-1.5 rounded-lg bg-[#0284c7] hover:bg-[#0369a1] text-white text-xs font-bold flex items-center gap-1.5 transition-all shadow-sm active:scale-95"
             title="Consolidar todas las áreas en Inventario General"
           >
             <RotateCw className="w-3.5 h-3.5" />
-            <span className="hidden sm:inline">Consolidar</span>
+            <span>Consolidar</span>
           </button>
 
           {/* Export Dropdown */}
@@ -151,7 +150,7 @@ export const InventoryTable: React.FC<InventoryTableProps> = ({
             <button
               onClick={() => setExportDropdownOpen(!exportDropdownOpen)}
               aria-label="Exportar Inventario"
-              className="px-3 py-1.5 rounded-lg bg-amber-500 hover:bg-amber-400 text-slate-950 text-xs font-black flex items-center gap-1.5 transition-all shadow-sm"
+              className="px-3 py-1.5 rounded-lg bg-amber-400 hover:bg-amber-300 text-slate-950 text-xs font-black flex items-center gap-1.5 transition-all shadow-sm active:scale-95"
             >
               <Download className="w-3.5 h-3.5" />
               <span>Exportar</span>
@@ -321,7 +320,14 @@ export const InventoryTable: React.FC<InventoryTableProps> = ({
 
                     {/* Código SKU */}
                     <td className="py-2.5 px-3 whitespace-nowrap">
-                      <div className="flex items-center gap-1.5">
+                      <div className="flex items-center gap-2">
+                        {it.Imagen && (
+                           <div className="w-8 h-8 rounded-lg overflow-hidden border border-slate-700 shadow-sm shrink-0">
+                              <img src={it.Imagen} className="w-full h-full object-cover" alt="" />
+                           </div>
+                        )}
+                        <div className="flex flex-col">
+                          <div className="flex items-center gap-1.5">
                         <span className="font-mono font-bold text-sm text-blue-300 tracking-wider">
                           {it.Código}
                         </span>
@@ -336,31 +342,75 @@ export const InventoryTable: React.FC<InventoryTableProps> = ({
                           </span>
                         )}
                       </div>
-                    </td>
+                    </div>
+                  </div>
+                </td>
 
-                    {/* Nombre y etiquetas de caducidad/precio/subitems */}
+                    {/* Nombre, salud de stock y etiquetas de caducidad/precio/subitems */}
                     <td className="py-2.5 px-3">
-                      <div className="font-semibold text-slate-100 text-xs sm:text-sm">{it.Nombre}</div>
-                      <div className="flex items-center gap-1.5 flex-wrap mt-0.5">
-                        {it.Caducidad && (
-                          <span className="inline-flex items-center gap-0.5 px-1.5 py-0.2 rounded text-[10px] font-semibold bg-rose-950/80 text-rose-300 border border-rose-800/40">
-                            <Calendar className="w-2.5 h-2.5" />
-                            <span>{it.Caducidad}</span>
-                          </span>
-                        )}
-                        {precio > 0 && (
-                          <span className="inline-flex items-center gap-0.5 px-1.5 py-0.2 rounded text-[10px] font-semibold bg-emerald-950/80 text-emerald-300 border border-emerald-800/40">
-                            <DollarSign className="w-2.5 h-2.5" />
-                            <span>${precio.toFixed(2)}</span>
-                          </span>
-                        )}
-                        {isCajaMixta && it._extraData?.subItems && (
-                          <span className="inline-flex items-center gap-1 text-[10px] text-purple-300 bg-purple-950 px-2 py-0.5 rounded border border-purple-800/60 font-mono">
-                            <Boxes className="w-3 h-3 text-purple-400" />
-                            <span>{it._extraData.subItems.length} sub-items</span>
-                          </span>
-                        )}
-                      </div>
+                      {(() => {
+                        const health = calculateStockHealth(t, precio, it.Caducidad);
+                        return (
+                          <div className="flex flex-col gap-1">
+                            <div className="flex items-center justify-between gap-1.5 flex-wrap">
+                              <span className="font-semibold text-slate-100 text-xs sm:text-sm">{it.Nombre}</span>
+
+                              {/* Health Badge */}
+                              <span
+                                className={`px-1.5 py-0.2 rounded text-[9px] font-black uppercase border font-mono ${
+                                  health.status === 'critical'
+                                    ? 'bg-rose-950 text-rose-300 border-rose-500/60 animate-pulse'
+                                    : health.status === 'low'
+                                    ? 'bg-amber-950 text-amber-300 border-amber-500/50'
+                                    : health.status === 'excess'
+                                    ? 'bg-blue-950 text-blue-300 border-blue-500/40'
+                                    : 'bg-emerald-950/80 text-emerald-300 border-emerald-600/40'
+                                }`}
+                                title={health.warningFlags.join(' | ') || `Salud: ${health.healthScore}%`}
+                              >
+                                {health.status === 'critical'
+                                  ? '🔴 CRÍTICO'
+                                  : health.status === 'low'
+                                  ? '🟡 STOCK BAJO'
+                                  : health.status === 'excess'
+                                  ? '🔵 SOBRESTOCK'
+                                  : '🟢 ÓPTIMO'}
+                              </span>
+                            </div>
+
+                            <div className="flex items-center gap-1.5 flex-wrap">
+                              {it.Caducidad && (
+                                <span className="inline-flex items-center gap-0.5 px-1.5 py-0.2 rounded text-[10px] font-semibold bg-rose-950/80 text-rose-300 border border-rose-800/40">
+                                  <Calendar className="w-2.5 h-2.5" />
+                                  <span>{it.Caducidad}</span>
+                                </span>
+                              )}
+                              {it._extraData?.estadoCaducidad && (
+                                <span className="inline-flex items-center gap-0.5 px-1.5 py-0.2 rounded text-[10px] font-black uppercase bg-amber-500/20 text-amber-300 border border-amber-500/40">
+                                  <span>⏰ {it._extraData.estadoCaducidad}</span>
+                                </span>
+                              )}
+                              {it._extraData?.originalArea && (
+                                <span className="inline-flex items-center gap-0.5 px-1.5 py-0.2 rounded text-[10px] font-semibold bg-slate-800 text-slate-300 border border-slate-700">
+                                  <span>De: {it._extraData.originalArea.replace(/_/g, ' ')}</span>
+                                </span>
+                              )}
+                              {precio > 0 && (
+                                <span className="inline-flex items-center gap-0.5 px-1.5 py-0.2 rounded text-[10px] font-semibold bg-emerald-950/80 text-emerald-300 border border-emerald-800/40">
+                                  <DollarSign className="w-2.5 h-2.5" />
+                                  <span>${precio.toFixed(2)}</span>
+                                </span>
+                              )}
+                              {isCajaMixta && it._extraData?.subItems && (
+                                <span className="inline-flex items-center gap-1 text-[10px] text-purple-300 bg-purple-950 px-2 py-0.5 rounded border border-purple-800/60 font-mono">
+                                  <Boxes className="w-3 h-3 text-purple-400" />
+                                  <span>{it._extraData.subItems.length} sub-items</span>
+                                </span>
+                              )}
+                            </div>
+                          </div>
+                        );
+                      })()}
 
                       {/* Display sub-items list for Caja Mixta directly in table row */}
                       {isCajaMixta && it._extraData?.subItems && (
