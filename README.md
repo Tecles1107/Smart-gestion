@@ -1,81 +1,82 @@
 # Smart Scanner Industrial Pro 🏭📱
 
-Sistema completo de gestión de inventarios para almacén e industria, optimizado para PWA, dispositivos móviles y ejecución nativa en **Termux (Android)**.
+Sistema completo de gestión de inventarios para almacén e industria, optimizado para PWA, dispositivos móviles, escritorio (**Windows**, **Ubuntu/Linux**, **macOS**) y ejecución nativa en **Termux (Android)**.
 
 ---
 
-## 🚀 Guía de Ejecución en Termux (Android)
+## 🚀 Instalación Rápida Multiplataforma
 
-### Opción A: Ejecución Directa Automática (Recomendada)
-En la terminal de Termux ejecuta:
+El proyecto incluye instaladores automáticos sincronizados para cada sistema operativo que verifican **Node.js** y **npm**, instalan las dependencias y muestran los comandos de inicio.
 
+### 1. En Ubuntu / Linux / macOS / Termux (Android)
 ```bash
-cd ~/smart-scanner-industrial-pro
-chmod +x instalar.sh termux/instalar.sh
-bash instalar.sh
+chmod +x setup.sh
+./setup.sh
+```
+*(En Termux, si aún no tienes Node.js instalado, ejecuta primero: `pkg update -y && pkg install -y nodejs git`)*
+
+### 2. En Windows (CMD / Explorador de Archivos)
+- Haz **doble clic** en el archivo **`setup.bat`**, o ejecútalo desde la consola CMD:
+```cmd
+setup.bat
 ```
 
-El script instalará automáticamente **Node.js** y las dependencias, e iniciará la aplicación en **`http://localhost:3000`**. Abre Google Chrome en tu Android e ingresa a ese enlace.
-
----
-
-### Opción B: Ejecución Manual con Node.js / React (Recomendada)
-
-Si prefieres ejecutar paso a paso:
-
+### 3. Instalador Universal (Cualquier Sistema Operativo con Node.js)
 ```bash
-# 1. Actualizar paquetes e instalar Node.js
-pkg update -y
-pkg install -y nodejs git
+npm run setup
+```
 
-# 2. Entrar a la carpeta del proyecto
-cd ~/smart-scanner-industrial-pro
-
-# 3. Instalar dependencias
+### 4. Instalación Manual Paso a Paso
+```bash
+# 1. Instalar dependencias del proyecto
 npm install
 
-# 4. Iniciar el servidor
+# 2. Iniciar el servidor de desarrollo (puerto 3000)
 npm run dev
 ```
-
-Abre Chrome en Android en: **`http://localhost:3000`**
-
----
-
-### Opción C: Ejecución con Python Flask (Modo Standalone Ligero)
-
-```bash
-cd ~/smart-scanner-industrial-pro
-bash termux/instalar.sh
-```
-
-Abre Chrome en Android en: **`http://localhost:8000`**
+Una vez iniciado, abre tu navegador en **`http://localhost:3000`**.
 
 ---
 
-## 📂 Estructura del Proyecto (Final y Definitiva)
+## 📋 Comandos Disponibles (`package.json`)
 
-La estructura actual de **14 directorios y 48 archivos** es la estructura **completa y final**. No requerirá más archivos adicionales para funcionar.
+| Comando | Descripción |
+| :--- | :--- |
+| `npm run setup` | Ejecuta el instalador universal (`scripts/setup.js`). |
+| `npm run dev` | Inicia el servidor Express + Vite en modo desarrollo (`http://localhost:3000`). |
+| `npm run start` | Inicia el servidor en modo producción (`tsx server.ts`). |
+| `npm run build` | Compila la aplicación optimizada en la carpeta `dist/`. |
+| `npm run preview` | Previsualiza localmente la versión compilada de `dist/`. |
+| `npm run lint` | Verifica errores de TypeScript (`tsc --noEmit`). |
+| `npm run test:unit` | Ejecuta las pruebas unitarias de lógica de inventario. |
 
-- **`instalar.sh`**: Script de inicio rápido para Termux.
+---
+
+## 📂 Estructura del Proyecto
+
+- **`setup.sh`**: Instalador y lanzador automático para Ubuntu, Linux, macOS y Termux.
+- **`setup.bat`**: Instalador y lanzador automático para Windows CMD.
+- **`scripts/setup.js`**: Script universal en Node.js (`npm run setup`).
 - **`server.ts`**: Servidor Express con persistencia de inventario en archivo local (`inventario_data.json`) y API REST para sincronización.
 - **`src/`**:
-  - **`App.tsx`**: Aplicación React PWA con gestión de estado offline/online y persistencia en borrador.
+  - **`App.tsx`**: Aplicación React PWA con gestión de estado offline/online y persistencia local.
   - **`components/`**:
     - `CameraScanner.tsx`: Escáner de cámara inteligente con reinicio automático de captura.
-    - `InventoryForm.tsx`: Formulario de captura rápida, cajas mixtas, fecha caducidad, auto-completado y caja mixta.
-    - `InventoryTable.tsx`: Tabla interactiva de productos con eliminación individual y masiva.
-    - `Dashboard.tsx`: Centro de analíticas con gráficos en Recharts (distribución por área, más stock y alerta de caducidad).
+    - `InventoryForm.tsx`: Formulario de captura rápida, cajas mixtas, fecha de caducidad y auto-completado.
+    - `InventoryTable.tsx`: Tabla interactiva de productos con filtros y eliminación individual/masiva.
+    - `Dashboard.tsx`: Centro de analíticas con gráficos en Recharts (flujo histórico, distribución por área y alertas).
+    - `RightSidebarDrawer.tsx`: Panel de Gestión y Ajustes (Sincronización, Merma, Caducidad 20 días, Manual Bilingüe y Centro de Actualizaciones).
+    - `UserManual.tsx`: Manual interactivo de usuario en Español e Inglés.
+    - `SoftwareUpdateCenter.tsx`: Centro de actualizaciones de software y carga de paquetes.
     - `LookupModal.tsx`: Modo consulta rápida para buscar SKU/Código sin alterar datos.
     - `AreasModal.tsx`: Gestión y eliminación limpia de áreas de almacenamiento.
     - `Navbar.tsx`: Barra superior con centro de notificaciones de productos por caducar y accesos directos.
-- **`termux/`**: Archivos del servidor Flask alternativo.
 
 ---
 
 ## 🌐 Despliegue en GitHub Pages (PWA Estática Gratuita)
 
-La aplicación está completamente preparada para desplegarse en **GitHub Pages**:
+La aplicación está preparada para desplegarse en **GitHub Pages**:
 
 ### Método 1: Despliegue Automático con GitHub Actions (Recomendado)
 El proyecto ya cuenta con el flujo de trabajo configurado en `.github/workflows/deploy.yml`:
